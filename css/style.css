@@ -1,0 +1,259 @@
+/*
+Theme Name: Rad Atom 
+Theme URI: http://radatom.com
+Version: 1
+Description: An entirely custom theme provided by Rad Atom Technologies.
+Author: Rad Atom
+Author URI: http://radatom.com
+*/
+
+
+.white-background{
+	background-color: blue;
+}
+
+.slide{
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.smaller-column{
+	padding: 2%;
+}
+
+.hover-container{
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #61B261 0%, #becad6 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #61B261 0%, #becad6 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #61B261 0%, #becad6 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #61B261), color-stop(1, #becad6));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #61B261 0%, #becad6 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #61B261 0%, #becad6 100%);
+}
+
+.hover-prompt{
+-webkit-border-top-left-radius: 15px;
+-webkit-border-top-right-radius: 15px;
+-moz-border-radius-topleft: 15px;
+-moz-border-radius-topright: 15px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+background-color: #b44646;
+}
+
+#header-wrapper{
+	background-color: #becad6; 
+}
+
+#header{
+	padding-top: 10px;
+}
+
+#logo{
+	padding-bottom: 10px;
+}
+
+#header-stuff{
+
+}
+
+#header-menu{
+	padding-top: 15px;
+	padding-left: 50px;
+	padding-right: 30px;
+}
+
+#header-menu{
+
+}
+
+#header-menu li{
+	list-style-type: bold;
+	display: inline;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#header-menu-container li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+
+#social-icons{
+	background:url(img/header-nav-background.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	margin-top: 30px;
+
+}
+
+#social-icons img{
+	padding-top: 5px;
+	padding-right: 5px;
+	max-height: 30px;
+}
+
+
+#scorller-wrapper{
+
+}
+
+#scroller{
+
+}
+
+#scroller-cta{
+
+}
+
+#scroller-descrip{
+
+}
+
+
+#front-content-wrapper{
+	background-color: #becad6;
+}
+
+#front-content-wrapper h1{
+
+}
+
+#cta-wrapper{
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #9f3e3e 0%, #b44646 50%, #9f3e3e 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #9f3e3e 0%, #b44646 50%, #9f3e3e 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #9f3e3e 0%, #b44646 50%, #9f3e3e 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9f3e3e), color-stop(0.5, #b44646), color-stop(1, #9f3e3e));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #9f3e3e 0%, #b44646 50%, #9f3e3e 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #9f3e3e 0%, #b44646 50%, #9f3e3e 100%);
+}
+
+#cta{
+	color: #f2f9ff;
+}
+
+#cta h2{
+	color: #f2f9ff;
+}
+
+#cta h3{
+	color: #f2f9ff;
+}
+
+#content{
+	
+}
+
+#internal-content-wrapper{
+	background-color: #becad6;
+}
+
+#internal-content{
+	
+}
+
+#closing-cta{
+
+}
+
+#closing-cta h4{
+color: #1d2329;;
+}
+
+#execute{
+
+}
+
+#plan{
+
+}
+
+
+#deploy{
+
+}
+
+
+
+
+
+
+
+
+
+
+#footer-wrapper{
+/* IE10 Consumer Preview */ 
+background-color: #abb5c0;
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #becad6 0%, #949494 60%, #abb5c0 90%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #becad6 0%, #949494 60%, #abb5c0 90%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #becad6 0%, #949494 60%, #abb5c0 90%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #becad6), color-stop(0.6, #949494), color-stop(0.9, #abb5c0));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #becad6 0%, #949494 60%, #abb5c0 90%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #becad6 0%, #949494 60%, #abb5c0 90%);
+
+padding-top: 15px;
+padding-bottom: 25px;
+}
+
+#footer-prompt{
+
+}
+
+#footer-trifecta{
+
+}
+
+#footer-trifecta h3{
+	color: #181e24;
+}
+
+#footer-follow{
+
+}
+
+#footer-newsletter{
+
+}
+
+#footer-nav{
+text-decoration: none;
+}

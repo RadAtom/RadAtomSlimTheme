@@ -1,0 +1,152 @@
+/*
+Theme Name: Rad Atom But Good
+Theme URI: http://radatom.com
+Version: 1
+Description: An entirely custom theme provided by Rad Atom Technologies. Appeasing to the need for a flashy site, whilst keeping everything simple, sweet, and satisfying. 
+Author: Rad Atom
+Author URI: http://radatom.com
+
+font-family: 'Share Tech', sans-serif;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Orbitron', sans-serif;
+
+*/
+
+
+
+/*
+This is the stuff to allow us to try and replicate in some "tablet" look and feel to everything
+Some of these classes are used so that the "screen" can turn on,
+some are so that the inner shading can follow the users mouse.
+
+*/
+body{
+background-color: #F5F5F5;
+}
+
+
+.bezelled{
+	border-style:solid;
+	border-color: #a5a5a5;
+	padding: 5px;
+	border-width: 2px;
+	background-color: #111111;
+	margin-top: 30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.inner-bezell{
+	background-color: #ffffff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: 5px;
+	border-width: 2px;
+	border-color: #a5a5a5;
+	border-style: solid;
+}
+
+
+.sub-bezelled{
+border-style:solid;
+	border-color: #a5a5a5;
+	border-width: 2px;
+	background-color: #111111;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.sub-bezell-heading{
+border-style:solid;
+	border-color: #a5a5a5;
+	border-width: 2px;
+	background-color: #111111;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.sub-bezell-content{
+	border-style:solid;
+	border-color: #a5a5a5;
+	border-width: 2px;
+	background-color: #111111;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+
+
+
+/*
+=================== Stuff for header
+*/
+.heading-text{
+	font-family: 'Orbitron', sans-serif;
+}
+
+.subheading-text{
+	font-family: 'Architects Daughter', cursive;
+}
+
+
+/*
+=================== Stuff for front page body
+*/
+#closing-cta{
+	margin: 1em;
+}
+
+#closing-cta .cta-wrapper{
+	margin-bottom: 2%;
+}
+
+/*
+=================== Stuff for page body
+*/
+
+
+/*
+=================== Stuff for category body
+*/
+
+
+/*
+=================== Stuff for project portfolio implementation
+*/
+
+
+
+
+
+
+/*
+====================== MEDIA QUERIES ============================
+These things react to the size of the screen.
+*/
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media only screen and (min-width: 768px) {
+	#closing-cta .cta-wrapper{
+		width: 29%;
+		margin: 2%;
+	}
+}
+
+
+/* Used to alter styles for screens at least 1280px wide. */
+@media only screen and (min-width: 1280px) {
+
+}
+
+
+/* Used to alter styles for screens at least 1440px wide. */
+@media only screen and (min-width: 1440px) {
+
+
+}
