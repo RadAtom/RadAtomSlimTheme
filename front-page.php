@@ -64,8 +64,6 @@ get_header();
 			<?php endwhile; endif; ?>
 			<h3>Is your website ready for Tomorrow's technology?</h3>
 		</div>
-
-		
 	</div>
 </div>
 
