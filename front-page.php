@@ -56,7 +56,7 @@ get_header();
 	</div>
 </div>
 
-<div id="front-content-wrapper" class="row bezelled">
+<div id="front-content-wrapper" class="row ">
 	<div class="inner-bezell small-13 columns">
 		<div id="content" class="small-13 columns">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
