@@ -7,7 +7,7 @@
 
 		<?php
 		//this php code will get the variable that is the scema.org rich snippet
-
+		//some edits here, hope this works.//
 		//setup a default value if none is found in the meta data of the post
 		$itemType = '';
 
