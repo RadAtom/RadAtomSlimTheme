@@ -24,10 +24,8 @@ get_header();
 				<div class="large-8 columns">
 					<h2>Our Prior Work</h2>
 					<h3 class="subheader">Proof of our method</h3>
-					<div id="slider2">
 					<h5 class="subheader">If our word alone is not suffiecient enough for you to believe Rad Atom on the quality we promise, why not judge our work for yourself by taking a look at our portfolio?</h4>
-					</div>
-						<p><a href="/portfolio/">Click Here to View Our Portfolio</a></p>
+					<p><a href="/portfolio/">Click Here to View Our Portfolio</a></p>
 				</div>
 				<div class="large-5 columns">
 					<img src="">
@@ -37,13 +35,9 @@ get_header();
 			<li>
 				<div class="large-8 columns">
 					<h2>Your Experience</h2>
-					<div id="slider3t">
 					<h3 class="subheader">Customer Service Track Record</h3>
-					</div>
-					<div id="slider3">
 					<h5 class="subheader">We value ourselves on providing an informative and enjoyable experience for each and every client. Please tell us your opinion on our service and finished product we offered.</h4>
-					</div>
-						<p><a href="/client-testimony/">Click Here for Our Track Record</a></p>
+					<p><a href="/client-testimony/">Click Here for Our Track Record</a></p>
 				</div>
 				<div class="large-5 columns">
 					<img src="">
@@ -56,7 +50,7 @@ get_header();
 	</div>
 </div>
 
-<div id="front-content-wrapper" class="row ">
+<div id="front-content-wrapper" class="row bezelled">
 	<div class="inner-bezell small-13 columns">
 		<div id="content" class="small-13 columns">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
