@@ -59,7 +59,7 @@ class RadAtomWordpressPages {
 		wp_nonce_field( 'ra_snippet_box', 'ra_snippet_box_nonce');
 
 		echo '<label for="ra_snippet_field">';
-		_e('Description', 'snippet_textdomain');
+		_e('Rich Snippet for this Page : ', 'snippet_textdomain');
 		echo '</label>';
 		echo '<input type="text" id="ra_snippet_field" name="ra_snippet_field" value="'. get_post_meta( $page->ID, 'ra_snippet_field', true).'" size="25"/>';
 	}

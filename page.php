@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 <!--page.php-->
+
+
 <div id="internal-content-outter-wrapper" class="row">
 	<div id="internal-content-inner wrapper" class="inner-bezell bezelled small-13 columns">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -31,22 +33,11 @@
 
 		<p><?= breadcrumbs() ?></p>
 
-
-
-
 		<?php
 
-			//this php code will get the variable that is the scema.org rich snippet
-			//setup a default value if none is found in the meta data of the post
-			$itemType = '';
+			// retrieves snippet for page
+			$itemType = get_post_meta($post->ID, 'ra_snippet_field', true);
 
-
-			$metaDataValues = get_post_custom_values('richsnippet' , get_the_ID() );
-
-			//check to make sure that the keyvalue is there
-
-			//set the $itmeType to the value using the key
-		
 		?>
 
 		
