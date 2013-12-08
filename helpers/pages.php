@@ -73,16 +73,17 @@ class RadAtomWordpressPages {
 
 		$value = trim($schema_value, 'http://');
 
+
 		wp_nonce_field( 'ra_snippet_box', 'ra_snippet_box_nonce');
 		echo '<label for="schema_snippet_field">';
 		_e('Schema Snippet Selector : ', 'schema_textdomain');
 		echo '<br>';
 		echo '</label>';
-		echo '<select name="schema_snippet_field" id="schema_snippet_field" selected="selected">';
-			echo '<option value="">';
+		echo '<select name="schema_snippet_field" id="schema_snippet_field">';
+			echo '<option value="" selected="selected">';
 			_e( 'Click to See', 'schema_textdomain' );
 			echo '</option>';
-			echo '<option value="http://schema.org/LocalBusiness">';
+			echo '<option value="http://schema.org/LocalBusiness" >';
 			echo 'LocalBusiness';
 			echo '</option>';	
 		echo '</select>';
@@ -100,9 +101,8 @@ class RadAtomWordpressPages {
 				echo $value;
 			}
 		}
-
 	}
-
+		
 
 }
 
