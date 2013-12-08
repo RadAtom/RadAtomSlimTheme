@@ -34,15 +34,16 @@
 		<p><?= breadcrumbs() ?></p>
 
 		<?php
-
 			// retrieves snippet for page
-			$itemType = get_post_meta($post->ID, 'ra_snippet_field', true);
+			$ra_snippet = get_post_meta($post->ID, 'ra_snippet_field' , true);
+
+			$schema_snippet = get_post_meta($post->ID, 'schema_snippet_field' , true);
 
 		?>
 
 		
 		<article>
-			<div class="large-9 columns" id="internal-content" itemscope itemtype="<?php echo $itemType; ?>" >
+			<div class="large-9 columns" id="internal-content" itemscope itemtype="<?php echo $schema_snippet; ?>" >
 					<h1 class="caps"><?php the_title(); ?></h1>
 					<?php the_content(); ?>
 			</div>
