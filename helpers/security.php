@@ -38,6 +38,7 @@ class RadAtomWordpressSecurity {
         ?>
         <div class="wrap">
             <?php screen_icon(); ?>
+            <?php echo var_dump($this->options); ?>
             <h2>RadAtom Wordpress Security Settings</h2>           
             <form method="post" action="options.php">
             <?php
@@ -98,13 +99,13 @@ class RadAtomWordpressSecurity {
             if($this->options['show_admin_bar'] == 0){
                 RadAtomWordpressSecurity::remove_admin_bar();
             }else if($this->options['show_admin_bar'] == 1){
-                RadAtomWordpressSecurity::show_admin_bar();
+                RadAtomWordpressSecurity::add_admin_bar();
             }
 
             if($this->options['show_generator_tag'] == 0){
                 RadAtomWordpressSecurity::remove_generator_tag();
             }else if($this->options['show_generator_tag'] == 1){
-                RadAtomWordpressSecurity::show_generator_tag();
+                RadAtomWordpressSecurity::add_generator_tag();
             }
         }
     }
@@ -122,7 +123,7 @@ class RadAtomWordpressSecurity {
 
         if( isset( $input['show_generator_tag'] ) )
             $new_input['show_generator_tag'] = absint( $input['show_generator_tag'] );
-
+        echo var_dump($input);
         return $new_input;
     }
 
