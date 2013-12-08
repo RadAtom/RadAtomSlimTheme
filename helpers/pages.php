@@ -48,24 +48,62 @@ class RadAtomWordpressPages {
 				return $post_id;
 		}
 
-	$snippet = sanitize_text_field( $_POST['ra_snippet_field'] );
+	$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
 
-	update_post_meta( $post_id, 'ra_snippet_field', $snippet );
-	
+	if( !isset( $_POST['schema_snippet_field'] ) ) {
+		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+	} elseif( isset( $_POST['schema_snippet_field'] ) ) {
+		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
 	}
+	if( isset( $_POST['schema_value'] ) ) {
+
+		$ra_snippet = sanitize_text_field( $_POST['ra_snippet_field'] );
+
+		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+		update_post_meta( $post_id, 'ra_snippet_field', $_POST['ra_snippet_field'] );
+	}
+}
 
 	
 	public function render_ra_snippet_box( $page ) {
-		wp_nonce_field( 'ra_snippet_box', 'ra_snippet_box_nonce');
 
-		echo '<label for="ra_snippet_field">';
-		_e('Rich Snippet for this Page : ', 'snippet_textdomain');
+		$ra_value = get_post_meta( $page->ID, 'ra_snippet_field', true);
+
+		$schema_value = get_post_meta( $page->ID, 'schema_snippet_field', true);
+
+		$value = trim($schema_value, 'http://');
+
+		wp_nonce_field( 'ra_snippet_box', 'ra_snippet_box_nonce');
+		echo '<label for="schema_snippet_field">';
+		_e('Schema Snippet Selector : ', 'schema_textdomain');
+		echo '<br>';
 		echo '</label>';
-		echo '<input type="text" id="ra_snippet_field" name="ra_snippet_field" value="'. get_post_meta( $page->ID, 'ra_snippet_field', true).'" size="25"/>';
+		echo '<select name="schema_snippet_field" id="schema_snippet_field" selected="selected">';
+			echo '<option value="">';
+			_e( 'Click to See', 'schema_textdomain' );
+			echo '</option>';
+			echo '<option value="http://schema.org/LocalBusiness">';
+			echo 'LocalBusiness';
+			echo '</option>';	
+		echo '</select>';
+		echo '<br>';
+		if( !isset( $_GET['schema_snippet_field'] ) ) { 
+			if( $schema_value == 'http://schema.org/LocalBusiness'){
+				echo '<br>';
+				echo $value;
+				echo '<br>';
+				echo '<label for="ra_snippet_field">';
+				_e('Name of Business : ', 'snippet_textdomain');
+				echo '</label>';
+				echo '<input type="text" name="ra_snippet_field" id="ra_snippet_field" value="'. $ra_value.'" size="20"/>';
+			}else{
+				echo $value;
+			}
+		}
+
 	}
 
 
 }
-
 
 
