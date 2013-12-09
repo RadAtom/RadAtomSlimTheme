@@ -48,21 +48,21 @@ class RadAtomWordpressPages {
 				return $post_id;
 		}
 
-	$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
+		$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
 
-	if( !isset( $_POST['schema_snippet_field'] ) ) {
-		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
-	} elseif( isset( $_POST['schema_snippet_field'] ) ) {
-		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+		if( !isset( $_POST['schema_snippet_field'] ) ) {
+			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+		} elseif( isset( $_POST['schema_snippet_field'] ) ) {
+			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+		}
+		if( isset( $_POST['ra_snippet_field'] ) ) {
+
+			$ra_snippet = sanitize_text_field( $_POST['ra_snippet_field'] );
+
+			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+			update_post_meta( $post_id, 'ra_snippet_field', $_POST['ra_snippet_field'] );
+		}
 	}
-	if( isset( $_POST['ra_snippet_field'] ) ) {
-
-		$ra_snippet = sanitize_text_field( $_POST['ra_snippet_field'] );
-
-		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
-		update_post_meta( $post_id, 'ra_snippet_field', $_POST['ra_snippet_field'] );
-	}
-}
 
 	
 	public function render_ra_snippet_box( $page ) {
