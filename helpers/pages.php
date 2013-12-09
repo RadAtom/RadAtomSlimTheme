@@ -55,7 +55,7 @@ class RadAtomWordpressPages {
 	} elseif( isset( $_POST['schema_snippet_field'] ) ) {
 		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
 	}
-	if( isset( $_POST['schema_value'] ) ) {
+	if( isset( $_POST['ra_snippet_field'] ) ) {
 
 		$ra_snippet = sanitize_text_field( $_POST['ra_snippet_field'] );
 
@@ -102,8 +102,7 @@ class RadAtomWordpressPages {
 			}
 		}
 	}
-		
-
+	
 }
 
 
