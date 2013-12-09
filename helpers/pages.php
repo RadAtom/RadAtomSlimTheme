@@ -48,21 +48,21 @@ class RadAtomWordpressPages {
 				return $post_id;
 		}
 
-	$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
+			$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
 
-	if( !isset( $_POST['schema_snippet_field'] ) ) {
-		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
-	} elseif( isset( $_POST['schema_snippet_field'] ) ) {
-		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
-	}
-	if( isset( $_POST['schema_value'] ) ) {
+			if( !isset( $_POST['schema_snippet_field'] ) ) {
+				update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+			} elseif( isset( $_POST['schema_snippet_field'] ) ) {
+				update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+			}
+			if( isset( $_POST['schema_value'] ) ) {
 
-		$ra_snippet = sanitize_text_field( $_POST['ra_snippet_field'] );
+				$ra_snippet = sanitize_text_field( $_POST['ra_snippet_field'] );
 
-		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
-		update_post_meta( $post_id, 'ra_snippet_field', $_POST['ra_snippet_field'] );
-	}
-}
+				update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+				update_post_meta( $post_id, 'ra_snippet_field', $_POST['ra_snippet_field'] );
+			}
+		}
 
 	
 	public function render_ra_snippet_box( $page ) {
@@ -80,10 +80,11 @@ class RadAtomWordpressPages {
 		echo '<br>';
 		echo '</label>';
 		echo '<select name="schema_snippet_field" id="schema_snippet_field">';
-			echo '<option value="" selected="selected">';
+			echo '<option value="" >';
 			_e( 'Click to See', 'schema_textdomain' );
 			echo '</option>';
-			echo '<option value="http://schema.org/LocalBusiness" >';
+			$selected = ($schema_value =='http://schema.org/LocalBusiness') ?'selected="selected"' : '';
+			echo '<option value="http://schema.org/LocalBusiness" '.$selected.'>';
 			echo 'LocalBusiness';
 			echo '</option>';	
 		echo '</select>';
@@ -102,7 +103,10 @@ class RadAtomWordpressPages {
 			}
 		}
 	}
-		
+
+	public static function get_pages(){
+
+	}
 
 }
 
