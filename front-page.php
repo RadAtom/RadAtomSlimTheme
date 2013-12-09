@@ -6,6 +6,27 @@ get_header();
 <div id="cta-wrapper" class="row bezelled">
 	<div id="cta" class="inner-bezell small-13 columns">
 		<ul data-orbit>
+			<?php
+			//get the options
+			$pageIdsSetting
+			//turn those optiions into pages
+			//loop over them hoes
+			foreach ($pages as $page) {
+				?>
+				<li>
+					<div class="large-8 columns">
+						<h2>Why Rad Atom?</h2>
+						<h3 class="subheader">Simplicity. That is why.</h3>
+						<h5 class="subheader">No matter if it's a Small Business Website, an E-Commerce Website, or a Creative Idea of any size, your website is no match for Rad Atom's planning and execution. Learn more simply by talking to one of us here at Rad Atom!</h4>
+							<p><a href="/schedule-a-meeting/">Click Here to Make an Appointment</a></p>
+					</div>
+					<div class="large-5 columns">
+						<img src="">
+					</div>
+				</li>
+				<?php
+			}
+			?>
 			<li>
 				<div class="large-8 columns">
 					<h2>Why Rad Atom?</h2>
