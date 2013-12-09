@@ -102,7 +102,28 @@ class RadAtomWordpressPages {
 			}
 		}
 	}
+
+	public function get_pages($id = array()){
+		//if $id is not a string, or its not an array, exit by returning null
+		$isArray = is_array($id);
+		$isString = is_string($id);
+		if (!$isArray && !$isString ) {
+			return null;
+		}elseif ($isArray && count($id) == 0) {
+			return null;
+		}
+		$args = array(
+			'sort_order' => 'ASC',
+			'sort_column' => 'post_title',
+			'include' => $id,
+			'authors' => '',
+			'exclude_tree' => '',
+			'number' => '',
+			'offset' => 0,
+			'post_type' => 'page',
+			'post_status' => 'publish'
+		); 
+		return get_pages($args);
+	}
 	
 }
-
-
