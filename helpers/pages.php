@@ -3,10 +3,6 @@
 /**
  * Calls the class on the post edit screen.
  */
-function call_RadAtomWordpressPages() {
-    new RadAtomWordpressPages();
-}
-
 if ( is_admin() ) {
 	new RadAtomWordpressPages();
 }
@@ -103,7 +99,7 @@ class RadAtomWordpressPages {
 		}
 	}
 
-	public function get_pages($id = array()){
+	public static function get_pages($id = array()){
 		//if $id is not a string, or its not an array, exit by returning null
 		$isArray = is_array($id);
 		$isString = is_string($id);
@@ -124,6 +120,17 @@ class RadAtomWordpressPages {
 			'post_status' => 'publish'
 		); 
 		return get_pages($args);
+	}
+
+	public static function get_pages_wexcerpt($id = array()){
+		$pages = RadAtomWordpressPages::get_pages($id);
+		if($pages){
+			foreach ($pages as $page) {
+				$page->post_excerpt = apply_filters('the_excerpt', $page->post_excerpt);
+			}
+			return $pages;
+		}
+		return null;
 	}
 	
 }
