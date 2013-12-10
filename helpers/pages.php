@@ -15,6 +15,7 @@ class RadAtomWordpressPages {
 	function __construct() {
     	add_action( 'add_meta_boxes', array( $this, 'add_ra_snippet' ) );
 		add_action( 'save_post', array( $this, 'save' ) );
+
    }
 
 
@@ -48,30 +49,45 @@ class RadAtomWordpressPages {
 				return $post_id;
 		}
 
-	$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
+$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
 
-	if( !isset( $_POST['schema_snippet_field'] ) ) {
-		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
-	} elseif( isset( $_POST['schema_snippet_field'] ) ) {
-		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+		if( !isset( $_POST['schema_snippet_field'] ) ) {
+			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+		} elseif( isset( $_POST['schema_snippet_field'] ) ) {
+			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+		}
+		if( isset( $_POST['name_snippet_field'] ) ) {
+
+			$name_snippet = sanitize_text_field( $_POST['name_snippet_field'] );
+
+			$address_snippet = sanitize_text_field( $_POST['address_snippet_field'] );
+
+			$phone_snippet = sanitize_text_field( $_POST['phone_snippet_field'] );
+
+			$email_snippet = sanitize_text_field( $_POST['email_snippet_field'] );
+
+			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+			update_post_meta( $post_id, 'name_snippet_field', $_POST['name_snippet_field'] );
+			update_post_meta( $post_id, 'address_snippet_field', $_POST['address_snippet_field'] );
+			update_post_meta( $post_id, 'phone_snippet_field', $_POST['phone_snippet_field'] );
+			update_post_meta( $post_id, 'email_snippet_field', $_POST['email_snippet_field'] );
+		}
 	}
-	if( isset( $_POST['ra_snippet_field'] ) ) {
 
-		$ra_snippet = sanitize_text_field( $_POST['ra_snippet_field'] );
 
-		update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
-		update_post_meta( $post_id, 'ra_snippet_field', $_POST['ra_snippet_field'] );
-	}
-}
-
-	
 	public function render_ra_snippet_box( $page ) {
-
-		$ra_value = get_post_meta( $page->ID, 'ra_snippet_field', true);
 
 		$schema_value = get_post_meta( $page->ID, 'schema_snippet_field', true);
 
-		$value = trim($schema_value, 'http://');
+		$value = trim($schema_value, '/:/.///');
+		
+		$name_value = get_post_meta( $page->ID, 'name_snippet_field', true);
+
+		$address_value = get_post_meta( $page->ID, 'address_snippet_field', true);
+
+		$phone_value = get_post_meta( $page->ID, 'phone_snippet_field', true);
+
+		$email_value = get_post_meta( $page->ID, 'email_snippet_field', true);
 
 
 		wp_nonce_field( 'ra_snippet_box', 'ra_snippet_box_nonce');
@@ -80,29 +96,65 @@ class RadAtomWordpressPages {
 		echo '<br>';
 		echo '</label>';
 		echo '<select name="schema_snippet_field" id="schema_snippet_field">';
-			echo '<option value="" selected="selected">';
-			_e( 'Click to See', 'schema_textdomain' );
-			echo '</option>';
-			echo '<option value="http://schema.org/LocalBusiness" >';
-			echo 'LocalBusiness';
-			echo '</option>';	
+    		if( !isset( $_POST['$schema_snippet_field'] ) ) { 
+					if( $schema_value == 'http://schema.org/LocalBusiness'){
+						echo '<option value="Select a Snippet">';
+						_e( 'Click to See', 'schema_textdomain' );
+						echo '</option>';
+						echo '<option value="http://schema.org/LocalBusiness" selected="selected">';
+						echo 'LocalBusiness';
+						echo '</option>';
+					}else{
+						echo '<option value="Select a Snippet">';
+						_e( 'Click to See', 'schema_textdomain' );
+						echo '</option>';
+						echo '<option value="http://schema.org/LocalBusiness">';
+						echo 'LocalBusiness';
+						echo '</option>';
+					}
+				}
 		echo '</select>';
+
 		echo '<br>';
-		if( !isset( $_GET['schema_snippet_field'] ) ) { 
+		if( !isset( $_POST['schema_snippet_field'] ) ) { 
 			if( $schema_value == 'http://schema.org/LocalBusiness'){
+				echo '<label id="name_snippet_field">';
 				echo '<br>';
 				echo $value;
 				echo '<br>';
-				echo '<label for="ra_snippet_field">';
+				echo '<br>';
 				_e('Name of Business : ', 'snippet_textdomain');
 				echo '</label>';
-				echo '<input type="text" name="ra_snippet_field" id="ra_snippet_field" value="'. $ra_value.'" size="20"/>';
+				echo '<input type="text" name="name_snippet_field" id="name_snippet_field" value="'. $name_value.'" size="20"/>';
+				echo '<br>';
+				echo '<br>';
+				echo '<label for="address_snippet_field">';
+				_e('Address of Business : ', 'snippet_textdomain');
+				echo '</label>';
+				echo '<input type="text" name="address_snippet_field" id="address_snippet_field" value="'. $address_value.'" size="20"/>';
+				echo '<br>';
+				echo '<br>';
+				echo '<label for="phone_snippet_field">';
+				_e('Phone Number of Business : ', 'snippet_textdomain');
+				echo '</label>';
+				echo '<input type="text" name="phone_snippet_field" id="phone_snippet_field" value="'. $phone_value.'" size="20"/>';
+				echo '<br>';
+				echo '<br>';
+				echo '<label for="email_snippet_field">';
+				_e('Email of Business : ', 'snippet_textdomain');
+				echo '</label>';
+				echo '<input type="text" name="email_snippet_field" id="email_snippet_field" value="'. $email_value.'" size="20"/>';
 			}else{
-				echo $value;
+				echo '<br>';
+				echo 'Select a Snippet from the menu above this sentence.';
 			}
 		}
+
 	}
 	
 }
+
+
+
 
 
