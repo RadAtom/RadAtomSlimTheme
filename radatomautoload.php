@@ -3,6 +3,7 @@ require_once('helpers/pages.php');
 require_once('helpers/excerpts.php');
 require_once('helpers/posts.php');
 require_once('helpers/security.php');
+require_once('helpers/images.php');
 
 
 class RadAtomWordpressAutoload {

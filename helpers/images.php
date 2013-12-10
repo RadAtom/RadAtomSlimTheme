@@ -1,5 +1,6 @@
 <?php
-
+if( is_admin() )
+    $my_settings_page = new RadAtomWordpressImages();
 
 class RadAtomWordpressImages {
 	function __construct() {
@@ -20,8 +21,8 @@ class RadAtomWordpressImages {
     {
         // This page will be under "Settings"
         add_options_page(
-            'RadAtom Image Settings',
-            'RadAtom Image Settings',
+            'Image Settings',
+            'Image Settings',
             'manage_options',
             'radatom-wordpress-images',
             array( $this, 'create_admin_page' )
@@ -38,7 +39,7 @@ class RadAtomWordpressImages {
         ?>
         <div class="wrap">
             <?php screen_icon(); ?>
-            <h2>RadAtom Wordpress Posts Settings</h2>
+            <h2>Wordpress Posts Settings</h2>
             <form method="post" action="options.php">
             <?php
                 // This prints out all hidden setting fields
