@@ -7,7 +7,7 @@ class RadAtomWordpressExcerpts {
 	function __construct() {
 		add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
         add_action( 'admin_init', array( $this, 'page_init' ) );
-        add_action( 'admin_init', array( $this, 'do_settings' ) );
+        add_action( 'init', array( $this, 'do_settings' ) );
 	}
 
 
@@ -41,7 +41,6 @@ class RadAtomWordpressExcerpts {
         ?>
         <div class="wrap">
             <?php screen_icon(); ?>
-            <?php echo var_dump($this->options); ?>
             <h2>Wordpress Excerpts Settings</h2>           
             <form method="post" action="options.php">
             <?php
@@ -75,7 +74,7 @@ class RadAtomWordpressExcerpts {
 
         add_settings_field(
             'show_excerpts', // ID
-            'Allow Excerpts For Post Types', // Title 
+            'Allow Excerpts For', // Title 
             array( $this, 'show_excerpts_callback' ), // Callback
             'radatom-wordpress-excerpts', // Page
             'radatom_wordpress_excerpts_id' // Section           
@@ -83,7 +82,7 @@ class RadAtomWordpressExcerpts {
 
         add_settings_field(
             'hide_excerpts', // ID
-            'Deny Excerpts For Post Types', // Title 
+            'Deny Excerpts For', // Title 
             array( $this, 'hide_excerpts_callback' ), // Callback
             'radatom-wordpress-excerpts', // Page
             'radatom_wordpress_excerpts_id' // Section           
@@ -99,10 +98,16 @@ class RadAtomWordpressExcerpts {
         $this->options = get_option( 'radatom_wordpress_excerpts_option' );
         if($this->options){
             //at this point it didnt return false so we know that the settings exist, but we have to check what they actually are.
-            if($this->options['show_excerpts'] == 0){
-                RadAtomWordpressexcerpts::add_excerpt_support();
-            }else if($this->options['show_excerpts'] == 1){
-                RadAtomWordpressexcerpts::add_excerpt_support();
+            if(array_key_exists('show_excerpts',$this->options)){
+                foreach ( $this->options['show_excerpts']as $showType) {
+                    echo $showType;
+                    RadAtomWordpressexcerpts::add_excerpt_support($showType);
+                }
+            }
+            if(array_key_exists('hide_excerpts',$this->options)){
+                foreach ($this->options['hide_excerpts'] as $hideType) {
+                    RadAtomWordpressexcerpts::remove_excerpt_support($hideType);
+                }
             }
         }
     }
@@ -127,7 +132,7 @@ class RadAtomWordpressExcerpts {
      */
     public function print_section_info()
     {
-        print '';
+        print 'These settings will manage the various aspects of the Exceprts throughout wordpress. They are made to allow for other plugins to also control excerpts so if you do not specify functionality here, then the other plugin will take over, or it will default to the WordPress default.</br>Be sure that you have excerpts enablesd on screen options when you are editing a post/page/etc.';
     }
 
     /** 
@@ -142,14 +147,14 @@ class RadAtomWordpressExcerpts {
         		$selected = '';
         		foreach ($this->options['show_excerpts']  as $hideType) {
 	        		if($hideType == $postType){
-	        			$selected = 'selected="selected"';
+	        			$selected = 'checked';
 	        		}
 	        	}
-        		echo '<input type="checkbox" name="radatom_wordpress_excerpts_option[show_excerpts][]" id="show_'.$postType.'_id" value="'.$postType.'" '.$selected.'><label for="show_'.$postType.'_id">'.$postType.'</label>';
+        		echo '<input type="checkbox" name="radatom_wordpress_excerpts_option[show_excerpts][]" id="show_'.$postType.'_id" value="'.$postType.'" '.$selected.' ><label for="show_'.$postType.'_id" style="padding-right: 10px;">'.$postType.'</label>';
         	}
         }else{
         	foreach ($postTypes as $postType) {
-        		echo '<input type="checkbox" name="radatom_wordpress_excerpts_option[show_excerpts][]" id="show_'.$postType.'_id" value="'.$postType.'"><label for="show_'.$postType.'_id">'.$postType.'</label>';
+        		echo '<input type="checkbox" name="radatom_wordpress_excerpts_option[show_excerpts][]" id="show_'.$postType.'_id" value="'.$postType.'"><label for="show_'.$postType.'_id" style="padding-right: 10px;">'.$postType.'</label>';
         	}
         }
     }
@@ -163,14 +168,14 @@ class RadAtomWordpressExcerpts {
         		$selected = '';
         		foreach ($this->options['hide_excerpts']  as $hideType) {
         			if($hideType == $postType){
-	        			$selected = 'selected="selected"';
+	        			$selected = 'checked';
 	        		}
 	        	}
-        		echo '<input type="checkbox" name="radatom_wordpress_excerpts_option[hide_excerpts][]" id="hide_'.$postType.'_id" value="'.$postType.'" '.$selected.'><label for="hide_'.$postType.'_id">'.$postType.'</label>';
+        		echo '<input type="checkbox" name="radatom_wordpress_excerpts_option[hide_excerpts][]" id="hide_'.$postType.'_id" value="'.$postType.'" '.$selected.'><label for="hide_'.$postType.'_id" style="padding-right: 10px;">'.$postType.'</label>';
         	}
         }else{
         	foreach ($postTypes as $postType) {
-        		echo '<input type="checkbox" name="radatom_wordpress_excerpts_option[hide_excerpts][]" id="hide_'.$postType.'_id" value="'.$postType.'"><label for="hide_'.$postType.'_id">'.$postType.'</label>';
+        		echo '<input  type="checkbox" name="radatom_wordpress_excerpts_option[hide_excerpts][]" id="hide_'.$postType.'_id" value="'.$postType.'"><label for="hide_'.$postType.'_id" style="padding-right: 10px;">'.$postType.'</label>';
         	}
         }
     }
