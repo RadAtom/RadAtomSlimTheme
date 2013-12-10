@@ -20,8 +20,8 @@ class RadAtomWordpressSecurity {
     {
         // This page will be under "Settings"
         add_options_page(
-            'RadAtom Security', 
-            'RadAtom Security', 
+            'Security', 
+            'Security', 
             'manage_options', 
             'radatom-wordpress-security', 
             array( $this, 'create_admin_page' )
@@ -39,7 +39,7 @@ class RadAtomWordpressSecurity {
         <div class="wrap">
             <?php screen_icon(); ?>
             <?php echo var_dump($this->options); ?>
-            <h2>RadAtom Wordpress Security Settings</h2>           
+            <h2>Wordpress Security Settings</h2>           
             <form method="post" action="options.php">
             <?php
                 // This prints out all hidden setting fields

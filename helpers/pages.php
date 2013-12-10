@@ -1,4 +1,5 @@
 <?php
+require_once('excerpts.php');
 
 /**
  * Calls the class on the post edit screen.
@@ -126,7 +127,18 @@ class RadAtomWordpressPages {
 		$pages = RadAtomWordpressPages::get_pages($id);
 		if($pages){
 			foreach ($pages as $page) {
-				$page->post_excerpt = apply_filters('the_excerpt', $page->post_excerpt);
+				$page->post_excerpt = RadAtomWordpressExcerpts::excerpt_and_link($page->post_excerpt);
+			}
+			return $pages;
+		}
+		return null;
+	}
+
+	public static function get_pages_wcontent($id = array()){
+		$pages = RadAtomWordpressPages::get_pages($id);
+		if($pages){
+			foreach ($pages as $page) {
+				$page->post_content = apply_filters('the_content', $page->post_content);
 			}
 			return $pages;
 		}
