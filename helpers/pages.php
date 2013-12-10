@@ -115,29 +115,29 @@ class RadAtomWordpressPages {
 		echo '<br>';
 		if( !isset( $_POST['schema_snippet_field'] ) ) { 
 			if( $schema_value == 'http://schema.org/LocalBusiness'){
-				echo '<label id="name_snippet_field">';
+				echo '<label id="name_snippet_field" id="LB1" title="To use type $Name in place of your company name">';
 				echo '<br>';
 				echo $value;
 				echo '<br>';
 				echo '<br>';
 				_e('Name of Business : ', 'snippet_textdomain');
 				echo '</label>';
-				echo '<input type="text" name="name_snippet_field" id="name_snippet_field" value="'. $name_value.'" size="20"/>';
+				echo '<input type="text" name="name_snippet_field" id="name_snippet_field"  value="'. $name_value.'" size="20"/>';
 				echo '<br>';
 				echo '<br>';
-				echo '<label for="address_snippet_field">';
+				echo '<label for="address_snippet_field" id="LB2" title="To use type $Address in place of your address">';
 				_e('Address of Business : ', 'snippet_textdomain');
 				echo '</label>';
 				echo '<input type="text" name="address_snippet_field" id="address_snippet_field" value="'. $address_value.'" size="20"/>';
 				echo '<br>';
 				echo '<br>';
-				echo '<label for="phone_snippet_field">';
+				echo '<label for="phone_snippet_field" id="LB3" title="To use type $Phone in place of your phone number">';
 				_e('Phone Number of Business : ', 'snippet_textdomain');
 				echo '</label>';
 				echo '<input type="text" name="phone_snippet_field" id="phone_snippet_field" value="'. $phone_value.'" size="20"/>';
 				echo '<br>';
 				echo '<br>';
-				echo '<label for="email_snippet_field">';
+				echo '<label for="email_snippet_field" id="LB4" title="To use type $Email in place of your email address">';
 				_e('Email of Business : ', 'snippet_textdomain');
 				echo '</label>';
 				echo '<input type="text" name="email_snippet_field" id="email_snippet_field" value="'. $email_value.'" size="20"/>';
@@ -148,6 +148,8 @@ class RadAtomWordpressPages {
 		}
 
 	}
+
+
 
 	public static function get_pages($id = array()){
 		//if $id is not a string, or its not an array, exit by returning null
@@ -171,6 +173,8 @@ class RadAtomWordpressPages {
 		); 
 		return get_pages($args);
 	}
+
+
 
 	public static function get_pages_wexcerpt($id = array()){
 		$pages = RadAtomWordpressPages::get_pages($id);

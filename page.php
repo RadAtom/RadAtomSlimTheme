@@ -34,10 +34,11 @@
 		<p><?= breadcrumbs() ?></p>
 
 		<?php
-			// retrieves snippet for page
-			$ra_snippet = get_post_meta($post->ID, 'ra_snippet_field' , true);
+			// retrieves snippets for the pages page
+			$ra_snippet = get_post_meta( get_the_id(), 'ra_snippet_field' , true);
 
-			$schema_snippet = get_post_meta($post->ID, 'schema_snippet_field' , true);
+			$schema_snippet = get_post_meta( get_the_id(), 'schema_snippet_field' , true);
+
 
 		?>
 
