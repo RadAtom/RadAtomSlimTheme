@@ -45,19 +45,13 @@ class RadAtomWordpressPages {
 			if ( ! current_user_can( 'edit_post', $post_id) )
 				return $post_id;
 		}
-
-<<<<<<< HEAD
-$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
-=======
 		$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
->>>>>>> c9d61e91e3f68db66d2ebfe54371ce0968200ca5
 
 		if( !isset( $_POST['schema_snippet_field'] ) ) {
 			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
 		} elseif( isset( $_POST['schema_snippet_field'] ) ) {
 			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
 		}
-<<<<<<< HEAD
 		if( isset( $_POST['name_snippet_field'] ) ) {
 
 			$name_snippet = sanitize_text_field( $_POST['name_snippet_field'] );
@@ -73,14 +67,7 @@ $schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
 			update_post_meta( $post_id, 'address_snippet_field', $_POST['address_snippet_field'] );
 			update_post_meta( $post_id, 'phone_snippet_field', $_POST['phone_snippet_field'] );
 			update_post_meta( $post_id, 'email_snippet_field', $_POST['email_snippet_field'] );
-=======
-		if( isset( $_POST['ra_snippet_field'] ) ) {
 
-			$ra_snippet = sanitize_text_field( $_POST['ra_snippet_field'] );
-
-			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
-			update_post_meta( $post_id, 'ra_snippet_field', $_POST['ra_snippet_field'] );
->>>>>>> c9d61e91e3f68db66d2ebfe54371ce0968200ca5
 		}
 	}
 
@@ -196,11 +183,8 @@ $schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
 		return null;
 	}
 
-<<<<<<< HEAD
 
 
-
-=======
 	public static function get_pages_wcontent($id = array()){
 		$pages = RadAtomWordpressPages::get_pages($id);
 		if($pages){
@@ -213,4 +197,3 @@ $schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
 	}
 	
 }
->>>>>>> c9d61e91e3f68db66d2ebfe54371ce0968200ca5
