@@ -26,6 +26,7 @@ get_header();
 				</li>
 				<?php
 			}
+			wp_reset_postdata();
 			?>
 			<li>
 				<div class="large-8 columns">

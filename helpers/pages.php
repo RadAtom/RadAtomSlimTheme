@@ -1,12 +1,9 @@
 <?php
+require_once('excerpts.php');
 
 /**
  * Calls the class on the post edit screen.
  */
-function call_RadAtomWordpressPages() {
-    new RadAtomWordpressPages();
-}
-
 if ( is_admin() ) {
 	new RadAtomWordpressPages();
 }
@@ -49,13 +46,18 @@ class RadAtomWordpressPages {
 				return $post_id;
 		}
 
+<<<<<<< HEAD
 $schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
+=======
+		$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
+>>>>>>> c9d61e91e3f68db66d2ebfe54371ce0968200ca5
 
 		if( !isset( $_POST['schema_snippet_field'] ) ) {
 			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
 		} elseif( isset( $_POST['schema_snippet_field'] ) ) {
 			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
 		}
+<<<<<<< HEAD
 		if( isset( $_POST['name_snippet_field'] ) ) {
 
 			$name_snippet = sanitize_text_field( $_POST['name_snippet_field'] );
@@ -71,6 +73,14 @@ $schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
 			update_post_meta( $post_id, 'address_snippet_field', $_POST['address_snippet_field'] );
 			update_post_meta( $post_id, 'phone_snippet_field', $_POST['phone_snippet_field'] );
 			update_post_meta( $post_id, 'email_snippet_field', $_POST['email_snippet_field'] );
+=======
+		if( isset( $_POST['ra_snippet_field'] ) ) {
+
+			$ra_snippet = sanitize_text_field( $_POST['ra_snippet_field'] );
+
+			update_post_meta( $post_id, 'schema_snippet_field', $_POST['schema_snippet_field'] );
+			update_post_meta( $post_id, 'ra_snippet_field', $_POST['ra_snippet_field'] );
+>>>>>>> c9d61e91e3f68db66d2ebfe54371ce0968200ca5
 		}
 	}
 
@@ -151,10 +161,56 @@ $schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
 		}
 
 	}
+
+	public static function get_pages($id = array()){
+		//if $id is not a string, or its not an array, exit by returning null
+		$isArray = is_array($id);
+		$isString = is_string($id);
+		if (!$isArray && !$isString ) {
+			return null;
+		}elseif ($isArray && count($id) == 0) {
+			return null;
+		}
+		$args = array(
+			'sort_order' => 'ASC',
+			'sort_column' => 'post_title',
+			'include' => $id,
+			'authors' => '',
+			'exclude_tree' => '',
+			'number' => '',
+			'offset' => 0,
+			'post_type' => 'page',
+			'post_status' => 'publish'
+		); 
+		return get_pages($args);
+	}
+
+	public static function get_pages_wexcerpt($id = array()){
+		$pages = RadAtomWordpressPages::get_pages($id);
+		if($pages){
+			foreach ($pages as $page) {
+				$page->post_excerpt = RadAtomWordpressExcerpts::excerpt_and_link($page->post_excerpt);
+			}
+			return $pages;
+		}
+		return null;
+	}
+
+<<<<<<< HEAD
+
+
+
+=======
+	public static function get_pages_wcontent($id = array()){
+		$pages = RadAtomWordpressPages::get_pages($id);
+		if($pages){
+			foreach ($pages as $page) {
+				$page->post_content = apply_filters('the_content', $page->post_content);
+			}
+			return $pages;
+		}
+		return null;
+	}
 	
 }
-
-
-
-
-
+>>>>>>> c9d61e91e3f68db66d2ebfe54371ce0968200ca5
