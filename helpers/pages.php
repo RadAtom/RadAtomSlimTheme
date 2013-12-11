@@ -9,14 +9,14 @@ if ( is_admin() ) {
 }
 
 class RadAtomWordpressPages {
-	function __construct() {
+	function __construct() 
+	{
     	add_action( 'add_meta_boxes', array( $this, 'add_ra_snippet' ) );
 		add_action( 'save_post', array( $this, 'save' ) );
 
    }
-
-
-	public function add_ra_snippet() {
+	public function add_ra_snippet()
+	{
 		add_meta_box(
 			'ra_snippet'
 			,__( 'Rad Atom Snippet Box', 'snippet_textdomain')
@@ -26,9 +26,8 @@ class RadAtomWordpressPages {
 			,'high'
 		);
 	}
-
-
-	public function save( $post_id ) {
+	public function save( $post_id )
+	{
 
 		$nonce = $_POST['ra_snippet_box_nonce'];
 
@@ -45,6 +44,7 @@ class RadAtomWordpressPages {
 			if ( ! current_user_can( 'edit_post', $post_id) )
 				return $post_id;
 		}
+
 		$schema_snippet = sanitize_text_field( $_POST['schema_snippet_field'] );
 
 		if( !isset( $_POST['schema_snippet_field'] ) ) {
@@ -70,9 +70,8 @@ class RadAtomWordpressPages {
 
 		}
 	}
-
-
-	public function render_ra_snippet_box( $page ) {
+	public function render_ra_snippet_box( $page )
+	{
 
 		$schema_value = get_post_meta( $page->ID, 'schema_snippet_field', true);
 
@@ -111,7 +110,6 @@ class RadAtomWordpressPages {
 					}
 				}
 		echo '</select>';
-
 		echo '<br>';
 		if( !isset( $_POST['schema_snippet_field'] ) ) { 
 			if( $schema_value == 'http://schema.org/LocalBusiness'){
@@ -146,12 +144,9 @@ class RadAtomWordpressPages {
 				echo 'Select a Snippet from the menu above this sentence.';
 			}
 		}
-
 	}
-
-
-
-	public static function get_pages($id = array()){
+	public static function get_pages($id = array() )
+	{
 		//if $id is not a string, or its not an array, exit by returning null
 		$isArray = is_array($id);
 		$isString = is_string($id);
@@ -173,10 +168,8 @@ class RadAtomWordpressPages {
 		); 
 		return get_pages($args);
 	}
-
-
-
-	public static function get_pages_wexcerpt($id = array()){
+	public static function get_pages_wexcerpt($id = array() )
+	{
 		$pages = RadAtomWordpressPages::get_pages($id);
 		if($pages){
 			foreach ($pages as $page) {
@@ -186,10 +179,8 @@ class RadAtomWordpressPages {
 		}
 		return null;
 	}
-
-
-
-	public static function get_pages_wcontent($id = array()){
+	public static function get_pages_wcontent($id = array() )
+	{
 		$pages = RadAtomWordpressPages::get_pages($id);
 		if($pages){
 			foreach ($pages as $page) {
@@ -199,5 +190,6 @@ class RadAtomWordpressPages {
 		}
 		return null;
 	}
-	
+
+
 }
