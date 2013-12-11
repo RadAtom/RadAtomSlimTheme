@@ -5,9 +5,9 @@ if( is_admin())
 class snipper {
     function __construct()
     {
-    add_action( 'admin_menu', array( $this, 'rasnippets_admin_menu' ) );
-    add_action( 'admin-init', array( $this, 'page_init' ) );
-    add_action( 'init', array( $this, 'do_settings' ) );
+        add_action( 'admin_menu', array( $this, 'rasnippets_admin_menu' ) );
+        add_action( 'admin_init', array( $this, 'page_init' ) );
+        add_action( 'init', array( $this, 'do_settings' ) );
     }
 
     private $options;
@@ -38,13 +38,13 @@ class snipper {
                 do_settings_sections( 'radatom-ra-snippets' );
                 submit_button(); 
             echo '</form>';
-        '</div>';
+        echo '</div>';
 
     }
 
     public function page_init()
     {
-        register_settings(
+        register_setting(
             'radatom_ra_snippets',                  //Options Group
             'radatom_ra_snippets_option',            //Options Name
             array( $this, 'sanitize')               //Sanitize

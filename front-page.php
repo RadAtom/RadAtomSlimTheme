@@ -8,9 +8,10 @@ get_header();
 		<ul data-orbit>
 			<?php
 			//get the options
-			$pageIdsSetting
+			$pageIdsSetting = '';
 			//turn those optiions into pages
 			//loop over them hoes
+			$pages = array();
 			foreach ($pages as $page) {
 				?>
 				<li>
