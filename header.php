@@ -67,34 +67,25 @@
       
 
       <div id="header-stuff" class="small-10 medium-9 small-centered columns">
-        <div class="panel">
           <div id="navs-buttons" class="small-13 large-3 columns">
+            <a href="" class="button">nav</a>
+            <a href="" class="button">social</a>
           </div>
 
           <div id="navs" class="hide-for-small small-13 large-10 columns">
+            <div id="header-menu" class="large-13 columns">
+              <?php wp_nav_menu( array( 'theme_location' => 'menu-header', 'container'       => 'nav','items_wrap'      => '<ul id="%1$s" class="%2$s inline-list">%3$s</ul>', ) ); ?>
+            </div>
+
             <div id="social-icons"  class="large-13 columns">
-              <ul class="small-block-grid-3">
-                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon.png" alt="Follow Us On Facebook!"></a></li>
-                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon.png" alt="Follow Us On Twitter!"></a></li>
-                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/linkedin-icon.png" alt="Follow Us On LinkedIn!"></a></li>
+              <ul class="inline-list">
+                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon." alt="Follow Us On Facebook!"></a></li>
+                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon" alt="Follow Us On Twitter!"></a></li>
+                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/linkedin-icon" alt="Follow Us On LinkedIn!"></a></li>
               </ul>
             </div>
-
-            <div id="header-menu" class="large-13 columns">
-              <?php wp_nav_menu( array( 'menu_class' => 'button-group','theme_location' => 'menu-header', 'container'     => 'nav',
-      'container_id'      => 'top-navigation-primary',
-      'conatiner_class'   => 'top-navigation',
-      'menu_class'        => '', 
-      'echo'          => true,
-      'items_wrap'        => '<ul id="%1$s" class="%2$s button-group radius ">%3$s</ul>',
-      'depth'         => 10, 
-      'walker'        => new themeslug_walker_nav_menu) ); ?>
-            </div>
-
-            
           </div>
             
-        </div>
       </div>
     </div>
   </div>
