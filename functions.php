@@ -106,7 +106,7 @@ function my_deregister_javascript() {
 }
 add_action( 'wp_enqueue_scripts', 'my_deregister_javascript', 100 );
 
-class ThemeSettings
+class HeaderSettings
 {
     /**
      * Holds the values to be used in the fields callbacks
@@ -129,10 +129,10 @@ class ThemeSettings
     {
         // This page will be under "Settings"
         add_theme_page(
-            'Theme Settings', 
-            'Theme Settings', 
+            'Header', 
+            'Header', 
             'manage_options', 
-            'radatom-theme-settings', 
+            'radatom-header-settings', 
             array( $this, 'create_admin_page' )
         );
     }
@@ -147,12 +147,12 @@ class ThemeSettings
         ?>
         <div class="wrap">
             <?php screen_icon(); ?>
-            <h2>My Settings</h2>           
+            <h2>Header Settings</h2>           
             <form method="post" action="options.php">
             <?php
                 // This prints out all hidden setting fields
-                settings_fields( 'radatom_theme_options_group' );   
-                do_settings_sections( 'radatom-theme-settings' );
+                settings_fields( 'radatom_header_options_group' );   
+                do_settings_sections( 'radatom-header-settings' );
                 submit_button(); 
             ?>
             </form>
@@ -166,32 +166,32 @@ class ThemeSettings
     public function page_init()
     {        
         register_setting(
-            'radatom_theme_options_group', // Option group
+            'radatom_header_options_group', // Option group
             'radatom_theme_options', // Option name
             array( $this, 'sanitize' ) // Sanitize
         );
 
         add_settings_section(
-            'setting_section_id', // ID
-            'Front Page Settings', // Title
-            array( $this, 'print_frontpage_info' ), // Callback
-            'radatom-theme-settings' // Page
+            'radatom_header_settings_section_id', // ID
+            'Header Settings', // Title
+            array( $this, 'print_header_settings_info' ), // Callback
+            'radatom-header-settings' // Page
         );  
 
         add_settings_field(
-            'scroller-options', // ID
-            'Pages for Front Scroller', // Title 
-            array( $this, 'scroller_options_render' ), // Callback
-            'radatom-theme-settings', // Page
-            'setting_section_id' // Section           
+            'nav-menu-text', // ID
+            'Nav Menu Text', // Title 
+            array( $this, 'nav_menu_render' ), // Callback
+            'radatom-header-settings', // Page
+            'radatom_header_settings_section_id' // Section           
         );      
 
         add_settings_field(
-            'title', 
-            'Title', 
-            array( $this, 'title_callback' ), 
-            'radatom-theme-settings', 
-            'setting_section_id'
+            'social-menu-text', 
+            'Social Menu Text', 
+            array( $this, 'social_menu_render' ), 
+            'radatom-header-settings', 
+            'radatom_header_settings_section_id'
         );      
     }
 
@@ -203,11 +203,11 @@ class ThemeSettings
     public function sanitize( $input )
     {
         $new_input = array();
-        if( isset( $input['scroller-options'] ) )
-            $new_input['scroller-options'] = absint( $input['scroller-options'] );
+        if( isset( $input['nav-menu-text'] ) )
+            $new_input['nav-menu-text'] = sanitize_text_field( $input['nav-menu-text'] );
 
-        if( isset( $input['title'] ) )
-            $new_input['title'] = sanitize_text_field( $input['title'] );
+        if( isset( $input['social-menu-text'] ) )
+            $new_input['social-menu-text'] = sanitize_text_field( $input['social-menu-text'] );
 
         return $new_input;
     }
@@ -215,34 +215,65 @@ class ThemeSettings
     /** 
      * Print the Section text
      */
-    public function print_frontpage_info()
+    public function print_header_settings_info()
     {
-        print 'Enter your settings below:';
+        print 'These settings manage the header of the ';
     }
 
     /** 
      * Get the settings option array and print one of its values
      */
-    public function scroller_options_render()
+    public function nav_menu_render()
     {
         printf(
-            '<input type="text" id="scroller-options" name="radatom_theme_options[scroller-options]" value="%s" />',
-            isset( $this->options['scroller-options'] ) ? esc_attr( $this->options['scroller-options']) : ''
+            '<input type="text" id="nav-menu-text" name="radatom_theme_options[nav-menu-text]" value="%s" />',
+            isset( $this->options['nav-menu-text'] ) ? esc_attr( $this->options['nav-menu-text']) : ''
         );
     }
 
     /** 
      * Get the settings option array and print one of its values
      */
-    public function title_callback()
+    public function social_menu_render()
     {
         printf(
-            '<input type="text" id="title" name="radatom_theme_options[title]" value="%s" />',
-            isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
+            '<input type="text" id="social-menu-text" name="radatom_theme_options[social-menu-text]" value="%s" />',
+            isset( $this->options['social-menu-text'] ) ? esc_attr( $this->options['social-menu-text']) : ''
         );
+    }
+
+    public function get_nav_menu_text(){
+        $this->options = get_option( 'radatom_theme_options' );
+        if($this->options){
+            if(array_key_exists('nav-menu-text', $this->options)){
+                return $this->options['nav-menu-text'];
+            }
+        }
+        return '';
+    }
+
+    public function get_social_menu_text(){
+        $this->options = get_option( 'radatom_theme_options' );
+        if($this->options){
+            if(array_key_exists('social-menu-text', $this->options)){
+                return $this->options['social-menu-text'];
+            }
+        }
+        return '';
     }
 }
 
 if( is_admin() )
-    $my_settings_page = new ThemeSettings();
+    $my_settings_page = new HeaderSettings();
+
+
+function get_nav_menu_text(){
+    $my_settings_page = new HeaderSettings();
+    return $my_settings_page->get_nav_menu_text();
+}
+
+function get_social_menu_text(){
+    $my_settings_page = new HeaderSettings();
+    return $my_settings_page->get_social_menu_text();
+}
 ?>

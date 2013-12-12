@@ -1,7 +1,10 @@
+<?php
+require_once('themeslug_walker_nav_menu.php');
+require_once('radatomautoload.php');
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<?php require_once('themeslug_walker_nav_menu.php');?>
 <head>
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
@@ -43,6 +46,7 @@
   <link href='http://fonts.googleapis.com/css?family=Share+Tech|Architects+Daughter|Orbitron' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
   <script src="<?php bloginfo('template_url'); ?>/js/vendor/custom.modernizr.js"></script>
+  
 
 
 
@@ -73,36 +77,12 @@
       <div id="header-stuff" class="small-10 medium-9 small-centered columns">
           <div id="nav-buttons" class="small-13 large-3 columns"> 
             <div id="navbuttonbox">
-              <button href="" id="navbutton" onclick="hsnavmenu()">
-                nav
-              </button>
+              <a href="#" id="navbutton"><?php echo get_nav_menu_text(); ?></a>
             </div>
             <div id="socialbuttonbox">
-              <button href="" id="socialbutton">
-                social
-              </button>
+              <a href="#" id="socialbutton"><?php echo get_social_menu_text(); ?></a>
             </div>
           </div>
-
-  <script>
-  function hsnavmenu() 
-  {
-  var button = document.getElementById('navbutton'); // Assumes element with id='button'
-
-  button.onclick = function() {
-    var div = document.getElementById('nav-menu');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {  
-        div.style.display = 'block';
-    }
-  };
-  }
-
-
-  </script>
-
 
           <div id="navs" class="hide-for-small small-13 large-10 columns">
             <div id="nav-menu" class="large-13 columns">
@@ -121,5 +101,3 @@
       </div>
     </div>
   </div>
-<script scr="/js/headermenu.js"></script>
-</body>

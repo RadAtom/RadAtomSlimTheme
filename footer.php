@@ -33,13 +33,7 @@
 		</div>
 	</div>
 </div>
-
-	<script>
-	document.write('<script src=' +
-	('__proto__' in {} ? '<?php bloginfo('template_url'); ?>/js/vendor/zepto' : '<?php bloginfo('template_url'); ?>/js/vendor/jquery') +
-	'.js><\/script>')
-	</script>
-
+	<script src="<?php bloginfo('template_url'); ?>/js/vendor/jquery.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/foundation/foundation.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/foundation/foundation.orbit.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/foundation/foundation.reveal.js"></script>
@@ -71,9 +65,11 @@
 	<script src="js/foundation/foundation.topbar.js"></script>
 
 	-->
+	<script src="<?php bloginfo('template_url'); ?>/js/radatom.js"></script>
 
 	<script>
 	$(document).foundation();
+
 	</script>
 </body>
 </html>
