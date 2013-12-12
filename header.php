@@ -77,10 +77,10 @@ require_once('radatomautoload.php');
       <div id="header-stuff" class="small-10 medium-9 small-centered columns">
           <div id="nav-buttons" class="small-13 large-3 columns"> 
             <div id="navbuttonbox">
-              <a href="#" id="navbutton"><?php echo get_nav_menu_text(); ?></a>
+              <a href="#" id="navbutton" class="round button"><?php echo get_nav_menu_text(); ?></a>
             </div>
             <div id="socialbuttonbox">
-              <a href="#" id="socialbutton"><?php echo get_social_menu_text(); ?></a>
+              <a href="#" id="socialbutton" class="round button"><?php echo get_social_menu_text(); ?></a>
             </div>
           </div>
 

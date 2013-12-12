@@ -1,11 +1,11 @@
 function show_nav_menu(){
   $('#social-menu').hide();
-  $('#nav-menu').show();
+  $('#nav-menu').toggle();
 }
 
 function show_social_menu(){
   $('#nav-menu').hide();
-  $('#social-menu').show();
+  $('#social-menu').toggle();
 }
 
 $( document ).ready(function() {

@@ -95,40 +95,49 @@ border-style:solid;
 }
 
 #navbutton{
-	margin: 0.55em 0.55em 0.55em 1.75em;
+	margin: 0.55em 0.55em 0.55em 1.15em;
 }
 
 #navbuttonbox{
-	border-radius: 40px;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 40px;
 	width: 162px;
 	background: #b0ff30;
 	margin-top: -0.5em;
-	box-shadow: 0px 0px 10px #888888;
+	box-shadow: 4px 1px 4px 0.5px #888888;
+
 }
 
 #nav-menu{
 	display: none;
 	background: #b0ff30;
 	margin-top: -0.5em;
-	margin-left: -1.87em;
+	margin-left: -0.2em;
 	width: 35em;
 	height: 8.12em;
-	box-shadow: 0px 0px 10px 0px #888888;
+	box-shadow: 5px 1px 4px 0.5px #888888;
 }
 
+
 #socialbutton{
-	margin: 0.55em 0.55em 0.55em 1.25em;
+	margin: 0.55em 0.55em 0.55em 0.58em;
 }
 
 #socialbuttonbox{
-	border-radius: 40px;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 40px;
 	width: 162px;
 	background: #c530ff;
-	box-shadow: 0px 0px 10px #888888;
+	box-shadow: 4px 2px 4px 0.5px #888888;
 }
 
 #social-menu{
 	background-color: #ef4330;
+	box-shadow: 5px 1px 4px 0.5px #888888;
 }
 
 
