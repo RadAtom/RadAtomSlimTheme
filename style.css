@@ -94,6 +94,30 @@ border-style:solid;
 	font-family: 'Architects Daughter', cursive;
 }
 
+#navbutton{
+	margin: 0.55em 0.55em 0.55em 1.75em;
+}
+
+#navbuttonbox{
+	background: #b0ff30;
+	margin-top: -0.5em;
+}
+
+#nav-menu{
+	background: #b0ff30;
+	margin-top: -0.5em;
+	margin-left: -1.87em;
+	width: 40em;
+	height: 8.12em;
+}
+
+#socialbutton{
+	margin: 0.55em 0.55em 0.55em 1.25em;
+}
+
+#socialbuttonbox{
+	background: #ef4330;
+}
 
 /*
 =================== Stuff for front page body

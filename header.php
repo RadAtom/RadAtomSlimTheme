@@ -68,12 +68,11 @@
 
       <div id="header-stuff" class="small-10 medium-9 small-centered columns">
           <div id="navs-buttons" class="small-13 large-3 columns">
-            <a href="" class="button">nav</a>
-            <a href="" class="button">social</a>
+            <div id="navbuttonbox"><button href="" id="navbutton">nav</button></div>
+            <div id="socialbuttonbox"><button href="" id="socialbutton">social</button></div>
           </div>
-
           <div id="navs" class="hide-for-small small-13 large-10 columns">
-            <div id="header-menu" class="large-13 columns">
+            <div id="nav-menu" class="large-13 columns">
               <?php wp_nav_menu( array( 'theme_location' => 'menu-header', 'container'       => 'nav','items_wrap'      => '<ul id="%1$s" class="%2$s inline-list">%3$s</ul>', ) ); ?>
             </div>
 
