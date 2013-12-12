@@ -44,6 +44,10 @@
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
   <script src="<?php bloginfo('template_url'); ?>/js/vendor/custom.modernizr.js"></script>
 
+
+
+
+
 </head>
 <body <?php body_class(); ?>>
 
@@ -65,22 +69,51 @@
         </div>
       </div>
       
-
+   
       <div id="header-stuff" class="small-10 medium-9 small-centered columns">
-          <div id="navs-buttons" class="small-13 large-3 columns">
-            <div id="navbuttonbox"><button href="" id="navbutton">nav</button></div>
-            <div id="socialbuttonbox"><button href="" id="socialbutton">social</button></div>
+          <div id="nav-buttons" class="small-13 large-3 columns"> 
+            <div id="navbuttonbox">
+              <button href="" id="navbutton" onclick="hsnavmenu()">
+                nav
+              </button>
+            </div>
+            <div id="socialbuttonbox">
+              <button href="" id="socialbutton">
+                social
+              </button>
+            </div>
           </div>
+
+  <script>
+  function hsnavmenu() 
+  {
+  var button = document.getElementById('navbutton'); // Assumes element with id='button'
+
+  button.onclick = function() {
+    var div = document.getElementById('nav-menu');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {  
+        div.style.display = 'block';
+    }
+  };
+  }
+
+
+  </script>
+
+
           <div id="navs" class="hide-for-small small-13 large-10 columns">
             <div id="nav-menu" class="large-13 columns">
               <?php wp_nav_menu( array( 'theme_location' => 'menu-header', 'container'       => 'nav','items_wrap'      => '<ul id="%1$s" class="%2$s inline-list">%3$s</ul>', ) ); ?>
             </div>
 
-            <div id="social-icons"  class="large-13 columns">
+            <div id="social-menu"  class="large-13 columns">
               <ul class="inline-list">
-                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon." alt="Follow Us On Facebook!"></a></li>
-                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon" alt="Follow Us On Twitter!"></a></li>
-                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/linkedin-icon" alt="Follow Us On LinkedIn!"></a></li>
+                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon.png" alt="Follow Us On Facebook!"></a></li>
+                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon.png" alt="Follow Us On Twitter!"></a></li>
+                <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/linkedin-icon.png" alt="Follow Us On LinkedIn!"></a></li>
               </ul>
             </div>
           </div>
@@ -88,3 +121,5 @@
       </div>
     </div>
   </div>
+<script scr="/js/headermenu.js"></script>
+</body>

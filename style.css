@@ -99,16 +99,21 @@ border-style:solid;
 }
 
 #navbuttonbox{
+	border-radius: 40px;
+	width: 162px;
 	background: #b0ff30;
 	margin-top: -0.5em;
+	box-shadow: 0px 0px 10px #888888;
 }
 
 #nav-menu{
+	display: none;
 	background: #b0ff30;
 	margin-top: -0.5em;
 	margin-left: -1.87em;
 	width: 35em;
 	height: 8.12em;
+	box-shadow: 0px 0px 10px 0px #888888;
 }
 
 #socialbutton{
@@ -116,8 +121,16 @@ border-style:solid;
 }
 
 #socialbuttonbox{
-	background: #ef4330;
+	border-radius: 40px;
+	width: 162px;
+	background: #c530ff;
+	box-shadow: 0px 0px 10px #888888;
 }
+
+#social-menu{
+	background-color: #ef4330;
+}
+
 
 /*
 =================== Stuff for front page body
