@@ -104,9 +104,8 @@ border-style:solid;
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 40px;
 	width: 162px;
-	background: #b0ff30;
 	margin-top: -0.5em;
-	box-shadow: 4px 1px 4px 0.5px #888888;
+	
 
 }
 
@@ -131,13 +130,9 @@ border-style:solid;
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 40px;
 	width: 162px;
-	background: #c530ff;
-	box-shadow: 4px 2px 4px 0.5px #888888;
 }
 
 #social-menu{
-	background-color: #ef4330;
-	box-shadow: 5px 1px 4px 0.5px #888888;
 }
 
 
