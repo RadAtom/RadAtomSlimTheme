@@ -88,14 +88,18 @@ border-style:solid;
 */
 .heading-text{
 	font-family: 'Orbitron', sans-serif;
+	text-align: center;
 }
 
 .subheading-text{
 	font-family: 'Architects Daughter', cursive;
+	text-align: center;
 }
 
 #navbutton{
-	margin: 0.55em 0.55em 0.55em 1.15em;
+	width: 	8em;
+	margin-top: 0.5em;
+	margin-left: -0.3em;
 }
 
 #navbuttonbox{
@@ -103,8 +107,10 @@ border-style:solid;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 40px;
-	width: 162px;
 	margin-top: -0.5em;
+	margin-left: 4em;
+	width: 162px;
+	height: 4em;
 }
 
 .navbuttonbox{
@@ -117,22 +123,27 @@ border-style:solid;
 	background: #b0ff30;
 	margin-top: -0.5em;
 	margin-left: -0.2em;
-	width: 35em;
-	height: 8.12em;
+	width: 30.95em;
+	height: 4em;
 	box-shadow: 5px 1px 4px 0.5px #888888;
 }
 
 
 #socialbutton{
-	margin: 0.55em 0.55em 0.55em 0.58em;
+	width: 9em;
+	margin-top: 0.5em;
+	margin-left: -0.5em;
 }
 
 #socialbuttonbox{
-	border-top-left-radius: 40px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 40px;
-	width: 162px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 0px;
+	margin-top: -0.5em;
+	margin-right: 4em;
+	height: 4em;
+	width: 10em;
 }
 
 .socialbuttonbox{
