@@ -105,8 +105,11 @@ border-style:solid;
 	border-bottom-left-radius: 40px;
 	width: 162px;
 	margin-top: -0.5em;
-	
+}
 
+.navbuttonbox{
+	background-color: #b0ff30;
+	box-shadow: 4px 1px 4px 0.5px #888888;
 }
 
 #nav-menu{
@@ -132,6 +135,11 @@ border-style:solid;
 	width: 162px;
 }
 
+.socialbuttonbox{
+	background-color: #c530ff;
+	box-shadow: 4px 2px 4px 0.5px #888888;
+}
+
 #social-menu{
 }
 
@@ -145,6 +153,42 @@ border-style:solid;
 
 #closing-cta .cta-wrapper{
 	margin-bottom: 2%;
+}
+
+.orbit-container ol{
+	margin-left: 17em;
+}
+
+.large-8 h2{
+	margin-left: 4em;
+}
+
+.large-8 h5{
+	margin-left: 4em;
+}
+
+#osh1{
+	margin-left: 6em;
+}
+
+#ob1{
+	margin-left: 10em;
+}
+
+#osh2{
+	margin-left: 6.2em;
+}
+
+#ob2{
+	margin-left: 10.5em;
+}
+
+#osh3{
+	margin-left: 4.5em;
+}
+
+#ob3{
+	margin-left: 10.9em;
 }
 
 /*
