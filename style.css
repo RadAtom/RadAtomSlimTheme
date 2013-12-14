@@ -21,7 +21,7 @@ some are so that the inner shading can follow the users mouse.
 
 */
 body{
-background-color: #F5F5F5;
+background-color: #3C3C3C;
 }
 
 
@@ -38,7 +38,7 @@ background-color: #F5F5F5;
 }
 
 .inner-bezell{
-	background-color: #ffffff;
+	background-color: #F5F5F5;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
@@ -158,12 +158,20 @@ border-style:solid;
 /*
 =================== Stuff for front page body
 */
+#fpq{
+	text-align: center;
+}
+
 #closing-cta{
 	margin: 1em;
 }
 
 #closing-cta .cta-wrapper{
 	margin-bottom: 2%;
+}
+
+.orbit-container{
+	background-color: #F5F5F5;
 }
 
 .orbit-container ol{

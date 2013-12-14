@@ -74,10 +74,10 @@ get_header();
 <div id="front-content-wrapper" class="row bezelled">
 	<div class="inner-bezell small-13 columns">
 		<div id="content" class="small-13 columns">
+			<h3 id="fpq">Is your website ready for Tomorrow's technology?</h3>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
 			<?php endwhile; endif; ?>
-			<h3>Is your website ready for Tomorrow's technology?</h3>
 		</div>
 	</div>
 </div>

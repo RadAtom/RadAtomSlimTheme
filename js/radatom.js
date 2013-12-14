@@ -13,7 +13,7 @@ function show_social_menu(){
   $('#nav-menu').hide();
   $('#socialbuttonbox').toggleClass('socialbuttonbox');
   //same goes for this code
-  $('#socialbuttonbox' ).animate({marginRight: "4em"}, 400);
+  $('#socialbuttonbox' ).animate({marginRight: "0em"}, 400);
   $('#social-menu').animate({width: "+19.9em"}, 400);
   $('#navbuttonbox').removeClass('navbuttonbox');
   
