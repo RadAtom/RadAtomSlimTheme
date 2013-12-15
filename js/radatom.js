@@ -1,21 +1,47 @@
 function show_nav_menu(){
   $('#nav-menu').toggle();
   $('#social-menu').hide();
-  $('#navbuttonbox').toggleClass('navbuttonbox');
-  //the following code is just a fragment. meaning that the following code does not actually belong. you see i am trying to make the animations be toggleable on click for the navbuttonbox and nav-menu
-  $('#navbuttonbox').animate({marginLeft: "-1em"}, 400);
-  $('#nav-menu').animate({width: "+19.9em"}, 400);
+  $('#navbuttonbox').toggleClass('navbuttonbox'); 
   $('#socialbuttonbox').removeClass('socialbuttonbox');
+  //this is for moving the navbutton box left/right
+  if($('#navbuttonbox').hasClass('navbuttonbox')) {
+    $('#navbuttonbox').animate({marginLeft: "-18"}, 400); 
+    $('#socialbuttonbox').animate({marginRight: "20em"}, 400);
+  }
+  else {
+    $('#navbuttonbox').animate({marginLeft: "18em"}, 400);
+  }
+  //this is for growing/shrinking nav-menu
+  if($('#navbuttonbox').hasClass('navbuttonbox')) {
+    $('#nav-menu').animate({width: "18.9em"}, 400); 
+    $('#social-menu').animate({width: "-18.1em"}, 400);
+  }
+  else {
+    $('#nav-menu').animate({width: "-19.9em"}, 400);
+  }
 }
 
 function show_social_menu(){
-  $('#social-menu').toggle();
+  $('social-menu').toggle();
   $('#nav-menu').hide();
   $('#socialbuttonbox').toggleClass('socialbuttonbox');
-  //same goes for this code
-  $('#socialbuttonbox' ).animate({marginRight: "0em"}, 400);
-  $('#social-menu').animate({width: "+19.9em"}, 400);
   $('#navbuttonbox').removeClass('navbuttonbox');
+  //this is for moving the navbutton box left/right
+  if($('#socialbuttonbox').hasClass('socialbuttonbox')) {
+    $('#socialbuttonbox').animate({marginRight: "-18"}, 400); 
+    $('#navbuttonbox').animate({marginLeft: "18em"}, 400);
+  }
+  else {
+    $('#socialbuttonbox').animate({marginRight: "20em"}, 400);
+  }
+  //this is for growing/shrinking social-menu
+  if($('#socialbuttonbox').hasClass('socialbuttonbox')) {
+    $('#social-menu').animate({width: "18.1em"}, 400); 
+    $('#nav-menu').animate({width: "-19.9em"}, 400);
+  }
+  else {
+    $('#social-menu').animate({width: "-18.1em"}, 400);
+  }
   
   
 }

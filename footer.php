@@ -1,7 +1,7 @@
 <div id="footer-wrapper" class="row bezelled">
 	<div id="footer-trifecta" class="inner-bezell small-13 columns">
 		<div id="footer-follow" class="large-4 columns">
-			<h3>Follow Us</h3>
+			<h3 id="follow">Follow Us</h3>
 			<div class="small-6 columns">
 				<ul class="small-block-grid-3">
 					<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon.png" alt="Follow Us On Facebook!"></a></li>
@@ -17,7 +17,8 @@
 			<?php endif; ?>
 		</div>
 		<div  id="footer-newsletter" class="large-4 columns">
-			<h3>NewsLetter</h3>
+			<h3 id="nl">NewsLetter</h3>
+			<h5 id="nlh" class="subheader">Interested in Free Information?<h5>
 			<?php 
 			if ( dynamic_sidebar('footer-news-letter') ) : 
 			else : 
@@ -25,11 +26,16 @@
 			<?php endif; ?>
 		</div>
 		<div id="footer-nav" class="large-4 columns">
-			<h3>Quick Links</h3>
-			<u>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-footer' ) ); ?>
-		</style>
-		</u>
+			<h3 id="ql">Quick Links</h3>
+			<ul>
+				<li><a href="" class="small secondary button" id="ql1">Services</a></li>
+				<li><a href="" class="small secondary button" id="ql2">Portfolio</a></li>
+				<li><a href="" class="small secondary button" id="ql3">Contact Rad Atom</a></li>
+				<li><a href="" class="small secondary button" id="ql4">Hire Rad Atom</a></li>
+				<?php 
+				//wp_nav_menu( array( 'theme_location' => 'menu-footer' ) ); 
+				?>
+			</ul>
 		</div>
 	</div>
 </div>

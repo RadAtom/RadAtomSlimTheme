@@ -21,12 +21,12 @@ some are so that the inner shading can follow the users mouse.
 
 */
 body{
-background-color: #3C3C3C;
+	background-color: #3C3C3C;
 }
 
 
 .bezelled{
-	border-style:solid;
+	border-style: solid;
 	border-color: #a5a5a5;
 	padding: 5px;
 	border-width: 2px;
@@ -50,7 +50,7 @@ background-color: #3C3C3C;
 
 
 .sub-bezelled{
-border-style:solid;
+	border-style: solid;
 	border-color: #a5a5a5;
 	border-width: 2px;
 	background-color: #111111;
@@ -60,7 +60,7 @@ border-style:solid;
 }
 
 .sub-bezell-heading{
-border-style:solid;
+	border-style:solid;
 	border-color: #a5a5a5;
 	border-width: 2px;
 	background-color: #111111;
@@ -78,10 +78,6 @@ border-style:solid;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
-
-
-
-
 
 /*
 =================== Stuff for header
@@ -116,6 +112,7 @@ border-style:solid;
 .navbuttonbox{
 	background-color: #b0ff30;
 	box-shadow: 4px 1px 4px 0.5px #888888;
+	margin-left: 200px;
 }
 
 #nav-menu{
@@ -148,10 +145,14 @@ border-style:solid;
 
 .socialbuttonbox{
 	background-color: #c530ff;
-	box-shadow: 4px 2px 4px 0.5px #888888;
+	box-shadow: 4px 1px 4px 0.5px #888888;
 }
 
 #social-menu{
+	background-color: #c530ff;
+	width: 0em;
+	height: 4em;
+	box-shadow: 4px 1px 4px 0.5px #888888;
 }
 
 
@@ -214,6 +215,61 @@ border-style:solid;
 =================== Stuff for page body
 */
 
+
+/*
+=================== Stuff for footer body
+*/
+#footer-nav ul{
+	list-style-type: none;
+	text-align: center;
+	margin-top: 1em;
+	height: 7em;
+}
+
+#footer-nav li{
+	margin-top: -0.7em;
+}
+
+#follow{
+	text-align: center;
+}
+
+#nl{
+	margin-left: 3.5em;
+}
+
+#nlh{
+	width: 13em;
+	margin-left: 3.3em;
+}
+
+#ql{
+	text-align: center;
+}
+
+#ql1{
+	padding: 0.1em 3.35em 0.2em;
+	background-color: #F5F5F5;
+	color: #111111;
+}
+
+#ql2{
+	padding: 0.1em 3.35em 0.2em;
+	background-color: #F5F5F5;
+	color: #111111;
+}
+
+#ql3{
+	padding: 0.1em 1em 0.2em;
+	background-color: #F5F5F5;
+	color: #111111;
+}
+
+#ql4{
+	padding: 0.1em 1.9em 0.2em;
+	background-color: #F5F5F5;
+	color: #111111;
+}
 
 /*
 =================== Stuff for category body
