@@ -1,14 +1,13 @@
 <div id="footer-wrapper" class="row bezelled">
 	<div id="footer-trifecta" class="inner-bezell small-13 columns">
+
 		<div id="footer-follow" class="large-4 columns">
 			<h3 id="follow">Follow Us</h3>
-			<div class="small-6 columns">
-				<ul class="small-block-grid-3">
-					<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon.png" alt="Follow Us On Facebook!"></a></li>
-					<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon.png" alt="Follow Us On Twitter!"></a></li>
-					<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/linkedin-icon.png" alt="Follow Us On LinkedIn!"></a></li>
-				</ul>
-			</div>
+			<ul>
+				<li><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon.png" alt="Follow Us On Facebook!"></li>
+				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon.png" alt="Follow Us On Twitter!"></a></li>
+				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/linkedin-icon.png" alt="Follow Us On LinkedIn!"></a></li>
+			</ul>
 			
 			<?php 
 			if ( dynamic_sidebar('footer-follow-us') ) : 
@@ -16,15 +15,20 @@
 			?>
 			<?php endif; ?>
 		</div>
+
 		<div  id="footer-newsletter" class="large-4 columns">
-			<h3 id="nl">NewsLetter</h3>
+			<h3 id="nl">Newsletter</h3>
 			<h5 id="nlh" class="subheader">Interested in Free Information?<h5>
+			<input type="text" id="newnl"/>
+			<a class="small secondary button" type="submit" id="newnlb">Submit</a>
+			<p id="nld">Curious as to what kind of "Free Information"? Click Here</p>
 			<?php 
 			if ( dynamic_sidebar('footer-news-letter') ) : 
 			else : 
 			?>
 			<?php endif; ?>
 		</div>
+
 		<div id="footer-nav" class="large-4 columns">
 			<h3 id="ql">Quick Links</h3>
 			<ul>

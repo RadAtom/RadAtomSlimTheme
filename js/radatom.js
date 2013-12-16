@@ -17,7 +17,7 @@ function show_nav_menu(){
     $('#social-menu').animate({width: "-18.1em"}, 400);
   }
   else {
-    $('#nav-menu').animate({width: "-19.9em"}, 400);
+    $('#nav-menu').animate({width: "0em"}, 400);
   }
 }
 
