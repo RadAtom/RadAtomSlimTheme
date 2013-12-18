@@ -222,22 +222,24 @@ body{
 
 .large-8 h2{
 	text-align: center;
-	margin-left: 1em;
+	margin-left: 1.5em;
 }
 
 .large-8 h3{
 	text-align: center;
-	margin-left: 1em;
+	margin-left: 1.8em;
 }
 
 .large-8 h5{
 	text-align: center;
-	margin-left: 3em;
+	margin-left: 1em;
+	padding-left: 32px;
+	width: 30.5em;
 }
 
 .large-8 p{
 	text-align: center;
-	margin-left: 3em;
+	margin-left: 2em;
 }
 
 #fpq{
