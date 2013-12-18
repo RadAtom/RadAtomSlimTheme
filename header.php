@@ -54,11 +54,9 @@ require_once('radatomautoload.php');
 
 </head>
 <body <?php body_class(); ?>>
-
   <div id="header-wrapper" class="row bezelled">
     <div id="header" class="inner-bezell small-13 columns">
       <div id="logo-wrapper" class="small-13 columns">
-
         <div id="logo" class="small-13 columns">
           <a href="<?php echo get_bloginfo('url'); ?>">
             <?php
@@ -97,8 +95,5 @@ require_once('radatomautoload.php');
         </div>
 
       </div>
-
-   
-      
     </div>
   </div>
