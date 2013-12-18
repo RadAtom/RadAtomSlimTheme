@@ -4,9 +4,9 @@
 		<div id="footer-follow" class="large-4 columns">
 			<h3 id="follow">Follow Us</h3>
 			<ul>
-				<li><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon.png" alt="Follow Us On Facebook!"></li>
-				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon.png" alt="Follow Us On Twitter!"></a></li>
-				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/linkedin-icon.png" alt="Follow Us On LinkedIn!"></a></li>
+				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/long-facebook-icon.png" alt="Follow Us On Facebook!"></a></li>
+				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/long-twitter-icon.png" alt="Follow Us On Twitter!"></a></li>
+				<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/long-linkedin-icon.png" alt="Follow Us On LinkedIn!"></a></li>
 			</ul>
 			
 			<?php 

@@ -1,12 +1,10 @@
-<?php get_header(); ?>
-<!--page.php-->
+<?php get_header();
+echo '<!--page.php-->';
 
 
-<div id="internal-content-outter-wrapper" class="row">
-	<div id="internal-content-inner wrapper" class="inner-bezell bezelled small-13 columns">
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-		<?php
+echo '<div id="internal-content-outter-wrapper" class="row">';
+	echo '<div id="internal-content-inner wrapper" class="inner-bezell bezelled small-13 columns">';
+		if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 			function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
 
@@ -28,36 +26,29 @@
 			    return implode($separator, $breadcrumbs);
 
 			}
+			echo '<p>';
+			breadcrumbs();
+			echo '</p>';
 
-		?>
-
-		<p><?= breadcrumbs() ?></p>
-
-		<?php
-			// retrieves snippets for the pages page
+			//retrieves user data
 			$ra_snippet = get_post_meta( get_the_id(), 'ra_snippet_field' , true);
-
+			// retrieves snippets for the pages page
 			$schema_snippet = get_post_meta( get_the_id(), 'schema_snippet_field' , true);
 
-
-		?>
-
 		
-		<article>
-			<div class="large-9 columns" id="internal-content" itemscope itemtype="<?php echo $schema_snippet; ?>" >
-					<h1 class="caps"><?php the_title(); ?></h1>
-					<?php the_content(); ?>
-			</div>
-		</article>
-		<?php endwhile; endif; ?>
-		<?php get_sidebar(); ?>
-	</div>
+		echo '<article>';
+			echo'<div class="large-9 columns" id="internal-content" itemscope itemtype="<?php echo $schema_snippet; ?>" >';
+					echo '<h1 class="caps"><?php the_title(); ?></h1>';
+					the_content();
+			echo '</div>';
+		'</article>';
+		endwhile; endif;
+		echo get_sidebar();
+	echo '</div>';
 	
-</div>
+echo '</div>';
 	
 
-
-<?php 
 //this would go here in order ot put the sidebar on the right
 //get_sidebar();
 get_footer(); 

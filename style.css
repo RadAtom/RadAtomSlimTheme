@@ -192,18 +192,65 @@ body{
 #social-menu img{
 	height: 50px;
 	width: 40px;
-	margin-top: 0.68em;
-	margin-bottom: -0.5em;
+	margin-top: 0.4em;
+	margin-bottom: 0.5em;
 	margin-left: 2.75em;
+	-webkit-box-shadow: 0.4px 0px 5px #888888;
+    box-shadow: 0.4px 0px 5px #888888;
+    border-radius: 0.2em;
 }
 
 /*
 =================== Stuff for front page body
 */
+#cta-wrapper{
+	margin-bottom: 2em;
+}
+
+.orbit-container{
+	background-color: #F5F5F5;
+}
+
+.orbit-bullets{
+	margin-left: 17.7em;
+}
+
+#cta-wrapper .large-8{
+	margin-top: 0.5em;
+}
+
+.large-8 h2{
+	text-align: center;
+	margin-left: 1em;
+}
+
+.large-8 h3{
+	text-align: center;
+	margin-left: 1em;
+}
+
+.large-8 h5{
+	text-align: center;
+	margin-left: 2em;
+}
+
+.large-8 p{
+	text-align: center;
+	margin-left: 1em;
+}
+
 #fpq{
 	text-align: center;
 }
 
+/*
+=================== Stuff for page body
+*/
+
+
+/*
+=================== Stuff for closing-cta
+*/
 #closing-cta{
 	margin: 1em;
 }
@@ -211,51 +258,6 @@ body{
 #closing-cta .cta-wrapper{
 	margin-bottom: 2%;
 }
-
-.orbit-container{
-	background-color: #F5F5F5;
-}
-
-.orbit-container ol{
-	margin-left: 17em;
-}
-
-.large-8 h2{
-	margin-left: 4em;
-}
-
-.large-8 h5{
-	margin-left: 4em;
-}
-
-#osh1{
-	margin-left: 6em;
-}
-
-#ob1{
-	margin-left: 10em;
-}
-
-#osh2{
-	margin-left: 6.2em;
-}
-
-#ob2{
-	margin-left: 10.5em;
-}
-
-#osh3{
-	margin-left: 4.5em;
-}
-
-#ob3{
-	margin-left: 10.9em;
-}
-
-/*
-=================== Stuff for page body
-*/
-
 
 /*
 =================== Stuff for footer body
