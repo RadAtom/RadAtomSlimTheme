@@ -217,6 +217,7 @@ body{
 
 #cta-wrapper .large-8{
 	margin-top: 0.5em;
+	margin-left: -1em;
 }
 
 .large-8 h2{
@@ -231,12 +232,12 @@ body{
 
 .large-8 h5{
 	text-align: center;
-	margin-left: 2em;
+	margin-left: 3em;
 }
 
 .large-8 p{
 	text-align: center;
-	margin-left: 1em;
+	margin-left: 3em;
 }
 
 #fpq{
