@@ -59,8 +59,8 @@ require_once('radatomautoload.php');
     <div id="header" class="inner-bezell small-13 columns">
       <div id="logo-wrapper" class="small-13 columns">
 
-        <div id="logo" class="small-13 medium- columns">
-          <a href="Http://www.radatom.com">
+        <div id="logo" class="small-13 columns">
+          <a href="<?php echo get_bloginfo('url'); ?>">
             <?php
             if(is_front_page()){
               echo '<h1 class="heading-text">'.get_bloginfo('name').'</h1>';
@@ -71,25 +71,31 @@ require_once('radatomautoload.php');
             <h2 class="subheading-text"><?php echo get_bloginfo('description'); ?></h2>
           </a>
         </div>
+
       </div>
+
       <div id="header-stuff" class="large-13 columns">
+
         <div id="navbuttonbox" class="large-2 columns">
           <a href="#" id="navbutton" class="round button"><?php echo get_nav_menu_text(); ?></a>
         </div>
-      <div id="nav-menu" class="large-8 columns">
-        <?php wp_nav_menu( array( 'theme_location' => 'menu-header', 'container'       => 'nav','items_wrap'      => '<ul id="%1$s" class="%2$s inline-list">%3$s</ul>', ) ); ?>
-      </div>  
 
-      <div id="social-menu"  class="large-8 columns">
-        <ul class="inline-list">
-          <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon.png" alt="Follow Us On Facebook!"></a></li>
-          <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon.png" alt="Follow Us On Twitter!"></a></li>
-          <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/linkedin-icon.png" alt="Follow Us On LinkedIn!"></a></li>
-        </ul>
+        <div id="nav-menu" class="large-8 columns">
+          <?php wp_nav_menu( array( 'theme_location' => 'menu-header', 'container'       => 'nav','items_wrap'      => '<ul id="%1$s" class="%2$s inline-list">%3$s</ul>', ) ); ?>
+        </div>        
+
+        <div id="social-menu"  class="large-8 columns">
+          <ul class="inline-list">
+            <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon.png" alt="Follow Us On Facebook!"></a></li>
+            <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon.png" alt="Follow Us On Twitter!"></a></li>
+            <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/linkedin-icon.png" alt="Follow Us On LinkedIn!"></a></li>
+          </ul>
         </div>
+
         <div id="socialbuttonbox" class="large-2 columns">
           <a href="#" id="socialbutton" class="round button"><?php echo get_social_menu_text(); ?></a>
         </div>
+
       </div>
 
    
