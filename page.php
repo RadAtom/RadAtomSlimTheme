@@ -32,16 +32,16 @@ echo '<div id="internal-content-outter-wrapper" class="row">';
 
 			//retrieves user data
 			$ra_snippet = get_post_meta( get_the_id(), 'ra_snippet_field' , true);
-			// retrieves snippets for the pages page
-			$schema_snippet = get_post_meta( get_the_id(), 'schema_snippet_field' , true);
 
 		
 		echo '<article>';
-			echo'<div class="large-9 columns" id="internal-content" itemscope itemtype="<?php echo $schema_snippet; ?>" >';
-					echo '<h1 class="caps"><?php the_title(); ?></h1>';
-					the_content();
+			echo '<div class="large-9 columns" id="internal-content" itemscope itemtype="'.$ra_snippet.'" >';
+				echo '<h1 id="page-title" class="caps">';
+					the_title();
+				echo '</h1>';
+				the_content();
 			echo '</div>';
-		'</article>';
+		echo '</article>';
 		endwhile; endif;
 		echo get_sidebar();
 	echo '</div>';

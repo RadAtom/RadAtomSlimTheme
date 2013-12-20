@@ -247,9 +247,18 @@ body{
 }
 
 /*
-=================== Stuff for page body
+=================== Stuff for page
 */
+#page-title{
+	text-align: center;
+}
 
+/*
+=================== Stuff for single
+*/
+#post-title{
+	text-align: center;
+}
 
 /*
 =================== Stuff for closing-cta
@@ -361,10 +370,6 @@ body{
 /*
 =================== Stuff for project portfolio implementation
 */
-
-
-
-
 
 
 /*
