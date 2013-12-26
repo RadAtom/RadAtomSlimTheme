@@ -1,0 +1,54 @@
+/*
+ * CSS for Ra Tab
+ */
+
+
+
+
+
+/*============RA SETTINGS TAB================*/
+ #ra_settings_header{
+ 	background-color: #8B8B8B;
+ 	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+ }
+
+#ra_settings_header ul{
+	display: -webkit-box;
+	margin-left: 1em;
+}
+
+#ra_settings_header li{
+	padding-top: 0.3em;
+}
+
+#ra_settings_header a{
+	color: #333;
+}
+
+#ra_settings_header p{
+	margin: 0.3em 1em 0.1em;
+}
+
+#radatomname{
+	margin-left: 49em;
+}
+
+#ra-settings-content{
+	margin-top: -1em;
+	padding: 1em;
+	border: 2px solid;
+	border-color: #8b8b8b;
+}
+
+#ra_settings_helpers{
+	margin: 4em;
+}
+
+#ra_settings_helpers .button{
+	padding: 1em 2em 3em;
+	font-weight: bold;
+	border-radius: 1em;
+}
+
+ /*=============RA SNIPPETS=================*/
