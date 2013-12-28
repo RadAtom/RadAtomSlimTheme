@@ -1245,5 +1245,5 @@ function page_itemscopes()
                     <option>Mosque</option>
                     <option>Synagogue</option>
                 </select>
-<?
+<?php
 }
