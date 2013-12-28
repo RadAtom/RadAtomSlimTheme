@@ -36,7 +36,7 @@ function show_social_menu(){
   }
   //this is for growing/shrinking nav-menu
   if($('#socialbuttonbox').hasClass('socialbuttonbox')) {
-    $('#social-menu').animate({width: "21.04em"}, 400); 
+    $('#social-menu').animate({width: "21.05em"}, 400); 
     $('#nav-menu').animate({width: "-19.9em"}, 400);
   }
   else {

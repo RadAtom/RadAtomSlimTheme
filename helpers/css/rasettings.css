@@ -53,19 +53,17 @@
 
  /*=============RA SNIPPETS=================*/
 
-#ra-snippets-home-tab{
-}
-
 .ra-snippets-home-tab{
 	background-color: #DFDFDF;
 }
 
+#ra-snippets-home-tab{
+
+}
+
 #ra-snippets-home-content{
-	display: none;
-	margin-top: -1.3em;
+
 	padding: 2em 2em 8em;
-	border: 2px solid;
-	border-color: #DFDFDF;
 }
 
 #ra-snippets-buttons{
@@ -100,10 +98,7 @@
 
 #ra-snippets-pageitemscope-content{
 	display: ;
-	margin-top: -1.3em;
 	padding: 2em 2em 8em;
-	border: 2px solid;
-	border-color: #DFDFDF;
 }
 
 #ra-snippets-pageitemscope-header{
@@ -115,44 +110,155 @@
 }
 /*list of itemscopes*/
 #pageitemscope{
-	margin-top: 1em;
+	display: ;
 }
 
 #pageitemscopedatatype{
 	display: none;
-	margin-top: 1em;
 	margin-left: 1.95em;
 }
 
 #pageitemscopenumber{
 	display: none;
-	margin-top: 1em;
 	margin-left: 1.95em;
 }
 
 #pageitemscopetext{
 	display: none;
-	margin-top: 1em;
 	margin-left: 1.95em;
 }
 
 #pageitemscopething{
-	display: ;
-	margin-top: 1em;
+	display: none;
 	margin-left: 1.95em;
 }
+
+#pageitemscopeaction{
+	display: none;
+	margin-left: 1.95em;
+}
+
+	#pageitemscopeachieveaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopeassessaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopeconsumeaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopecreateaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopefindaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopeinteractaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopemoveaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopeorganizeaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopeplayaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopesearchaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopetradeaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopetransferaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+	#pageitemscopeupdateaction{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+#pageitemscopebroadcastservice{
+	display: none;
+	margin-left: 1.95em;
+}
+
+#pageitemscopeclass{
+	display: none;
+	margin-left: 1.95em;
+}
+
+#pageitemscopecreativcework{
+	display: none;
+	margin-left: 1.95em;
+}
+
+#pageitemscopeevent{
+	display: none;
+	margin-left: 1.95em;
+}
+
+#pageitemscopeintangible{
+	display: none;
+	margin-left: 1.95em;
+}
+
+#pageitemscopemedicalentity{
+	display: none;
+	margin-left: 1.95em;
+}
+
 
 #pageitemscopeorganization{
 	display: none;
-	margin-top: 1em;
 	margin-left: 1.95em;
 }
 
-#pageitemscopelocalbusiness{
+	#pageitemscopelocalbusiness{
+		display: none;
+		margin-left: 1.95em;
+	}
+
+#pageitemscopeoerson{
 	display: none;
-	margin-top: 1em;
 	margin-left: 1.95em;
 }
+
+#pageitemscopeplace{
+	display: none;
+	margin-left: 1.95em;
+}
+
+#pageitemscopeproperty{
+	display: none;
+	margin-left: 1.95em;
+}
+
 
 /*list of posts and pages created*/
 #pageitemscopepages{
@@ -169,11 +275,8 @@
 }
 
 #ra-snippets-contentitemscope-content{
-	display: none;
-	margin-top: -1.3em;
+	display: ;
 	padding: 2em 2em 8em;
-	border: 2px solid;
-	border-color: #DFDFDF;
 }
 /*********ITEMPROP*********/
 .ra-snippets-itemprop-tab{
@@ -181,11 +284,8 @@
 }
 
 #ra-snippets-itemprop-content{
-	display: none;
-	margin-top: -1.3em;
+	display: ;
 	padding: 2em 2em 8em;
-	border: 2px solid;
-	border-color: #DFDFDF;
 }
 
 /*=======================================*/
