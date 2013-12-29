@@ -92,6 +92,8 @@ function pageitemscope_content()
                 <?php page_itemscopes(); ?>
             </span>
             <span id="pageitemscopepages">
+                <br>
+                <br>
                 for Page:
                 <?php wp_dropdown_pages(); ?>
             </span>
@@ -137,7 +139,7 @@ function page_itemscopes()
         <option value="http://schema.org/Thing">Thing</option>
     </select>
         <select id="pageitemscopedatatype">
-            <option value="">Select a Data Type</option>
+            <option value="http://schema.org/DataType">Select a Data Type</option>
             <option value="http://schema.org/Boolean">Boolean</option>
             <option value="http://schema.org/Date">Date</option>
             <option value="http://schema.org/DateTime">DateTime</option>
@@ -146,16 +148,16 @@ function page_itemscopes()
             <option value="http://schema.org/Time">Time</option>
         </select>
             <select id="pageitemscopenumber">
-            <option value="http://schema.org/Number">Select a Number Type</option>
-            <option value="http://schema.org/Float">Float</option>
-            <option value="http://schema.org/Integer">Integer</option>
+                <option value="http://schema.org/Number">Select a Number Type</option>
+                <option value="http://schema.org/Float">Float</option>
+                <option value="http://schema.org/Integer">Integer</option>
             </select>
             <select id="pageitemscopetext">
-            <option value="http://schema.org/Text">Select a Text Type</option>
-            <option value="http://schema.org/URL">URL</option>
+                <option value="http://schema.org/Text">Select a Text Type</option>
+                <option value="http://schema.org/URL">URL</option>
             </select>
         <select id="pageitemscopething">
-            <option value="">Select a Thing Type</option>
+            <option value="http://schema.org/Thing">Select a Thing Type</option>
             <option value="http://schema.org/Action">Action</option>
             <option value="http://schema.org/BroadcastService">BroadcastService</option>
             <option value="http://schema.org/Class">Class</option>
@@ -185,24 +187,24 @@ function page_itemscopes()
                 <option value="http://schema.org/UpdateAction">UpdateAction</option>
             </select>
                 <select id="pageitemscopeachieveaction">
-                    <option value="">Select a AchieveAction Type</option>
+                    <option value="http://schema.org/AchieveAction">Select a AchieveAction Type</option>
                     <option value="http://schema.org/LoseAction">LoseAction</option>
                     <option value="http://schema.org/TieAction">TieAction</option>
                     <option value="http://schema.org/WinAction">WinAction</option>
                 </select>
-                    <select id="pageitemscopeassessaction">
-                        <option value="">Select a AssessAction Type</option>
+                <select id="pageitemscopeassessaction">
+                        <option value="http://schema.org/AssessAction">Select a AssessAction Type</option>
                         <option value="http://schema.org/ChooseAction">ChooseAction</option>
                         <option value="http://schema.org/IgnoreAction">IgnoreAction</option>
                         <option value="http://schema.org/ReactAction">ReactAction</option>
                         <option value="http://schema.org/ReviewAction">ReviewAction</option>
-                    </select>
+                </select>
                     <select id="pageitemscopechooseaction">
-                        <option value="">Select a ChooseAction Type</option>
+                        <option value="http://schema.org/ChooseAction">Select a ChooseAction Type</option>
                         <option value="http://schema.org/VoteAction">VoteAction</option>
                     </select>
                     <select id="pageitemscopereactaction">
-                        <option value="">Select a ReactAction Type</option>
+                        <option value="http://schema.org/ReactAction">Select a ReactAction Type</option>
                         <option value="http://schema.org/AgreeAction">AgreeAction</option>
                         <option value="http://schema.org/DisagreeAction">DisagreeAction</option>
                         <option value="http://schema.org/DislikeAction">DislikeAction</option>
@@ -211,7 +213,7 @@ function page_itemscopes()
                         <option value="http://schema.org/WantAction">WantAction</option>
                     </select>
                 <select id="pageitemscopeconsumeaction">
-                    <option value="">Select a ConsumeAction Type</option>
+                    <option value="http://schema.org/ConsumeAction">Select a ConsumeAction Type</option>
                     <option value="http://schema.org/DrinkAction">DrinkAction</option>
                     <option value="http://schema.org/EatAction">EatAction</option>
                     <option value="http://schema.org/InstallAction">InstallAction</option>
@@ -222,11 +224,11 @@ function page_itemscopes()
                     <option value="http://schema.org/WatchAction">WatchAction</option>
                 </select>
                     <select id="pageitemscopeuseaction">
-                        <option value="">Select a UseAction Type</option>
+                        <option value="http://schema.org/UseAction">Select a UseAction Type</option>
                         <option value="http://schema.org/WearAction">WearAction</option>
                     </select>
                 <select id="pageitemscopecreateaction">
-                    <option value="">Select a CreateAction Type</option>
+                    <option value="http://schema.org/CreateAction">Select a CreateAction Type</option>
                     <option value="http://schema.org/CookAction">CookAction</option>
                     <option value="http://schema.org/DrawAction">DrawAction</option>
                     <option value="http://schema.org/FilmAction">FilmAction</option>
@@ -235,13 +237,13 @@ function page_itemscopes()
                     <option value="http://schema.org/WriteAction">WriteAction</option>
                 </select>
                 <select id="pageitemscopefindaction">
-                    <option value="">Select a FindAction Type</option>
+                    <option value="http://schema.org/FindAction">Select a FindAction Type</option>
                     <option value="http://schema.org/CheckAction">CheckAction</option>
                     <option value="http://schema.org/DiscoverAction">DiscoverAction</option>
                     <option value="http://schema.org/TrackAction">TrackAction</option>
                 </select>
                 <select id="pageitemscopeinteractaction">
-                    <option value="">Select a InteractAction Type</option>
+                    <option value="http://schema.org/InteractAction">Select a InteractAction Type</option>
                     <option value="http://schema.org/BefriendAction">BefriendAction</option>
                     <option value="http://schema.org/CommunicateAction">CommunicateAction</option>
                     <option value="http://schema.org/FollowAction">FollowAction</option>
@@ -253,7 +255,7 @@ function page_itemscopes()
                     <option value="http://schema.org/UnRegisterAction">UnRegisterAction</option>
                 </select>
                     <select id="pageitemscopecommunicateaction">
-                        <option value="">Select a CommunicateAction Type</option>
+                        <option value="http://schema.org/CommunicateAction">Select a CommunicateAction Type</option>
                         <option value="http://schema.org/AskAction">AskAction</option>
                         <option value="http://schema.org/CheckInAction">CheckInAction</option>
                         <option value="http://schema.org/CheckOutAction">CheckOutAction</option>
@@ -264,43 +266,43 @@ function page_itemscopes()
                         <option value="http://schema.org/ShareAction">ShareAction</option>
                     </select>
                     <select id="pageitemscopeinformaction">
-                            <option value="">Select a InformAction Type</option>
+                            <option value="http://schema.org/InformAction">Select a InformAction Type</option>
                             <option value="http://schema.org/ConfirmAction">ConfirmAction
                             <option value="http://schema.org/RsvpAction">RsvpAction</option>
                     </select>
                 <select id="pageitemscopemoveaction">
-                    <option value="">Select a MoveAction Type</option>
+                    <option value="http://schema.org/MoveAction">Select a MoveAction Type</option>
                     <option value="http://schema.org/ArriveAction">ArriveAction</option>
                     <option value="http://schema.org/DepartAction">DepartAction</option>
                     <option value="http://schema.org/TravelAction">TravelAction</option>
                 </select>
                 <select id="pageitemscopeorganizeaction">
-                    <option value="">Select a OrganizeAction Type</option>
+                    <option value="http://schema.org/OrganizeAction">Select a OrganizeAction Type</option>
                     <option value="http://schema.org/AllocateAction">AllocateAction</option>
                     <option value="http://schema.org/ApplyAction">ApplyAction</option>
                     <option value="http://schema.org/BookmarkAction">BookmarkAction</option>
                     <option value="http://schema.org/PlanAction">PlanAction</option>
                 </select>
                     <select id="pageitemscopeallocateaction">
-                        <option value="">Select a AllocateAction Type</option>
+                        <option value="http://schema.org/AllocateAction">Select a AllocateAction Type</option>
                         <option value="http://schema.org/AcceptAction">AcceptAction</option>
                         <option value="http://schema.org/AssignAction">AssignAction</option>
                         <option value="http://schema.org/AuthorizeAction">AuthorizeAction</option>
                         <option value="http://schema.org/RejectAction">RejectAction</option>
                     </select>
                     <select id="pageitemscopeplanaction">
-                        <option value="">Select a PlanAction Type</option>
+                        <option value="http://schema.org/PlanAction">Select a PlanAction Type</option>
                         <option value="http://schema.org/CancelAction">CancelAction</option>
                         <option value="http://schema.org/ReserveAction">ReserveAction</option>
                         <option value="http://schema.org/ScheduleAction">ScheduleAction</option>
                     </select>
                 <select id="pageitemscopeplayaction">
-                    <option value="">Select a PlayAction Type</option>
+                    <option value="http://schema.org/PlayAction">Select a PlayAction Type</option>
                     <option value="http://schema.org/ExerciseAction">ExerciseAction</option>
                     <option value="http://schema.org/PerformAction">PerformAction</option>
                 </select>
                 <select id="pageitemscopetradeaction">
-                    <option value="">Select a TradeAction Type</option>
+                    <option value="http://schema.org/TradeAction">Select a TradeAction Type</option>
                     <option value="http://schema.org/BuyAction">BuyAction</option>
                     <option value="http://schema.org/DonateAction">DonateAction</option>
                     <option value="http://schema.org/OrderAction">OrderAction</option>
@@ -311,7 +313,7 @@ function page_itemscopes()
                     <option value="http://schema.org/TipAction">TipAction</option>
                 </select>
                 <select id="pageitemscopetransferaction">
-                    <option value="">Select a TransferAction Type</option>
+                    <option value="http://schema.org/TransferAction">Select a TransferAction Type</option>
                     <option value="http://schema.org/BorrowAction">BorrowAction</option>
                     <option value="http://schema.org/DownloadAction">DownloadAction</option>
                     <option value="http://schema.org/GiveAction">GiveAction</option>
@@ -322,637 +324,637 @@ function page_itemscopes()
                     <option value="http://schema.org/TakeAction">TakeAction</option>
                 </select>
                 <select id="pageitemscopeupdateaction">
-                    <option value="">Select a UpdateAction Type</option>
-                    <option value="http://schema.org/AddAction">AddAction</option>
+                    <option value="http://schema.org/UpdateAction">Select a UpdateAction Type</option>
+                    <option value="http://schema.org/AddActionAddAction">AddAction</option>
                     <option value="http://schema.org/DeleteAction">DeleteAction</option>
                     <option value="http://schema.org/ReplaceAction">ReplaceAction</option>
                 </select>
                     <select id="pageitemscopeaddaction">
-                        <option value="">Select a AddAction Type</option>
+                        <option value="http://schema.org/AddAction">Select a AddAction Type</option>
                         <option value="http://schema.org/InsertAction">InsertAction</option>
                     </select>
                     <select id="pageitemscopeinsertaction">
-                            <option value="">Select a InsertAction Type</option>
+                            <option value="http://schema.org/InsertAction">Select a InsertAction Type</option>
                             <option value="http://schema.org/AppendAction">AppendAction</option>
                             <option value="http://schema.org/PrependAction">PrependAction</option>
                     </select>
             <select id="pageitemscopecreativework">
-                <option value="">Select a CreativeWork Type</option>
-                <option>Article</option>
-                <option>Blog</option>
-                <option>Book</option>
-                <option>Clip</option>
-                <option>Code</option>
-                <option>Comment</option>
-                <option>DataCatalog</option>
-                <option>Dataset</option>
-                <option>Diet</option>
-                <option>Episode</option>
-                <option>ExercisePlan</option>
-                <option>ItemList</option>
-                <option>Map</option>
-                <option>MediaObject</option>
-                <option>Movie</option>
-                <option>MusicPlaylist</option>
-                <option>MusicRecording</option>
-                <option>Painting</option>
-                <option>Photograph</option>
-                <option>Recipe</option>
-                <option>Review</option>
-                <option>Sculpture</option>
-                <option>Season</option>
-                <option>Series</option>
-                <option>SoftwareApplication</option>
-                <option>TVSeason</option>
-                <option>TVSeries</option>
-                <option>WebPage</option>
-                <option>WebPageElement</option>
+                <option value="http://schema.org/CreativeWork">Select a CreativeWork Type</option>
+                <option value="http://schema.org/Article">Article</option>
+                <option value="http://schema.org/Blog">Blog</option>
+                <option value="http://schema.org/Book">Book</option>
+                <option value="http://schema.org/Clip">Clip</option>
+                <option value="http://schema.org/Code">Code</option>
+                <option value="http://schema.org/Comment">Comment</option>
+                <option value="http://schema.org/DataCatalog">DataCatalog</option>
+                <option value="http://schema.org/Dataset">Dataset</option>
+                <option value="http://schema.org/Diet">Diet</option>
+                <option value="http://schema.org/Episode">Episode</option>
+                <option value="http://schema.org/ExercisePlan">ExercisePlan</option>
+                <option value="http://schema.org/ItemList">ItemList</option>
+                <option value="http://schema.org/Map">Map</option>
+                <option value="http://schema.org/MediaObject">MediaObject</option>
+                <option value="http://schema.org/Movie">Movie</option>
+                <option value="http://schema.org/MusicPlaylist">MusicPlaylist</option>
+                <option value="http://schema.org/MusicRecording">MusicRecording</option>
+                <option value="http://schema.org/Painting">Painting</option>
+                <option value="http://schema.org/Photograph">Photograph</option>
+                <option value="http://schema.org/Recipe">Recipe</option>
+                <option value="http://schema.org/Review">Review</option>
+                <option value="http://schema.org/Sculpture">Sculpture</option>
+                <option value="http://schema.org/Season">Season</option>
+                <option value="http://schema.org/Series">Series</option>
+                <option value="http://schema.org/SoftwareApplication">SoftwareApplication</option>
+                <option value="http://schema.org/TVSeason">TVSeason</option>
+                <option value="http://schema.org/TVSeries">TVSeries</option>
+                <option value="http://schema.org/WebPage">WebPage</option>
+                <option value="http://schema.org/WebPageElement">WebPageElement</option>
             </select>
                 <select id="pageitemscopearticle">
-                    <option value="">Select a Article Type</option>
-                    <option>BlogPosting</option>
-                    <option>NewsArticle</option>
-                    <option>ScholarlyArticle</option>
-                    <option>TechArticle</option>
+                    <option value="http://schema.org/Article">Select a Article Type</option>
+                    <option value="http://schema.org/BlogPosting">BlogPosting</option>
+                    <option value="http://schema.org/NewsArticle">NewsArticle</option>
+                    <option value="http://schema.org/ScholarlyArticle">ScholarlyArticle</option>
+                    <option value="http://schema.org/TechArticle">TechArticle</option>
                 </select>
                     <select id="pageitemscopescholarlyarticle">
-                        <option value="">Select a ScholarlyArticle Type</option>
-                        <option>MedicalScholarlyArticle</option>
+                        <option value="http://schema.org/ScholarlyArticle">Select a ScholarlyArticle Type</option>
+                        <option value="http://schema.org/MedicalScholarlyArticle">MedicalScholarlyArticle</option>
                     </select>
                     <select id="pageitemscopetecharticle">
-                        <option value="">Select a TechArticle Type</option>
-                        <option>APIReference</option>
+                        <option value="http://schema.org/TechArticle">Select a TechArticle Type</option>
+                        <option value="http://schema.org/APIReference">APIReference</option>
                     </select>  
                 <select id="pageitemscopeclip">
-                    <option value="">Select a Clip Type</option>
-                    <option>RadioClip</option>
-                    <option>TVClip</option>
+                    <option value="http://schema.org/Clip">Select a Clip Type</option>
+                    <option value="http://schema.org/RadioClip">RadioClip</option>
+                    <option value="http://schema.org/TVClip">TVClip</option>
                 </select>
                 <select id="pageitemscopeepisode">
-                    <option value="">Select a Episode Type</option>
-                    <option>RadioEpisode</option>
-                    <option>TVEpisode</option>
+                    <option value="http://schema.org/Episode">Select a Episode Type</option>
+                    <option value="http://schema.org/RadioEpisode">RadioEpisode</option>
+                    <option value="http://schema.org/TVEpisode">TVEpisode</option>
                 </select>
                 <select id="pageitemscopemediaobject">
-                    <option value="">Select a MediaObject Type</option>
-                    <option>AudioObject</option>
-                    <option>DataDownload</option>
-                    <option>ImageObject</option>
-                    <option>MusicVideoObject</option>
-                    <option>VideoObject</option>
+                    <option value="http://schema.org/MediaObject">Select a MediaObject Type</option>
+                    <option value="http://schema.org/AudioObject">AudioObject</option>
+                    <option value="http://schema.org/DataDownload">DataDownload</option>
+                    <option value="http://schema.org/ImageObject">ImageObject</option>
+                    <option value="http://schema.org/MusicVideoObject">MusicVideoObject</option>
+                    <option value="http://schema.org/VideoObject">VideoObject</option>
                 </select>
                 <select id="pageitemscopemusicplaylist">
-                    <option value="">Select a MusicPlaylist Type</option>
-                    <option>MusicAlbum</option>
+                    <option value="http://schema.org/MusicPlaylist">Select a MusicPlaylist Type</option>
+                    <option value="http://schema.org/MusicAlbum">MusicAlbum</option>
                 </select>
                 <select id="pageitemscopeseason">
-                    <option value="">Select a Season Type</option>
-                    <option>RadioSeason</option>
-                    <option>TVSeason</option>
+                    <option value="http://schema.org/Season">Select a Season Type</option>
+                    <option value="http://schema.org/RadioSeason">RadioSeason</option>
+                    <option value="http://schema.org/TVSeason">TVSeason</option>
                 </select>
                 <select id="pageitemscopeseries">
-                    <option value="">Select a Series Type</option>
-                    <option>RadioSeries</option>
-                    <option>TVSeries</option>
+                    <option value="http://schema.org/Series">Select a Series Type</option>
+                    <option value="http://schema.org/RadioSeries">RadioSeries</option>
+                    <option value="http://schema.org/TVSeries">TVSeries</option>
                 </select>
                 <select id="pageitemscopesoftwareapplication">
-                    <option value="">Select a SoftwareApplication Type</option>
-                    <option>MobileApplication/option>
-                    <option>WebApplication</option>
+                    <option value="http://schema.org/SoftwareApplication">Select a SoftwareApplication Type</option>
+                    <option value="http://schema.org/MobileApplication">MobileApplication/option>
+                    <option value="http://schema.org/WebApplication">WebApplication</option>
                 </select>
                 <select id="pageitemscopewebpage">
-                    <option value="">Select a Webapage Type</option>
-                    <option>AboutPage</option>
-                    <option>CheckoutPage</option>
-                    <option>CollectionPage</option>
-                    <option>ContactPage</option>
-                    <option>ItemPage</option>
-                    <option>MedicalWebPage</option>
-                    <option>ProfilePage</option>
-                    <option>SearchResultsPage</option>
+                    <option value="http://schema.org/Webpage">Select a Webpage Type</option>
+                    <option value="http://schema.org/AboutPage">AboutPage</option>
+                    <option value="http://schema.org/CheckoutPage">CheckoutPage</option>
+                    <option value="http://schema.org/CollectionPage">CollectionPage</option>
+                    <option value="http://schema.org/ContactPage">ContactPage</option>
+                    <option value="http://schema.org/ItemPage">ItemPage</option>
+                    <option value="http://schema.org/MedicalWebPage">MedicalWebPage</option>
+                    <option value="http://schema.org/ProfilePage">ProfilePage</option>
+                    <option value="http://schema.org/SearchResultsPage">SearchResultsPage</option>
                 </select>
                     <select id="pageitemscopecollectionpage">
-                        <option value="">Select a CollectionPage Type</option>
-                        <option>ImageGallery</option>
-                        <option>VideoGallery</option>
+                        <option value="http://schema.org/CollectionPage">Select a CollectionPage Type</option>
+                        <option value="http://schema.org/ImageGallery">ImageGallery</option>
+                        <option value="http://schema.org/VideoGallery">VideoGallery</option>
                     </select>
                 <select id="pageitemscopewebpageelement">
-                    <option value="">Select a WebpageElement Type</option>
-                    <option>SiteNavigationElement</option>
-                    <option>Table</option>
-                    <option>WPAdBlock</option>
-                    <option>WPFooter</option>
-                    <option>WPHeader</option>
-                    <option>WPSideBar</option>
+                    <option value="http://schema.org/WebpageElement">Select a WebpageElement Type</option>
+                    <option value="http://schema.org/SiteNavigationElement">SiteNavigationElement</option>
+                    <option value="http://schema.org/Table">Table</option>
+                    <option value="http://schema.org/WPAdBlock">WPAdBlock</option>
+                    <option value="http://schema.org/WPFooter">WPFooter</option>
+                    <option value="http://schema.org/WPHeader">WPHeader</option>
+                    <option value="http://schema.org/WPSideBar">WPSideBar</option>
                 </select>
             <select id="pageitemscopeevent">
-                <option value="">Select a Event Type</option>
-                <option>BusinessEvent</option>
-                <option>ChildrensEvent</option>
-                <option>ComedyEvent</option>
-                <option>DanceEvent</option>
-                <option>DeliveryEvent</option>
-                <option>EducationEvent</option>
-                <option>Festival</option>
-                <option>FoodEvent</option>
-                <option>LiteraryEvent</option>
-                <option>MusicEvent</option>
-                <option>PublicationEvent</option>
-                <option>SaleEvent</option>
-                <option>SocialEvent</option>
-                <option>SportsEvent</option>
-                <option>TheaterEvent</option>
-                <option>UserInteraction</option>
-                <option>VisualArtsEvent</option>
+                <option value="http://schema.org/Event">Select a Event Type</option>
+                <option value="http://schema.org/BusinessEvent">BusinessEvent</option>
+                <option value="http://schema.org/ChildrensEvent">ChildrensEvent</option>
+                <option value="http://schema.org/ComedyEvent">ComedyEvent</option>
+                <option value="http://schema.org/DanceEvent">DanceEvent</option>
+                <option value="http://schema.org/DeliveryEvent">DeliveryEvent</option>
+                <option value="http://schema.org/EducationEvent">EducationEvent</option>
+                <option value="http://schema.org/Festival">Festival</option>
+                <option value="http://schema.org/FoodEvent">FoodEvent</option>
+                <option value="http://schema.org/LiteraryEvent">LiteraryEvent</option>
+                <option value="http://schema.org/MusicEvent">MusicEvent</option>
+                <option value="http://schema.org/PublicationEvent">PublicationEvent</option>
+                <option value="http://schema.org/SaleEvent">SaleEvent</option>
+                <option value="http://schema.org/SocialEvent">SocialEvent</option>
+                <option value="http://schema.org/SportsEvent">SportsEvent</option>
+                <option value="http://schema.org/TheaterEvent">TheaterEvent</option>
+                <option value="http://schema.org/UserInteraction">UserInteraction</option>
+                <option value="http://schema.org/VisualArtsEvent">VisualArtsEvent</option>
             </select>
                 <select id="pageitemscopepublicationevent">
-                    <option value="">Select a PublicationEvent Type</option>
-                    <option>BroadcastEvent</option>
-                    <option>OnDemandEvent</option>
+                    <option value="http://schema.org/PublicationEvent">Select a PublicationEvent Type</option>
+                    <option value="http://schema.org/BroadcastEvent">BroadcastEvent</option>
+                    <option value="http://schema.org/OnDemandEvent">OnDemandEvent</option>
                 </select>
                 <select id="pageitemscopeuserinteraction">
-                    <option value="">Select a UserInteraction Type</option>
-                    <option>UserBlocks</option>
-                    <option>UserCheckins</option>
-                    <option>UserComments</option>
-                    <option>UserDownloads</option>
-                    <option>UserLikes</option>
-                    <option>UserPageVisits</option>
-                    <option>UserPlays</option>
-                    <option>UserPlusOnes</option>
-                    <option>UserTweets</option>
+                    <option value="http://schema.org/UserInteraction">Select a UserInteraction Type</option>
+                    <option value="http://schema.org/UserBlocks">UserBlocks</option>
+                    <option value="http://schema.org/UserCheckins">UserCheckins</option>
+                    <option value="http://schema.org/UserComments">UserComments</option>
+                    <option value="http://schema.org/UserDownloads">UserDownloads</option>
+                    <option value="http://schema.org/UserLikes">UserLikes</option>
+                    <option value="http://schema.org/UserPageVisits">UserPageVisits</option>
+                    <option value="http://schema.org/UserPlays">UserPlays</option>
+                    <option value="http://schema.org/UserPlusOnes">UserPlusOnes</option>
+                    <option value="http://schema.org/UserTweets">UserTweets</option>
                 </select>
             <select id="pageitemscopeintangible">
-                <option value="">Select a Intangible Type</option>
-                <option>AlignmentObject</option>
-                <option>Audience</option>
-                <option>Brand</option>
-                <option>Demand</option>
-                <option>Enumeration</option>
-                <option>JobPosting</option>
-                <option>Language</option>
-                <option>Offer</option>
-                <option>Order</option>
-                <option>ParcelDelivery</option>
-                <option>Permit</option>
-                <option>Quantity</option>
-                <option>Rating</option>
-                <option>Service</option>
-                <option>ServiceChannel</option>
-                <option>StructuredValue</option>
+                <option value="http://schema.org/Intangible">Select a Intangible Type</option>
+                <option value="http://schema.org/AlignmentObject">AlignmentObject</option>
+                <option value="http://schema.org/Audience">Audience</option>
+                <option value="http://schema.org/Brand">Brand</option>
+                <option value="http://schema.org/Demand">Demand</option>
+                <option value="http://schema.org/Enumeration">Enumeration</option>
+                <option value="http://schema.org/JobPosting">JobPosting</option>
+                <option value="http://schema.org/Language">Language</option>
+                <option value="http://schema.org/Offer">Offer</option>
+                <option value="http://schema.org/Order">Order</option>
+                <option value="http://schema.org/ParcelDelivery">ParcelDelivery</option>
+                <option value="http://schema.org/Permit">Permit</option>
+                <option value="http://schema.org/Quantity">Quantity</option>
+                <option value="http://schema.org/Rating">Rating</option>
+                <option value="http://schema.org/Service">Service</option>
+                <option value="http://schema.org/ServiceChannel">ServiceChannel</option>
+                <option value="http://schema.org/StructuredValue">StructuredValue</option>
             </select>
                 <select id="pageitemscopeaudience">
-                    <option value="">Select a Audience Type</option>
-                    <option>BusinessAudience</option>
-                    <option>EducationalAudience</option>
-                    <option>MedicalAudience</option>
-                    <option>PeopleAudience</option>
-                    <option>Researcher</option>
+                    <option value="http://schema.org/Audience">Select a Audience Type</option>
+                    <option value="http://schema.org/BusinessAudience">BusinessAudience</option>
+                    <option value="http://schema.org/EducationalAudience">EducationalAudience</option>
+                    <option value="http://schema.org/MedicalAudience">MedicalAudience</option>
+                    <option value="http://schema.org/PeopleAudience">PeopleAudience</option>
+                    <option value="http://schema.org/Researcher">Researcher</option>
                 </select>
                     <select id="pageitemscopemedicalaudience">
-                        <option value="">Select a Medical Audience Type</option>
-                        <option>Clinician</option>
-                        <option>MedicalResearcher</option>
-                        <option>Patient</option>
+                        <option value="http://schema.org/MedicalAudience">Select a MedicalAudience Type</option>
+                        <option value="http://schema.org/Clinician">Clinician</option>
+                        <option value="http://schema.org/MedicalResearcher">MedicalResearcher</option>
+                        <option value="http://schema.org/Patient">Patient</option>
                     </select>
                     <select id="pageitemscopepeopleaudience">
-                        <option value="">Select a PeopleAudience Type</option>
-                        <option>ParentAudience</option>
+                        <option value="http://schema.org/PeopleAudience">Select a PeopleAudience Type</option>
+                        <option value="http://schema.org/ParentAudience">ParentAudience</option>
                     </select>            
                 <select id="pageitemscopeenumeration">
-                    <option value="">Select a Enumeration Type</option>
-                    <option>BookFormatType</option>
-                    <option>BusinessEntityType</option>
-                    <option>BusinessFunction</option>
-                    <option>ContactPointOption</option>
-                    <option>DayOfWeek</option>
-                    <option>DeliveryMethod</option>
-                    <option>EventStatusType</option>
-                    <option>ItemAvailability</option>
-                    <option>OfferItemCondition</option>
-                    <option>OrderStatus</option>
-                    <option>PaymentMethod</option>
-                    <option>QualitativeValue</option>
-                    <option>Specialty</option>
-                    <option>WarrantyScope</option>
+                    <option value="http://schema.org/Enumeration">Select a Enumeration Type</option>
+                    <option value="http://schema.org/BookFormatType">BookFormatType</option>
+                    <option value="http://schema.org/BusinessEntityType">BusinessEntityType</option>
+                    <option value="http://schema.org/BusinessFunction">BusinessFunction</option>
+                    <option value="http://schema.org/ContactPointOption">ContactPointOption</option>
+                    <option value="http://schema.org/DayOfWeek">DayOfWeek</option>
+                    <option value="http://schema.org/DeliveryMethod">DeliveryMethod</option>
+                    <option value="http://schema.org/EventStatusType">EventStatusType</option>
+                    <option value="http://schema.org/ItemAvailability">ItemAvailability</option>
+                    <option value="http://schema.org/OfferItemCondition">OfferItemCondition</option>
+                    <option value="http://schema.org/OrderStatus">OrderStatus</option>
+                    <option value="http://schema.org/PaymentMethod">PaymentMethod</option>
+                    <option value="http://schema.org/QualitativeValue">QualitativeValue</option>
+                    <option value="http://schema.org/Specialty">Specialty</option>
+                    <option value="http://schema.org/WarrantyScope">WarrantyScope</option>
                 </select>
                     <select id="pageitemscopebookformattype">
-                        <option value="">Select a BookFormatType Type</option>
-                        <option>EBook</option>
-                        <option>Hardcover</option>
-                        <option>Paperback</option>
+                        <option value="http://schema.org/BookFormatType">Select a BookFormatType Type</option>
+                        <option value="http://schema.org/EBook">EBook</option>
+                        <option value="http://schema.org/Hardcover">Hardcover</option>
+                        <option value="http://schema.org/Paperback">Paperback</option>
                     </select>
                     <select id="pageitemscopecontactpointoption">
-                        <option value="">Select a ContactPointOption Type</option>
-                        <option>HearingImpairedSupported</option>
-                        <option>TollFree</option>
+                        <option value="http://schema.org/ContactPointOption">Select a ContactPointOption Type</option>
+                        <option value="http://schema.org/HearingImpairedSupported">HearingImpairedSupported</option>
+                        <option value="http://schema.org/TollFree">TollFree</option>
                     </select>
                     <select id="pageitemscopedeliverymethod">
-                        <option value="">Select a DeliveryMethod Type</option>
-                        <option>LockerDelivery</option>
-                        <option>OnSitePickup</option>
-                        <option>ParcelService</option>
+                        <option value="http://schema.org/DeliveryMethod">Select a DeliveryMethod Type</option>
+                        <option value="http://schema.org/LockerDelivery">LockerDelivery</option>
+                        <option value="http://schema.org/OnSitePickup">OnSitePickup</option>
+                        <option value="http://schema.org/ParcelService">ParcelService</option>
                     </select>
-                    <select id="pageitemscopeeventstatusstype">
-                        <option value="">Select a EventStatusType Type</option>
-                        <option>EventCancelled</option>
-                        <option>EventPostponed</option>
-                        <option>EventRescheduled</option>
-                        <option>EventScheduled</option>
+                    <select id="pageitemscopeeventstatustype">
+                        <option value="http://schema.org/EventStatusType">Select a EventStatusType Type</option>
+                        <option value="http://schema.org/EventCancelled">EventCancelled</option>
+                        <option value="http://schema.org/EventPostponed">EventPostponed</option>
+                        <option value="http://schema.org/EventRescheduled">EventRescheduled</option>
+                        <option value="http://schema.org/EventScheduled">EventScheduled</option>
                     </select>
                     <select id="pageitemscopeitemavailability">
-                        <option value="">Select a ItemAvailability Type</option>
-                        <option>Discontinued</option>
-                        <option>InStock</option>
-                        <option>InStoreOnly</option>
-                        <option>LimitedAvailability</option>
-                        <option>OnlineOnly</option>
-                        <option>OutOfStock</option>
-                        <option>PreOrder</option>
-                        <option>SoldOut</option>
+                        <option value="http://schema.org/ItemAvailability">Select a ItemAvailability Type</option>
+                        <option value="http://schema.org/Discontinued">Discontinued</option>
+                        <option value="http://schema.org/InStock">InStock</option>
+                        <option value="http://schema.org/InStoreOnly">InStoreOnly</option>
+                        <option value="http://schema.org/LimitedAvailability">LimitedAvailability</option>
+                        <option value="http://schema.org/OnlineOnly">OnlineOnly</option>
+                        <option value="http://schema.org/OutOfStock">OutOfStock</option>
+                        <option value="http://schema.org/PreOrder">PreOrder</option>
+                        <option value="http://schema.org/SoldOut">SoldOut</option>
                     </select>
                     <select id="pageitemscopeofferitemcondition">
-                        <option value="">Select a OfferItemCondition Type</option>
-                        <option>DamagedCondition</option>
-                        <option>NewCondition</option>
-                        <option>RefurbishedCondition</option>
-                        <option>UsedCondition</option>
+                        <option value="http://schema.org/OfferItemCondition">Select a OfferItemCondition Type</option>
+                        <option value="http://schema.org/DamagedCondition">DamagedCondition</option>
+                        <option value="http://schema.org/NewCondition">NewCondition</option>
+                        <option value="http://schema.org/RefurbishedCondition">RefurbishedCondition</option>
+                        <option value="http://schema.org/UsedCondition">UsedCondition</option>
                     </select>
                     <select id="pageitemscopeorderstatus">
-                        <option value="">Select a OrderStatus Type</option>
-                        <option>OrderCancelled</option>
-                        <option>OrderDelivered</option>
-                        <option>OrderInTransit</option>
-                        <option>OrderPaymentDue</option>
-                        <option>OrderPickupAvailable</option>
-                        <option>OrderProblem</option>
-                        <option>OrderProcessing</option>
-                        <option>OrderReturned</option>
+                        <option value="http://schema.org/OrderStatus">Select a OrderStatus Type</option>
+                        <option value="http://schema.org/OrderCancelled">OrderCancelled</option>
+                        <option value="http://schema.org/OrderDelivered">OrderDelivered</option>
+                        <option value="http://schema.org/OrderInTransit">OrderInTransit</option>
+                        <option value="http://schema.org/OrderPaymentDue">OrderPaymentDue</option>
+                        <option value="http://schema.org/OrderPickupAvailable">OrderPickupAvailable</option>
+                        <option value="http://schema.org/OrderProblem">OrderProblem</option>
+                        <option value="http://schema.org/OrderProcessing">OrderProcessing</option>
+                        <option value="http://schema.org/OrderReturned">OrderReturned</option>
                     </select>
                     <select id="pageitemscopepaymentmethod">
-                        <option value="">Select a PaymentMethod Type</option>
-                        <option>CreditCard</option>
+                        <option value="http://schema.org/PaymentMethod">Select a PaymentMethod Type</option>
+                        <option value="http://schema.org/CreditCard">CreditCard</option>
                     </select>
                     <select id="pageitemscopespecialty">
-                        <option value="">Select a Specialty Type</option>
-                        <option>MedicalSpecialty</option>
+                        <option value="http://schema.org/Specialty">Select a Specialty Type</option>
+                        <option value="http://schema.org/MedicalSpecialty">MedicalSpecialty</option>
                     </select>
                         <select id="pageitemscopemedicalspecialty">
-                            <option value="">Select a MedicalSpecialty Type</option>
-                            <option>Anesthesia</option>
-                            <option>Cardiovascular</option>
-                            <option>CommunityHealth</option>
-                            <option>Dentistry</option>
-                            <option>Dermatologic</option>
-                            <option>DietNutrition</option>
-                            <option>Emergency</option>
-                            <option>Endocrine</option>
-                            <option>Gastroenterologic</option>
-                            <option>Genetic</option>
-                            <option>Geriatric</option>
-                            <option>Gynecologic</option>
-                            <option>Hematologic</option>
-                            <option>Infectious</option>
-                            <option>LaboratoryScience</option>
-                            <option>Midwifery</option>
-                            <option>Musculoskeletal</option>
-                            <option>Neurologic</option>
-                            <option>Nursing</option>
-                            <option>Obstetric</option>
-                            <option>OccupationalTherapy</option>
-                            <option>Oncologic</option>
-                            <option>Optometic</option>
-                            <option>Otolaryngologic</option>
-                            <option>Pathology</option>
-                            <option>Pediatric</option>
-                            <option>PharmacySpecialty</option>
-                            <option>Physiotherapy</option>
-                            <option>PlasticSurgery</option>
-                            <option>Podiatric</option>
-                            <option>PrimaryCare</option>
-                            <option>Psychiatric</option>
-                            <option>PublicHealth</option>
-                            <option>Pulmonary</option>
-                            <option>Radiograpy</option>
-                            <option>Renal</option>
-                            <option>RespiratoryTherapy</option>
-                            <option>Rheumatologic</option>
-                            <option>SpeechPathology</option>
-                            <option>Surgical</option>
-                            <option>Toxicologic</option>
-                            <option>Urologic</option>
+                            <option value="http://schema.org/MedicalSpecialty">Select a MedicalSpecialty Type</option>
+                            <option value="http://schema.org/Anesthesia">Anesthesia</option>
+                            <option value="http://schema.org/Cardiovascular">Cardiovascular</option>
+                            <option value="http://schema.org/CommunityHealth">CommunityHealth</option>
+                            <option value="http://schema.org/Dentistry">Dentistry</option>
+                            <option value="http://schema.org/Dermatologic">Dermatologic</option>
+                            <option value="http://schema.org/DietNutrition">DietNutrition</option>
+                            <option value="http://schema.org/Emergency">Emergency</option>
+                            <option value="http://schema.org/Endocrine">Endocrine</option>
+                            <option value="http://schema.org/Gastroenterologic">Gastroenterologic</option>
+                            <option value="http://schema.org/Genetic">Genetic</option>
+                            <option value="http://schema.org/Geriatric">Geriatric</option>
+                            <option value="http://schema.org/Gynecologic">Gynecologic</option>
+                            <option value="http://schema.org/Hematologic">Hematologic</option>
+                            <option value="http://schema.org/Infectious">Infectious</option>
+                            <option value="http://schema.org/LaboratoryScience">LaboratoryScience</option>
+                            <option value="http://schema.org/Midwifery">Midwifery</option>
+                            <option value="http://schema.org/Musculoskeletal">Musculoskeletal</option>
+                            <option value="http://schema.org/Neurologic">Neurologic</option>
+                            <option value="http://schema.org/Nursing">Nursing</option>
+                            <option value="http://schema.org/Obstetric">Obstetric</option>
+                            <option value="http://schema.org/OccupationalTherapy">OccupationalTherapy</option>
+                            <option value="http://schema.org/Oncologic">Oncologic</option>
+                            <option value="http://schema.org/Optometic">Optometic</option>
+                            <option value="http://schema.org/Otolaryngologic">Otolaryngologic</option>
+                            <option value="http://schema.org/Pathology">Pathology</option>
+                            <option value="http://schema.org/Pediatric">Pediatric</option>
+                            <option value="http://schema.org/PharmacySpecialty">PharmacySpecialty</option>
+                            <option value="http://schema.org/Physiotherapy">Physiotherapy</option>
+                            <option value="http://schema.org/PlasticSurgery">PlasticSurgery</option>
+                            <option value="http://schema.org/Podiatric">Podiatric</option>
+                            <option value="http://schema.org/PrimaryCare">PrimaryCare</option>
+                            <option value="http://schema.org/Psychiatric">Psychiatric</option>
+                            <option value="http://schema.org/PublicHealth">PublicHealth</option>
+                            <option value="http://schema.org/Pulmonary">Pulmonary</option>
+                            <option value="http://schema.org/Radiograpy">Radiograpy</option>
+                            <option value="http://schema.org/Renal">Renal</option>
+                            <option value="http://schema.org/RespiratoryTherapy">RespiratoryTherapy</option>
+                            <option value="http://schema.org/Rheumatologic">Rheumatologic</option>
+                            <option value="http://schema.org/SpeechPathology">SpeechPathology</option>
+                            <option value="http://schema.org/Surgical">Surgical</option>
+                            <option value="http://schema.org/Toxicologic">Toxicologic</option>
+                            <option value="http://schema.org/Urologic">Urologic</option>
                         </select>
                 <select id="pageitemscopeoffer">
-                    <option value="">Select a Offer Type</option>
-                    <option>AggregateOffer</option>
+                    <option value="http://schema.org/Offer">Select a Offer Type</option>
+                    <option value="http://schema.org/AggregateOffer">AggregateOffer</option>
                 </select>
                 <select id="pageitemscopepermit">
-                    <option value="">Select a Permit Type</option>
-                    <option>GovernmentPermit</option>
+                    <option value="http://schema.org/Permit">Select a Permit Type</option>
+                    <option value="http://schema.org/GovernmentPermit">GovernmentPermit</option>
                 </select>
                 <select id="pageitemscopequantity">
-                    <option value="">Select a Quantity Type</option>
-                    <option>Distance</option>
-                    <option>Duration</option>
-                    <option>Energy</option>
-                    <option>Mass</option>
+                    <option value="http://schema.org/Quantity">Select a Quantity Type</option>
+                    <option value="http://schema.org/Distance">Distance</option>
+                    <option value="http://schema.org/Duration">Duration</option>
+                    <option value="http://schema.org/Energy">Energy</option>
+                    <option value="http://schema.org/Mass">Mass</option>
                 </select>
                 <select id="pageitemscoperating">
-                    <option value="">Select a Rating Type</option>
-                    <option>AggregateRating</option>
+                    <option value="http://schema.org/Rating">Select a Rating Type</option>
+                    <option value="http://schema.org/AggregateRating">AggregateRating</option>
                 </select>
                 <select id="pageitemscopeservice">
-                    <option value="">Select a Service Type</option>
-                    <option>GovernmentService</option>
+                    <option value="http://schema.org/Service">Select a Service Type</option>
+                    <option value="http://schema.org/GovernmentService">GovernmentService</option>
                 </select>
                 <select id="pageitemscopestructuredvalue">
-                    <option value="">Select a StructuredValue Type</option>
-                    <option>ContactPoint</option>
-                    <option>GeoCoordinates</option>
-                    <option>GeoShape</option>
-                    <option>NutritionInformation</option>
-                    <option>OpeningHoursSpecification</option>
-                    <option>OwnershipInfo</option>
-                    <option>PriceSpecification</option>
-                    <option>QuantitativeValue</option>
-                    <option>TypeAndQuantityNode</option>
-                    <option>WarrantyPromise</option>
+                    <option value="http://schema.org/StructuredValue">Select a StructuredValue Type</option>
+                    <option value="http://schema.org/ContactPoint">ContactPoint</option>
+                    <option value="http://schema.org/GeoCoordinates">GeoCoordinates</option>
+                    <option value="http://schema.org/GeoShape">GeoShape</option>
+                    <option value="http://schema.org/NutritionInformation">NutritionInformation</option>
+                    <option value="http://schema.org/OpeningHoursSpecification">OpeningHoursSpecification</option>
+                    <option value="http://schema.org/OwnershipInfo">OwnershipInfo</option>
+                    <option value="http://schema.org/PriceSpecification">PriceSpecification</option>
+                    <option value="http://schema.org/QuantitativeValue">QuantitativeValue</option>
+                    <option value="http://schema.org/TypeAndQuantityNode">TypeAndQuantityNode</option>
+                    <option value="http://schema.org/WarrantyPromise">WarrantyPromise</option>
                 </select>
                     <select id="pageitemscopecontactpoint">
-                        <option value="">Select a ContactPoint Type</option>
-                        <option>PostalAddress</option>
+                        <option value="http://schema.org/ContactPoint">Select a ContactPoint Type</option>
+                        <option value="http://schema.org/PostalAddress">PostalAddress</option>
                     </select>
                     <select id="pageitemscopepricespecification">
-                        <option value="">Select a PriceSpecification Type</option>
-                        <option>DeliveryChargeSpecification</option>
-                        <option>PaymentChargeSpecification</option>
-                        <option>UnitPriceSpecification</option>
+                        <option value="http://schema.org/PriceSpecification">Select a PriceSpecification Type</option>
+                        <option value="http://schema.org/DeliveryChargeSpecification">DeliveryChargeSpecification</option>
+                        <option value="http://schema.org/PaymentChargeSpecification">PaymentChargeSpecification</option>
+                        <option value="http://schema.org/UnitPriceSpecification">UnitPriceSpecification</option>
                     </select>
             <select id="pageitemscopemedicalentity">
-                <option value="">Select a MedicalEntity Type</option>
-                <option>AnatomicalStructure</option>
-                <option>AnatomicalSystem</option>
-                <option>MedicalCause</option>
-                <option>MedicalCondition</option>
-                <option>MedicalContraindication</option>
-                <option>MedicalDevice</option>
-                <option>MedicalGuideline</option>
-                <option>MedicalIndication</option>
-                <option>MedicalIntangible</option>
-                <option>MedicalProcedure</option>
-                <option>MedicalRiskEstimator</option>
-                <option>MedicalRiskFactor</option>
-                <option>MedicalSignOrSymptom</option>
-                <option>MedicalStudy</option>
-                <option>MedicalTest</option>
-                <option>MedicalTherapy</option>
-                <option>SuperficialAnatomy</option>
+                <option value="http://schema.org/MedicalEntity">Select a MedicalEntity Type</option>
+                <option value="http://schema.org/AnatomicalStructure">AnatomicalStructure</option>
+                <option value="http://schema.org/AnatomicalSystem">AnatomicalSystem</option>
+                <option value="http://schema.org/MedicalCause">MedicalCause</option>
+                <option value="http://schema.org/MedicalCondition">MedicalCondition</option>
+                <option value="http://schema.org/MedicalContraindication">MedicalContraindication</option>
+                <option value="http://schema.org/MedicalDevice">MedicalDevice</option>
+                <option value="http://schema.org/MedicalGuideline">MedicalGuideline</option>
+                <option value="http://schema.org/MedicalIndication">MedicalIndication</option>
+                <option value="http://schema.org/MedicalIntangible">MedicalIntangible</option>
+                <option value="http://schema.org/MedicalProcedure">MedicalProcedure</option>
+                <option value="http://schema.org/MedicalRiskEstimator">MedicalRiskEstimator</option>
+                <option value="http://schema.org/MedicalRiskFactor">MedicalRiskFactor</option>
+                <option value="http://schema.org/MedicalSignOrSymptom">MedicalSignOrSymptom</option>
+                <option value="http://schema.org/MedicalStudy">MedicalStudy</option>
+                <option value="http://schema.org/MedicalTest">MedicalTest</option>
+                <option value="http://schema.org/MedicalTherapy">MedicalTherapy</option>
+                <option value="http://schema.org/SuperficialAnatomy">SuperficialAnatomy</option>
             </select>
                 <select id="pageitemscopeanatomicalstructure">
-                    <option value="">Select a AnatomicalStructure Type</option>
-                    <option>Bone</option>
-                    <option>BrainStructure</option>
-                    <option>Joint</option>
-                    <option>Ligament</option>
-                    <option>Muscle</option>
-                    <option>Nerve</option>
-                    <option>Vessel</option>
+                    <option value="http://schema.org/AnatomicalStructure">Select a AnatomicalStructure Type</option>
+                    <option value="http://schema.org/Bone">Bone</option>
+                    <option value="http://schema.org/BrainStructure">BrainStructure</option>
+                    <option value="http://schema.org/Joint">Joint</option>
+                    <option value="http://schema.org/Ligament">Ligament</option>
+                    <option value="http://schema.org/Muscle">Muscle</option>
+                    <option value="http://schema.org/Nerve">Nerve</option>
+                    <option value="http://schema.org/Vessel">Vessel</option>
                 </select>
                     <select id="pageitemscopevessel">
-                        <option value="">Select a Vessel Type</option>
-                        <option>Artery</option>
-                        <option>LymphaticVessel</option>
-                        <option>Vein</option>
+                        <option value="http://schema.org/Vessel">Select a Vessel Type</option>
+                        <option value="http://schema.org/Artery">Artery</option>
+                        <option value="http://schema.org/LymphaticVessel">LymphaticVessel</option>
+                        <option value="http://schema.org/Vein">Vein</option>
                     </select>
                 <select id="pageitemscopemedicalcondition">
-                    <option value="">Select a MedicalCondition Type</option>
-                    <option>InfectiousDisease</option>
+                    <option value="http://schema.org/MedicalCondition">Select a MedicalCondition Type</option>
+                    <option value="http://schema.org/InfectiousDisease">InfectiousDisease</option>
                 </select>
                 <select id="pageitemscopemedicalguideline">
-                    <option value="">Select a MedicalGuidline Type</option>
-                    <option>MedicalGuidelineContraindication</option>
-                    <option>MedicalGuidelineRecommendation</option>
+                    <option value="http://schema.org/MedicalGuidline">Select a MedicalGuidline Type</option>
+                    <option value="http://schema.org/MedicalGuidelineContraindication">MedicalGuidelineContraindication</option>
+                    <option value="http://schema.org/MedicalGuidelineRecommendation">MedicalGuidelineRecommendation</option>
                 </select>
                 <select id="pageitemscopemedicalindication">
-                    <option value="">Select a MedicalIndication Type</option>
-                    <option>ApprovedIndication</option>
-                    <option>PreventionIndication</option>
-                    <option>TreatmentIndication</option>
+                    <option value="http://schema.org/MedicalIndication">Select a MedicalIndication Type</option>
+                    <option value="http://schema.org/ApprovedIndication">ApprovedIndication</option>
+                    <option value="http://schema.org/PreventionIndication">PreventionIndication</option>
+                    <option value="http://schema.org/TreatmentIndication">TreatmentIndication</option>
                 </select>
                 <select id="pageitemscopemedicalintangible">
-                    <option value="">Select a MedicalIntangible Type</option>
-                    <option>DDxElement</option>
-                    <option>DoseSchedule</option>
-                    <option>DrugCost</option>
-                    <option>DrugLegalStatus</option>
-                    <option>DrugStrength</option>
-                    <option>MedicalCode</option>
-                    <option>MedicalConditionStage</option>
-                    <option>MedicalEnumeration</option>
+                    <option value="http://schema.org/MedicalIntangible">Select a MedicalIntangible Type</option>
+                    <option value="http://schema.org/DDxElement">DDxElement</option>
+                    <option value="http://schema.org/DoseSchedule">DoseSchedule</option>
+                    <option value="http://schema.org/DrugCost">DrugCost</option>
+                    <option value="http://schema.org/DrugLegalStatus">DrugLegalStatus</option>
+                    <option value="http://schema.org/DrugStrength">DrugStrength</option>
+                    <option value="http://schema.org/MedicalCode">MedicalCode</option>
+                    <option value="http://schema.org/MedicalConditionStage">MedicalConditionStage</option>
+                    <option value="http://schema.org/MedicalEnumeration">MedicalEnumeration</option>
                 </select>
                 <select id="pageitemscopedoseschedule">
-                    <option value="">Select a DoseSchedule Type</option>
-                    <option>MaximumDoseSchedule</option>
-                    <option>RecommendedDoseSchedule</option>
-                    <option>ReportedDoseSchedule</option>
+                    <option value="http://schema.org/DoseSchedule">Select a DoseSchedule Type</option>
+                    <option value="http://schema.org/MaximumDoseSchedule">MaximumDoseSchedule</option>
+                    <option value="http://schema.org/RecommendedDoseSchedule">RecommendedDoseSchedule</option>
+                    <option value="http://schema.org/ReportedDoseSchedule">ReportedDoseSchedule</option>
                 </select>
                 <select id="pageitemscopemedicalenumeration">
-                    <option value="">Select a MedicalEnumeration Type</option>
-                    <option>DrugCostCategory</option>
-                    <option>DrugPregnancyCategory</option>
-                    <option>DrugPrescriptionStatus</option>
-                    <option>InfectiousAgentClass</option>
-                    <option>MedicalAudience</option>
-                    <option>MedicalDevicePurpose</option>
-                    <option>MedicalEvidenceLevel</option>
-                    <option>MedicalImagingTechnique</option>
-                    <option>MedicalObservationalStudyDesign</option>
-                    <option>MedicalProcedureType</option>
-                    <option>MedicalSpecialty</option>
-                    <option>MedicalStudyStatus</option>
-                    <option>MedicalTrialDesign</option>
-                    <option>MedicineSystem</option>
-                    <option>PhysicalActivityCategory</option>
-                    <option>PhysicalExam</option>
+                    <option value="http://schema.org/MedicalEnumeration">Select a MedicalEnumeration Type</option>
+                    <option value="http://schema.org/DrugCostCategory">DrugCostCategory</option>
+                    <option value="http://schema.org/DrugPregnancyCategory">DrugPregnancyCategory</option>
+                    <option value="http://schema.org/DrugPrescriptionStatus">DrugPrescriptionStatus</option>
+                    <option value="http://schema.org/InfectiousAgentClass">InfectiousAgentClass</option>
+                    <option value="http://schema.org/MedicalAudience">MedicalAudience</option>
+                    <option value="http://schema.org/MedicalDevicePurpose">MedicalDevicePurpose</option>
+                    <option value="http://schema.org/MedicalEvidenceLevel">MedicalEvidenceLevel</option>
+                    <option value="http://schema.org/MedicalImagingTechnique">MedicalImagingTechnique</option>
+                    <option value="http://schema.org/MedicalObservationalStudyDesign">MedicalObservationalStudyDesign</option>
+                    <option value="http://schema.org/MedicalProcedureType">MedicalProcedureType</option>
+                    <option value="http://schema.org/MedicalSpecialty">MedicalSpecialty</option>
+                    <option value="http://schema.org/MedicalStudyStatus">MedicalStudyStatus</option>
+                    <option value="http://schema.org/MedicalTrialDesign">MedicalTrialDesign</option>
+                    <option value="http://schema.org/MedicineSystem">MedicineSystem</option>
+                    <option value="http://schema.org/PhysicalActivityCategory">PhysicalActivityCategory</option>
+                    <option value="http://schema.org/PhysicalExam">PhysicalExam</option>
                 </select>
                 <select id="pageitemscopedrugcostcatagory">
-                    <option value="">Select a DrugCostCatagory Type</option>
-                    <option>ReimbursementCap</option>
-                    <option>Retail</option>
-                    <option>Wholesale</option>
+                    <option value="http://schema.org/DrugCostCatagory">Select a DrugCostCatagory Type</option>
+                    <option value="http://schema.org/ReimbursementCap">ReimbursementCap</option>
+                    <option value="http://schema.org/Retail">Retail</option>
+                    <option value="http://schema.org/Wholesale">Wholesale</option>
                 </select>
                 <select id="pageitemscopedrugpregnancy">
-                    <option value="">Select a DrugPregnancy Type</option>
-                    <option>FDAcategoryA</option>
-                    <option>FDAcategoryB</option>
-                    <option>FDAcategoryC</option>
-                    <option>FDAcategoryD</option>
-                    <option>FDAcategoryX</option>
-                    <option>FDAnotEvaluated</option>
+                    <option value="http://schema.org/DrugPregnancy">Select a DrugPregnancy Type</option>
+                    <option value="http://schema.org/FDAcategoryA">FDAcategoryA</option>
+                    <option value="http://schema.org/FDAcategoryB">FDAcategoryB</option>
+                    <option value="http://schema.org/FDAcategoryC">FDAcategoryC</option>
+                    <option value="http://schema.org/FDAcategoryD">FDAcategoryD</option>
+                    <option value="http://schema.org/FDAcategoryX">FDAcategoryX</option>
+                    <option value="http://schema.org/FDAnotEvaluated">FDAnotEvaluated</option>
                 </select>
                 <select id="pageitemscopedrugprescriptionstatus">
-                    <option value="">Select a DrugPrescriptionStatus Type</option>
-                    <option>OTC</option>
-                    <option>PrescriptionOnly</option>
+                    <option value="http://schema.org/DrugPrescriptionStatus">Select a DrugPrescriptionStatus Type</option>
+                    <option value="http://schema.org/OTC">OTC</option>
+                    <option value="http://schema.org/PrescriptionOnly">PrescriptionOnly</option>
                 </select>
                 <select id="pageitemscopeinfectionagentclass">
-                    <option value="">Select a InfectionAgentClass Type</option>
-                    <option>Bacteria</option>
-                    <option>Fungus</option>
-                    <option>MulticellularParasite</option>
-                    <option>Prion</option>
-                    <option>Protozoa</option>
-                    <option>Virus</option>
+                    <option value="http://schema.org/InfectionAgentClass">Select a InfectionAgentClass Type</option>
+                    <option value="http://schema.org/Bacteria">Bacteria</option>
+                    <option value="http://schema.org/Fungus">Fungus</option>
+                    <option value="http://schema.org/MulticellularParasite">MulticellularParasite</option>
+                    <option value="http://schema.org/Prion">Prion</option>
+                    <option value="http://schema.org/Protozoa">Protozoa</option>
+                    <option value="http://schema.org/Virus">Virus</option>
                 </select>
                 <select id="pageitemscopemedicaldevicepurpose">
-                    <option value="">Select a MedicalDevicePurpose Type</option>
-                    <option>Diagnostic</option>
-                    <option>Therapeutic</option>
+                    <option value="http://schema.org/MedicalDevicePurpose">Select a MedicalDevicePurpose Type</option>
+                    <option value="http://schema.org/Diagnostic">Diagnostic</option>
+                    <option value="http://schema.org/Therapeutic">Therapeutic</option>
                 </select>
                 <select id="pageitemscopemedicalevidencelevel">
-                    <option value="">Select a MedicalEvidenceLevel Type</option>
-                    <option>EvidenceLevelA</option>
-                    <option>EvidenceLevelB</option>
-                    <option>EvidenceLevelC</option>
+                    <option value="http://schema.org/">Select a MedicalEvidenceLevel Type</option>
+                    <option value="http://schema.org/EvidenceLevelA">EvidenceLevelA</option>
+                    <option value="http://schema.org/EvidenceLevelB">EvidenceLevelB</option>
+                    <option value="http://schema.org/EvidenceLevelC">EvidenceLevelC</option>
                 </select>
                 <select id="pageitemscopemedicalimagingtechnique">
-                    <option value="">Select a MedicalImagingTechnique Type</option>
-                    <option>CT</option>
-                    <option>MRI</option>
-                    <option>PET</option>
-                    <option>Ultrasound</option>
-                    <option>XRay</option>
+                    <option value="http://schema.org/MedicalImagingTechnique">Select a MedicalImagingTechnique Type</option>
+                    <option value="http://schema.org/CT">CT</option>
+                    <option value="http://schema.org/MRI">MRI</option>
+                    <option value="http://schema.org/PET">PET</option>
+                    <option value="http://schema.org/Ultrasound">Ultrasound</option>
+                    <option value="http://schema.org/XRay">XRay</option>
                 </select>
                 <select id="pageitemscopemedicalobservationalstudydesign">
-                    <option value="">Select a MedicalObservationalStudyDesign Type</option>
-                    <option>CaseSeries</option>
-                    <option>CohortStudy</option>
-                    <option>CrossSectional</option>
-                    <option>Longitudinal</option>
-                    <option>Observational</option>
-                    <option>Registry</option>
+                    <option value="http://schema.org/MedicalObservationalStudyDesign">Select a MedicalObservationalStudyDesign Type</option>
+                    <option value="http://schema.org/CaseSeries">CaseSeries</option>
+                    <option value="http://schema.org/CohortStudy">CohortStudy</option>
+                    <option value="http://schema.org/CrossSectional">CrossSectional</option>
+                    <option value="http://schema.org/Longitudinal">Longitudinal</option>
+                    <option value="http://schema.org/Observational">Observational</option>
+                    <option value="http://schema.org/Registry">Registry</option>
                 </select>
                 <select id="pageitemscopemedicalproceduretype">
-                    <option value="">Select a MedicalProcedureType Type</option>
-                    <option>NoninvasiveProcedure</option>
-                    <option>PercutaneousProcedure</option>
-                    <option>SurgicalProcedure</option>
+                    <option value="http://schema.org/MedicalProcedureType">Select a MedicalProcedureType Type</option>
+                    <option value="http://schema.org/NoninvasiveProcedure">NoninvasiveProcedure</option>
+                    <option value="http://schema.org/PercutaneousProcedure">PercutaneousProcedure</option>
+                    <option value="http://schema.org/SurgicalProcedure">SurgicalProcedure</option>
                 </select>
                 </select>
                 <select id="pageitemscopemedicalstudystatus">
-                    <option value="">Select a MedicalStudyStatus Type</option>
-                    <option>ActiveNotRecruiting</option>
-                    <option>Completed</option>
-                    <option>EnrollingByInvitation</option>
-                    <option>NotYetRecruiting</option>
-                    <option>Recruiting</option>
-                    <option>ResultsAvailable</option>
-                    <option>ResultsNotAvailable</option>
-                    <option>Suspended</option>
-                    <option>Terminated</option>
-                    <option>Withdrawn</option>
+                    <option value="http://schema.org/MedicalStudyStatus">Select a MedicalStudyStatus Type</option>
+                    <option value="http://schema.org/ActiveNotRecruiting">ActiveNotRecruiting</option>
+                    <option value="http://schema.org/Completed">Completed</option>
+                    <option value="http://schema.org/EnrollingByInvitation">EnrollingByInvitation</option>
+                    <option value="http://schema.org/NotYetRecruiting">NotYetRecruiting</option>
+                    <option value="http://schema.org/Recruiting">Recruiting</option>
+                    <option value="http://schema.org/ResultsAvailable">ResultsAvailable</option>
+                    <option value="http://schema.org/ResultsNotAvailable">ResultsNotAvailable</option>
+                    <option value="http://schema.org/Suspended">Suspended</option>
+                    <option value="http://schema.org/Terminated">Terminated</option>
+                    <option value="http://schema.org/Withdrawn">Withdrawn</option>
                 </select>
                 <select id="pageitemscopemedicaltrialdesign">
-                    <option value="">Select a MedicalTrialDesign Type</option>
-                    <option>DoubleBlindedTrial</option>
-                    <option>InternationalTrial</option>
-                    <option>MultiCenterTrial</option>
-                    <option>OpenTrial</option>
-                    <option>PlaceboControlledTrial</option>
-                    <option>RandomizedTrial</option>
-                    <option>SingleBlindedTrial</option>
-                    <option>SingleCenterTrial</option>
-                    <option>TripleBlindedTrial</option>
+                    <option value="http://schema.org/MedicalTrialDesign">Select a MedicalTrialDesign Type</option>
+                    <option value="http://schema.org/DoubleBlindedTrial">DoubleBlindedTrial</option>
+                    <option value="http://schema.org/InternationalTrial">InternationalTrial</option>
+                    <option value="http://schema.org/MultiCenterTrial">MultiCenterTrial</option>
+                    <option value="http://schema.org/OpenTrial">OpenTrial</option>
+                    <option value="http://schema.org/PlaceboControlledTrial">PlaceboControlledTrial</option>
+                    <option value="http://schema.org/RandomizedTrial">RandomizedTrial</option>
+                    <option value="http://schema.org/SingleBlindedTrial">SingleBlindedTrial</option>
+                    <option value="http://schema.org/SingleCenterTrial">SingleCenterTrial</option>
+                    <option value="http://schema.org/TripleBlindedTrial">TripleBlindedTrial</option>
                 </select>
                 <select id="pageitemscopemedicinesystem">
-                    <option value="">Select a MedicineSystem Type</option>
-                    <option>Ayurvedic</option>
-                    <option>Chiropractic</option>
-                    <option>Homeopathic</option>
-                    <option>Osteopathic</option>
-                    <option>TraditionalChinese</option>
-                    <option>WesternConventional</option>
+                    <option value="http://schema.org/MedicineSystem">Select a MedicineSystem Type</option>
+                    <option value="http://schema.org/Ayurvedic">Ayurvedic</option>
+                    <option value="http://schema.org/Chiropractic">Chiropractic</option>
+                    <option value="http://schema.org/Homeopathic">Homeopathic</option>
+                    <option value="http://schema.org/Osteopathic">Osteopathic</option>
+                    <option value="http://schema.org/TraditionalChinese">TraditionalChinese</option>
+                    <option value="http://schema.org/WesternConventional">WesternConventional</option>
                 </select>
                 <select id="pageitemscopephysicalactivitycategory">
-                    <option value="">Select a PhysicalActivityCategory Type</option>
-                    <option>AerobicActivity</option>
-                    <option>AnaerobicActivity</option>
-                    <option>Balance</option>
-                    <option>Flexibility</option>
-                    <option>LeisureTimeActivity</option>
-                    <option>OccupationalActivity</option>
-                    <option>StrengthTraining</option>
+                    <option value="http://schema.org/PhysicalActivityCategory">Select a PhysicalActivityCategory Type</option>
+                    <option value="http://schema.org/AerobicActivity">AerobicActivity</option>
+                    <option value="http://schema.org/AnaerobicActivity">AnaerobicActivity</option>
+                    <option value="http://schema.org/Balance">Balance</option>
+                    <option value="http://schema.org/Flexibility">Flexibility</option>
+                    <option value="http://schema.org/LeisureTimeActivity">LeisureTimeActivity</option>
+                    <option value="http://schema.org/OccupationalActivity">OccupationalActivity</option>
+                    <option value="http://schema.org/StrengthTraining">StrengthTraining</option>
                 </select>
                 <select id="pageitemscopephysicalexam">
-                    <option value="">Select a PhysicalExam Type</option>
-                    <option>Abdomen</option>
-                    <option>Appearance</option>
-                    <option>CardiovascularExam</option>
-                    <option>Ear</option>
-                    <option>Eye</option>
-                    <option>Genitourinary</option>
-                    <option>Head</option>
-                    <option>Lung</option>
-                    <option>MusculoskeletalExam</option>
-                    <option>Neck</option>
-                    <option>Neuro</option>
-                    <option>Nose</option>
-                    <option>Skin</option>
-                    <option>Throat</option>
-                    <option>VitalSign</option>
+                    <option value="http://schema.org/PhysicalExam">Select a PhysicalExam Type</option>
+                    <option value="http://schema.org/Abdomen">Abdomen</option>
+                    <option value="http://schema.org/Appearance">Appearance</option>
+                    <option value="http://schema.org/CardiovascularExam">CardiovascularExam</option>
+                    <option value="http://schema.org/Ear">Ear</option>
+                    <option value="http://schema.org/Eye">Eye</option>
+                    <option value="http://schema.org/Genitourinary">Genitourinary</option>
+                    <option value="http://schema.org/Head">Head</option>
+                    <option value="http://schema.org/Lung">Lung</option>
+                    <option value="http://schema.org/MusculoskeletalExam">MusculoskeletalExam</option>
+                    <option value="http://schema.org/Neck">Neck</option>
+                    <option value="http://schema.org/Neuro">Neuro</option>
+                    <option value="http://schema.org/Nose">Nose</option>
+                    <option value="http://schema.org/Skin">Skin</option>
+                    <option value="http://schema.org/Throat">Throat</option>
+                    <option value="http://schema.org/VitalSign">VitalSign</option>
                 </select>
                 <select id="pageitemscopemedicalprocedure">
-                    <option value="">Select a MedicalProcedure Type</option>
-                    <option>DiagnosticProcedure</option>
-                    <option>PalliativeProcedure</option>
-                    <option>TherapeuticProcedure</option>
+                    <option value="http://schema.org/MedicalProcedure">Select a MedicalProcedure Type</option>
+                    <option value="http://schema.org/DiagnosticProcedure">DiagnosticProcedure</option>
+                    <option value="http://schema.org/PalliativeProcedure">PalliativeProcedure</option>
+                    <option value="http://schema.org/TherapeuticProcedure">TherapeuticProcedure</option>
                 </select>
                 <select id="pageitemscopemedicalriskestimator">
-                    <option value="">Select a MedicalRiskEstimator Type</option>
-                    <option>MedicalRiskCalculator</option>
-                    <option>MedicalRiskScore</option>
+                    <option value="http://schema.org/MedicalRiskEstimator">Select a MedicalRiskEstimator Type</option>
+                    <option value="http://schema.org/MedicalRiskCalculator">MedicalRiskCalculator</option>
+                    <option value="http://schema.org/MedicalRiskScore">MedicalRiskScore</option>
                 </select>
                 <select id="pageitemscopemedicalsignorsymptom">
-                    <option value="">Select a MedicalSignorSymptom Type</option>
-                    <option>MedicalSign</option>
-                    <option>MedicalSymptom</option>
+                    <option value="http://schema.org/MedicalSignorSymptom">Select a MedicalSignorSymptom Type</option>
+                    <option value="http://schema.org/MedicalSign">MedicalSign</option>
+                    <option value="http://schema.org/MedicalSymptom">MedicalSymptom</option>
                 </select>
                 <select id="pageitemscopemedicalstudy">
-                    <option value="">Select a MedicalStudy Type</option>
-                    <option>MedicalObservationalStudy</option>
-                    <option>MedicalTrial</option>
+                    <option value="http://schema.org/MedicalStudy">Select a MedicalStudy Type</option>
+                    <option value="http://schema.org/MedicalObservationalStudy">MedicalObservationalStudy</option>
+                    <option value="http://schema.org/MedicalTrial">MedicalTrial</option>
                 </select>
                 <select id="pageitemscopemedicaltest">
-                    <option value="">Select a MedicalTest Type</option>
-                    <option>BloodTest</option>
-                    <option>DiagnosticProcedure</option>
-                    <option>ImagingTest</option>
-                    <option>MedicalTestPanel</option>
-                    <option>PathologyTest</option>
+                    <option value="http://schema.org/MedicalTest">Select a MedicalTest Type</option>
+                    <option value="http://schema.org/BloodTest">BloodTest</option>
+                    <option value="http://schema.org/DiagnosticProcedure">DiagnosticProcedure</option>
+                    <option value="http://schema.org/ImagingTest">ImagingTest</option>
+                    <option value="http://schema.org/MedicalTestPanel">MedicalTestPanel</option>
+                    <option value="http://schema.org/PathologyTest">PathologyTest</option>
                 </select>
                 <select id="pageitemscopemedicaltherapy">
-                    <option value="">Select a MedicalTherapy Type</option>
-                    <option>DietarySupplement</option>
-                    <option>Drug</option>
-                    <option>DrugClass</option>
-                    <option>LifestyleModification</option>
-                    <option>PalliativeProcedure</option>
-                    <option>PhysicalTherapy</option>
-                    <option>PsychologicalTreatment</option>
-                    <option>RadiationTherapy</option>
-                    <option>TherapeuticProcedure</option>
+                    <option value="http://schema.org/MedicalTherapy">Select a MedicalTherapy Type</option>
+                    <option value="http://schema.org/DietarySupplement">DietarySupplement</option>
+                    <option value="http://schema.org/Drug">Drug</option>
+                    <option value="http://schema.org/DrugClass">DrugClass</option>
+                    <option value="http://schema.org/LifestyleModification">LifestyleModification</option>
+                    <option value="http://schema.org/PalliativeProcedure">PalliativeProcedure</option>
+                    <option value="http://schema.org/PhysicalTherapy">PhysicalTherapy</option>
+                    <option value="http://schema.org/PsychologicalTreatment">PsychologicalTreatment</option>
+                    <option value="http://schema.org/RadiationTherapy">RadiationTherapy</option>
+                    <option value="http://schema.org/TherapeuticProcedure">TherapeuticProcedure</option>
                 </select>
                 <select id="pageitemscopelifestylemodification">
-                    <option value="">Select a LifestyleModification Type</option>
-                    <option>Diet</option>
-                    <option>PhysicalActivity</option>
+                    <option value="http://schema.org/LifestyleModification">Select a LifestyleModification Type</option>
+                    <option value="http://schema.org/Diet">Diet</option>
+                    <option value="http://schema.org/PhysicalActivity">PhysicalActivity</option>
                 </select>
                 <select id="pageitemscopephysicalactivity">
-                    <option value="">Select a PhysicalActivity Type</option>
-                    <option>ExercisePlan</option>
+                    <option value="http://schema.org/">Select a PhysicalActivity Type</option>
+                    <option value="http://schema.org/ExercisePlan">ExercisePlan</option>
                 </select>
             <select id="pageitemscopeorganization">
-                <option value="">Select a Organization Type</option>
+                <option value="http://schema.org/Organization">Select a Organization Type</option>
                 <option value="http://schema.org/Corporation">Corporation</option>
                 <option value="http://schema.org/EducationalOrganization">EducationalOrganization</option>
                 <option value="http://schema.org/GovernmentOrganization">GovernmentOrganization</option>
@@ -962,16 +964,16 @@ function page_itemscopes()
                 <option value="http://schema.org/SportsTeam">SportsTeam</option>
             </select>
                 <select id="pageitemscopeeducationalorganization">
-                    <option value="">Select a EducationalOrganization Type</option>
-                    <option>CollegeOrUniversity
-                    <option>ElementarySchool
-                    <option>HighSchool
-                    <option>MiddleSchool
-                    <option>Preschool
-                    <option>School</option>
+                    <option value="http://schema.org/EducationalOrganization">Select a EducationalOrganization Type</option>
+                    <option value="http://schema.org/CollegeOrUniversity">CollegeOrUniversity</option>
+                    <option value="http://schema.org/ElementarySchool">ElementarySchool</option>
+                    <option value="http://schema.org/HighSchool">HighSchool</option>
+                    <option value="http://schema.org/MiddleSchool">MiddleSchool</option>
+                    <option value="http://schema.org/Preschool">Preschool</option>
+                    <option value="http://schema.org/School">School</option>
                 </select>
                 <select id="pageitemscopelocalbusiness">
-                    <option value="">Select a LocalBusiness Type</option>
+                    <option value="http://schema.org/LocalBusiness">Select a LocalBusiness Type</option>
                     <option value="http://schema.org/AnimalShelter">AnimalShelter</option>
                     <option value="http://schema.org/AutomotiveBusiness">AutomotiveBusiness</option>
                     <option value="http://schema.org/ChildCare">ChildCare</option>
@@ -1000,250 +1002,250 @@ function page_itemscopes()
                     <option value="http://schema.org/TouristInformationCenter">TouristInformationCenter</option>
                     <option value="http://schema.org/TravelAgency">TravelAgency</option>
                 </select>
-                <select id="pageitemscopeautomotivebusiness">
-                    <option value="">Select a AutomotiveBusiness Type</option>
-                    <option>AutoBodyShop</option>
-                    <option>AutoDealer</option>
-                    <option>AutoPartsStore</option>
-                    <option>AutoRental</option>
-                    <option>AutoRepair</option>
-                    <option>AutoWash</option>
-                    <option>GasStation</option>
-                    <option>MotorcycleDealer</option>
-                    <option>MotorcycleRepair</option>
-                </select>
-                <select id="pageitemscopeemergencyservice">
-                    <option value="">Select a EmergencyService Type</option>
-                    <option>FireStation</option>
-                    <option>Hospital</option>
-                    <option>PoliceStation</option>
-                </select>
-                <select id="pageitemscopeentertainmentbusiness">
-                    <option value="">Select a EntertainmentBusiness Type</option>
-                    <option>AdultEntertainment</option>
-                    <option>AmusementPark</option>
-                    <option>ArtGallery</option>
-                    <option>Casino</option>
-                    <option>ComedyClub</option>
-                    <option>MovieTheater</option>
-                    <option>NightClub</option>
-                </select>
-                <select id="pageitemscopefinancialservice">
-                    <option value="">Select a FinancialService Type</option>
-                    <option>AccountingService</option>
-                    <option>AutomatedTeller</option>
-                    <option>BankOrCreditUnion</option>
-                    <option>InsuranceAgency</option>
-                </select>
-                <select id="pageitemscopefoodestablishment">
-                    <option value="">Select a FoodEstablishment Type</option>
-                    <option>Bakery</option>
-                    <option>BarOrPub</option>
-                    <option>Brewery</option>
-                    <option>CafeOrCoffeeShop</option>
-                    <option>FastFoodRestaurant</option>
-                    <option>IceCreamShop</option>
-                    <option>Restaurant</option>
-                    <option>Winery</option>
-                </select>
-                <select id="pageitemscopegovernmentoffice">
-                    <option value="">Select a GovernmentOffice Type</option>
-                    <option>PostOffice</option>
-                </select>
-                <select id="pageitemscopehealthandbeautybusiness">
-                    <option value="">Select a HealthAndBeautyBusiness Type</option>
-                    <option>BeautySalon</option>
-                    <option>DaySpa</option>
-                    <option>HairSalon</option>
-                    <option>HealthClub</option>
-                    <option>NailSalon</option>
-                    <option>TattooParlor</option>
-                </select>
-                <select id="pageitemscopehomeandconstructionbusiness">
-                    <option value="">Select a HomeAndConstructionBusiness Type</option>
-                    <option>Electrician</option>
-                    <option>GeneralContractor</option>
-                    <option>HVACBusiness</option>
-                    <option>HousePainter</option>
-                    <option>Locksmith</option>
-                    <option>MovingCompany</option>
-                    <option>Plumber</option>
-                    <option>RoofingContractor</option>
-                </select>
-                <select id="pageitemscopelodgingbusiness">
-                    <option value="">Select a LodgingBusiness Type</option>
-                    <option>BedAndBreakfast</option>
-                    <option>Hostel</option>
-                    <option>Hotel</option>
-                    <option>Motel</option>
-                </select>
-                <select id="pageitemscopemedicalorganization">
-                    <option value="">Select a MedicalOrganization Type</option>
-                    <option>Dentist</option>
-                    <option>DiagnosticLab</option>
-                    <option>Hospital</option>
-                    <option>MedicalClinic</option>
-                    <option>Optician</option>
-                    <option>Pharmacy</option>
-                    <option>Physician</option>
-                    <option>VeterinaryCare</option>
-                </select>
-                <select id="pageitemscopeprofessionalservice">
-                    <option value="">Select a ProfessionalService Type</option>
-                    <option>AccountingService</option>
-                    <option>Attorney</option>
-                    <option>Dentist</option>
-                    <option>Electrician</option>
-                    <option>GeneralContractor</option>
-                    <option>HousePainter</option>
-                    <option>Locksmith</option>
-                    <option>Notary</option>
-                    <option>Plumber</option>
-                    <option>RoofingContractor</option>
-                </select>
-                <select id="pageitemscopesportsactivitylocation">
-                    <option value="">Select a SportsActivityLocation Type</option>
-                    <option>BowlingAlley</option>
-                    <option>ExerciseGym</option>
-                    <option>GolfCourse</option>
-                    <option>HealthClub</option>
-                    <option>PublicSwimmingPool</option>
-                    <option>SkiResort</option>
-                    <option>SportsClub</option>
-                    <option>StadiumOrArena</option>
-                    <option>TennisComplex</option>
-                </select>
-                <select id="pageitemscopestore">
-                    <option value="">Select a Store Type</option>
-                    <option>AutoPartsStore</option>
-                    <option>BikeStore</option>
-                    <option>BookStore</option>
-                    <option>ClothingStore</option>
-                    <option>ComputerStore</option>
-                    <option>ConvenienceStore</option>
-                    <option>DepartmentStore</option>
-                    <option>ElectronicsStore</option>
-                    <option>Florist</option>
-                    <option>FurnitureStore</option>
-                    <option>GardenStore</option>
-                    <option>GroceryStore</option>
-                    <option>HardwareStore</option>
-                    <option>HobbyShop</option>
-                    <option>HomeGoodsStore</option>
-                    <option>JewelryStore</option>
-                    <option>LiquorStore</option>
-                    <option>MensClothingStore</option>
-                    <option>MobilePhoneStore</option>
-                    <option>MovieRentalStore</option>
-                    <option>MusicStore</option>
-                    <option>OfficeEquipmentStore</option>
-                    <option>OutletStore</option>
-                    <option>PawnShop</option>
-                    <option>PetStore</option>
-                    <option>ShoeStore</option>
-                    <option>SportingGoodsStore</option>
-                    <option>TireShop</option>
-                    <option>ToyStore</option>
-                    <option>WholesaleStore</option>
-                </select>
+                    <select id="pageitemscopeautomotivebusiness">
+                        <option value="http://schema.org/AutomotiveBusiness">Select a AutomotiveBusiness Type</option>
+                        <option value="http://schema.org/AutoBodyShop">AutoBodyShop</option>
+                        <option value="http://schema.org/AutoDealer">AutoDealer</option>
+                        <option value="http://schema.org/AutoPartsStore">AutoPartsStore</option>
+                        <option value="http://schema.org/AutoRental">AutoRental</option>
+                        <option value="http://schema.org/AutoRepair">AutoRepair</option>
+                        <option value="http://schema.org/AutoWash">AutoWash</option>
+                        <option value="http://schema.org/GasStation">GasStation</option>
+                        <option value="http://schema.org/MotorcycleDealer">MotorcycleDealer</option>
+                        <option value="http://schema.org/MotorcycleRepair">MotorcycleRepair</option>
+                    </select>
+                    <select id="pageitemscopeemergencyservice">
+                        <option value="http://schema.org/EmergencyService">Select a EmergencyService Type</option>
+                        <option value="http://schema.org/FireStation">FireStation</option>
+                        <option value="http://schema.org/Hospital">Hospital</option>
+                        <option value="http://schema.org/PoliceStation">PoliceStation</option>
+                    </select>
+                    <select id="pageitemscopeentertainmentbusiness">
+                        <option value="http://schema.org/EntertainmentBusiness">Select a EntertainmentBusiness Type</option>
+                        <option value="http://schema.org/AdultEntertainment">AdultEntertainment</option>
+                        <option value="http://schema.org/AmusementPark">AmusementPark</option>
+                        <option value="http://schema.org/ArtGallery">ArtGallery</option>
+                        <option value="http://schema.org/Casino">Casino</option>
+                        <option value="http://schema.org/ComedyClub">ComedyClub</option>
+                        <option value="http://schema.org/MovieTheater">MovieTheater</option>
+                        <option value="http://schema.org/NightClub">NightClub</option>
+                    </select>
+                    <select id="pageitemscopefinancialservice">
+                        <option value="http://schema.org/FinancialService">Select a FinancialService Type</option>
+                        <option value="http://schema.org/AccountingService">AccountingService</option>
+                        <option value="http://schema.org/AutomatedTeller">AutomatedTeller</option>
+                        <option value="http://schema.org/BankOrCreditUnion">BankOrCreditUnion</option>
+                        <option value="http://schema.org/InsuranceAgency">InsuranceAgency</option>
+                    </select>
+                    <select id="pageitemscopefoodestablishment">
+                        <option value="http://schema.org/FoodEstablishment">Select a FoodEstablishment Type</option>
+                        <option value="http://schema.org/Bakery">Bakery</option>
+                        <option value="http://schema.org/BarOrPub">BarOrPub</option>
+                        <option value="http://schema.org/Brewery">Brewery</option>
+                        <option value="http://schema.org/CafeOrCoffeeShop">CafeOrCoffeeShop</option>
+                        <option value="http://schema.org/FastFoodRestaurant">FastFoodRestaurant</option>
+                        <option value="http://schema.org/IceCreamShop">IceCreamShop</option>
+                        <option value="http://schema.org/Restaurant">Restaurant</option>
+                        <option value="http://schema.org/Winery">Winery</option>
+                    </select>
+                    <select id="pageitemscopegovernmentoffice">
+                        <option value="http://schema.org/GovernmentOffice">Select a GovernmentOffice Type</option>
+                        <option value="http://schema.org/PostOffice">PostOffice</option>
+                    </select>
+                    <select id="pageitemscopehealthandbeautybusiness">
+                        <option value="http://schema.org/HealthAndBeautyBusiness">Select a HealthAndBeautyBusiness Type</option>
+                        <option value="http://schema.org/BeautySalon">BeautySalon</option>
+                        <option value="http://schema.org/DaySpa">DaySpa</option>
+                        <option value="http://schema.org/HairSalon">HairSalon</option>
+                        <option value="http://schema.org/HealthClub">HealthClub</option>
+                        <option value="http://schema.org/NailSalon">NailSalon</option>
+                        <option value="http://schema.org/TattooParlor">TattooParlor</option>
+                    </select>
+                    <select id="pageitemscopehomeandconstructionbusiness">
+                        <option value="http://schema.org/HomeAndConstructionBusiness">Select a HomeAndConstructionBusiness Type</option>
+                        <option value="http://schema.org/Electrician">Electrician</option>
+                        <option value="http://schema.org/GeneralContractor">GeneralContractor</option>
+                        <option value="http://schema.org/HVACBusiness">HVACBusiness</option>
+                        <option value="http://schema.org/HousePainter">HousePainter</option>
+                        <option value="http://schema.org/Locksmith">Locksmith</option>
+                        <option value="http://schema.org/MovingCompany">MovingCompany</option>
+                        <option value="http://schema.org/Plumber">Plumber</option>
+                        <option value="http://schema.org/RoofingContractor">RoofingContractor</option>
+                    </select>
+                    <select id="pageitemscopelodgingbusiness">
+                        <option value="http://schema.org/LodgingBusiness">Select a LodgingBusiness Type</option>
+                        <option value="http://schema.org/BedAndBreakfast">BedAndBreakfast</option>
+                        <option value="http://schema.org/Hostel">Hostel</option>
+                        <option value="http://schema.org/Hotel">Hotel</option>
+                        <option value="http://schema.org/Motel">Motel</option>
+                    </select>
+                    <select id="pageitemscopemedicalorganization">
+                        <option value="http://schema.org/MedicalOrganization">Select a MedicalOrganization Type</option>
+                        <option value="http://schema.org/Dentist">Dentist</option>
+                        <option value="http://schema.org/DiagnosticLab">DiagnosticLab</option>
+                        <option value="http://schema.org/Hospital">Hospital</option>
+                        <option value="http://schema.org/MedicalClinic">MedicalClinic</option>
+                        <option value="http://schema.org/Optician">Optician</option>
+                        <option value="http://schema.org/Pharmacy">Pharmacy</option>
+                        <option value="http://schema.org/Physician">Physician</option>
+                        <option value="http://schema.org/VeterinaryCare">VeterinaryCare</option>
+                    </select>
+                    <select id="pageitemscopeprofessionalservice">
+                        <option value="http://schema.org/ProfessionalService">Select a ProfessionalService Type</option>
+                        <option value="http://schema.org/AccountingService">AccountingService</option>
+                        <option value="http://schema.org/Attorney">Attorney</option>
+                        <option value="http://schema.org/Dentist">Dentist</option>
+                        <option value="http://schema.org/Electrician">Electrician</option>
+                        <option value="http://schema.org/GeneralContractor">GeneralContractor</option>
+                        <option value="http://schema.org/HousePainter">HousePainter</option>
+                        <option value="http://schema.org/Locksmith">Locksmith</option>
+                        <option value="http://schema.org/Notary">Notary</option>
+                        <option value="http://schema.org/Plumber">Plumber</option>
+                        <option value="http://schema.org/RoofingContractor">RoofingContractor</option>
+                    </select>
+                    <select id="pageitemscopesportsactivitylocation">
+                        <option value="http://schema.org/SportsActivityLocation">Select a SportsActivityLocation Type</option>
+                        <option value="http://schema.org/BowlingAlley">BowlingAlley</option>
+                        <option value="http://schema.org/ExerciseGym">ExerciseGym</option>
+                        <option value="http://schema.org/GolfCourse">GolfCourse</option>
+                        <option value="http://schema.org/HealthClub">HealthClub</option>
+                        <option value="http://schema.org/PublicSwimmingPool">PublicSwimmingPool</option>
+                        <option value="http://schema.org/SkiResort">SkiResort</option>
+                        <option value="http://schema.org/SportsClub">SportsClub</option>
+                        <option value="http://schema.org/StadiumOrArena">StadiumOrArena</option>
+                        <option value="http://schema.org/TennisComplex">TennisComplex</option>
+                    </select>
+                    <select id="pageitemscopestore">
+                        <option value="http://schema.org/Store">Select a Store Type</option>
+                        <option value="http://schema.org/AutoPartsStore">AutoPartsStore</option>
+                        <option value="http://schema.org/BikeStore">BikeStore</option>
+                        <option value="http://schema.org/BookStore">BookStore</option>
+                        <option value="http://schema.org/ClothingStore">ClothingStore</option>
+                        <option value="http://schema.org/ComputerStore">ComputerStore</option>
+                        <option value="http://schema.org/ConvenienceStore">ConvenienceStore</option>
+                        <option value="http://schema.org/DepartmentStore">DepartmentStore</option>
+                        <option value="http://schema.org/ElectronicsStore">ElectronicsStore</option>
+                        <option value="http://schema.org/Florist">Florist</option>
+                        <option value="http://schema.org/FurnitureStore">FurnitureStore</option>
+                        <option value="http://schema.org/GardenStore">GardenStore</option>
+                        <option value="http://schema.org/GroceryStore">GroceryStore</option>
+                        <option value="http://schema.org/HardwareStore">HardwareStore</option>
+                        <option value="http://schema.org/HobbyShop">HobbyShop</option>
+                        <option value="http://schema.org/HomeGoodsStore">HomeGoodsStore</option>
+                        <option value="http://schema.org/JewelryStore">JewelryStore</option>
+                        <option value="http://schema.org/LiquorStore">LiquorStore</option>
+                        <option value="http://schema.org/MensClothingStore">MensClothingStore</option>
+                        <option value="http://schema.org/MobilePhoneStore">MobilePhoneStore</option>
+                        <option value="http://schema.org/MovieRentalStore">MovieRentalStore</option>
+                        <option value="http://schema.org/MusicStore">MusicStore</option>
+                        <option value="http://schema.org/OfficeEquipmentStore">OfficeEquipmentStore</option>
+                        <option value="http://schema.org/OutletStore">OutletStore</option>
+                        <option value="http://schema.org/PawnShop">PawnShop</option>
+                        <option value="http://schema.org/PetStore">PetStore</option>
+                        <option value="http://schema.org/ShoeStore">ShoeStore</option>
+                        <option value="http://schema.org/SportingGoodsStore">SportingGoodsStore</option>
+                        <option value="http://schema.org/TireShop">TireShop</option>
+                        <option value="http://schema.org/ToyStore">ToyStore</option>
+                        <option value="http://schema.org/WholesaleStore">WholesaleStore</option>
+                    </select>
                 <select id="pageitemscopeperforminggroup">
-                    <option value="">Select a PerformingGroup Type</option>
-                    <option>DanceGroup</option>
-                    <option>MusicGroup</option>
-                    <option>TheaterGroup</option>
+                    <option value="http://schema.org/PerformingGroup">Select a PerformingGroup Type</option>
+                    <option value="http://schema.org/DanceGroup">DanceGroup</option>
+                    <option value="http://schema.org/MusicGroup">MusicGroup</option>
+                    <option value="http://schema.org/TheaterGroup">TheaterGroup</option>
                 </select>
             <select id="pageitemscopeplace">
-                <option value="">Select a Place Type</option>
-                <option>AdministrativeArea</option>
-                <option>CivicStructure</option>
-                <option>Landform</option>
-                <option>LandmarksOrHistoricalBuildings</option>
-                <option>LocalBusiness</option>
-                <option>Residence</option>
-                <option>TouristAttraction</option>
+                <option value="http://schema.org/Place">Select a Place Type</option>
+                <option value="http://schema.org/AdministrativeArea">AdministrativeArea</option>
+                <option value="http://schema.org/CivicStructure">CivicStructure</option>
+                <option value="http://schema.org/Landform">Landform</option>
+                <option value="http://schema.org/LandmarksOrHistoricalBuildings">LandmarksOrHistoricalBuildings</option>
+                <option value="http://schema.org/Residence">Residence</option>
+                <option value="http://schema.org/TouristAttraction">TouristAttraction</option>
             </select>
                 <select id="pageitemscopeadministrativearea">
-                    <option value="">Select a AdministrativeArea Type</option>
-                    <option>City</option>
-                    <option>Country</option>
-                    <option>State</option>
+                    <option value="http://schema.org/AdministrativeArea">Select a AdministrativeArea Type</option>
+                    <option value="http://schema.org/City">City</option>
+                    <option value="http://schema.org/Country">Country</option>
+                    <option value="http://schema.org/State">State</option>
                 </select>
                 <select id="pageitemscopecivicstructure">
-                    <option value="">Select a CivicStructure Type</option>
-                    <option>Airport</option>
-                    <option>Aquarium</option>
-                    <option>Beach</option>
-                    <option>BusStation</option>
-                    <option>BusStop</option>
-                    <option>Campground</option>
-                    <option>Cemetery</option>
-                    <option>Crematorium</option>
-                    <option>EventVenue</option>
-                    <option>FireStation</option>
-                    <option>GovernmentBuilding</option>
-                    <option>Hospital</option>
-                    <option>MovieTheater</option>
-                    <option>Museum</option>
-                    <option>MusicVenue</option>
-                    <option>Park</option>
-                    <option>ParkingFacility</option>
-                    <option>PerformingArtsTheater</option>
-                    <option>PlaceOfWorship</option>
-                    <option>Playground</option>
-                    <option>PoliceStation</option>
-                    <option>RVPark</option>
-                    <option>StadiumOrArena</option>
-                    <option>SubwayStation</option>
-                    <option>TaxiStand</option>
-                    <option>TrainStation</option>
-                    <option>Zoo</option>
+                    <option value="http://schema.org/CivicStructure">Select a CivicStructure Type</option>
+                    <option value="http://schema.org/Airport">Airport</option>
+                    <option value="http://schema.org/Aquarium">Aquarium</option>
+                    <option value="http://schema.org/Beach">Beach</option>
+                    <option value="http://schema.org/BusStation">BusStation</option>
+                    <option value="http://schema.org/BusStop">BusStop</option>
+                    <option value="http://schema.org/Campground">Campground</option>
+                    <option value="http://schema.org/Cemetery">Cemetery</option>
+                    <option value="http://schema.org/Crematorium">Crematorium</option>
+                    <option value="http://schema.org/EventVenue">EventVenue</option>
+                    <option value="http://schema.org/FireStation">FireStation</option>
+                    <option value="http://schema.org/GovernmentBuilding">GovernmentBuilding</option>
+                    <option value="http://schema.org/Hospital">Hospital</option>
+                    <option value="http://schema.org/MovieTheater">MovieTheater</option>
+                    <option value="http://schema.org/Museum">Museum</option>
+                    <option value="http://schema.org/MusicVenue">MusicVenue</option>
+                    <option value="http://schema.org/Park">Park</option>
+                    <option value="http://schema.org/ParkingFacility">ParkingFacility</option>
+                    <option value="http://schema.org/PerformingArtsTheater">PerformingArtsTheater</option>
+                    <option value="http://schema.org/PlaceOfWorship">PlaceOfWorship</option>
+                    <option value="http://schema.org/Playground">Playground</option>
+                    <option value="http://schema.org/PoliceStation">PoliceStation</option>
+                    <option value="http://schema.org/RVPark">RVPark</option>
+                    <option value="http://schema.org/StadiumOrArena">StadiumOrArena</option>
+                    <option value="http://schema.org/SubwayStation">SubwayStation</option>
+                    <option value="http://schema.org/TaxiStand">TaxiStand</option>
+                    <option value="http://schema.org/TrainStation">TrainStation</option>
+                    <option value="http://schema.org/Zoo">Zoo</option>
                 </select>
-                <select id="pageitemscopegovernmentbuilding">
-                    <option value="">Select a GovernmentBuilding Type</option>
-                    <option>CityHall</option>
-                    <option>Courthouse</option>
-                    <option>DefenceEstablishment</option>
-                    <option>Embassy</option>
-                    <option>LegislativeBuilding</option>
-                </select>
+                    <select id="pageitemscopegovernmentbuilding">
+                    <option value="http://schema.org/GovernmentBuilding">Select a GovernmentBuilding Type</option>
+                    <option value="http://schema.org/CityHall">CityHall</option>
+                    <option value="http://schema.org/Courthouse">Courthouse</option>
+                    <option value="http://schema.org/DefenceEstablishment">DefenceEstablishment</option>
+                    <option value="http://schema.org/Embassy">Embassy</option>
+                    <option value="http://schema.org/LegislativeBuilding">LegislativeBuilding</option>
+                    </select>
+                    <select id="pageitemscopeplaceofworship">
+                        <option value="http://schema.org/PlaceOfWorship">Select a PlaceOfWorship Type</option>
+                        <option value="http://schema.org/BuddhistTemple">BuddhistTemple</option>
+                        <option value="http://schema.org/CatholicChurch">CatholicChurch</option>
+                        <option value="http://schema.org/Church">Church</option>
+                        <option value="http://schema.org/HinduTemple">HinduTemple</option>
+                        <option value="http://schema.org/Mosque">Mosque</option>
+                        <option value="http://schema.org/Synagogue">Synagogue</option>
+                    </select>
                 <select id="pageitemscopelandform">
-                    <option value="">Select a Landform Type</option>
-                    <option>BodyOfWater</option>
-                    <option>Continent</option>
-                    <option>Mountain</option>
-                    <option>Volcano</option>
+                    <option value="http://schema.org/Landform">Select a Landform Type</option>
+                    <option value="http://schema.org/BodyOfWater">BodyOfWater</option>
+                    <option value="http://schema.org/Continent">Continent</option>
+                    <option value="http://schema.org/Mountain">Mountain</option>
+                    <option value="http://schema.org/Volcano">Volcano</option>
                 </select>
-                <select id="pageitemscopebodyofwater">
-                    <option value="">Select a BodyOfWater Type</option>
-                    <option>Canal</option>
-                    <option>LakeBodyOfWater</option>
-                    <option>OceanBodyOfWater</option>
-                    <option>Pond</option>
-                    <option>Reservoir</option>
-                    <option>RiverBodyOfWater</option>
-                    <option>SeaBodyOfWater</option>
-                    <option>Waterfall</option>
-                </select>
+                    <select id="pageitemscopebodyofwater">
+                        <option value="http://schema.org/BodyOfWater">Select a BodyOfWater Type</option>
+                        <option value="http://schema.org/Canal">Canal</option>
+                        <option value="http://schema.org/LakeBodyOfWater">LakeBodyOfWater</option>
+                        <option value="http://schema.org/OceanBodyOfWater">OceanBodyOfWater</option>
+                        <option value="http://schema.org/Pond">Pond</option>
+                        <option value="http://schema.org/Reservoir">Reservoir</option>
+                        <option value="http://schema.org/RiverBodyOfWater">RiverBodyOfWater</option>
+                        <option value="http://schema.org/SeaBodyOfWater">SeaBodyOfWater</option>
+                        <option value="http://schema.org/Waterfall">Waterfall</option>
+                    </select>
                 <select id="pageitemscoperesidence">
-                    <option value="">Select a Residence Type</option>
-                    <option>ApartmentComplex</option>
-                    <option>GatedResidenceCommunity</option>
-                    <option>SingleFamilyResidence</option>
+                    <option value="http://schema.org/Residence">Select a Residence Type</option>
+                    <option value="http://schema.org/ApartmentComplex">ApartmentComplex</option>
+                    <option value="http://schema.org/GatedResidenceCommunity">GatedResidenceCommunity</option>
+                    <option value="http://schema.org/SingleFamilyResidence">SingleFamilyResidence</option>
                 </select>
-                <select id="pageitemscopeproduct">
-                    <option value="">Select a Product Type</option>
-                    <option>IndividualProduct</option>
-                    <option>ProductModel</option>
-                    <option>SomeProducts</option>
-                </select>
-                <select id="pageitemscopeplaceofworship">
-                    <option value="">Select a PlaceOfWorship Type</option>
-                    <option>BuddhistTemple</option>
-                    <option>CatholicChurch</option>
-                    <option>Church</option>
-                    <option>HinduTemple</option>
-                    <option>Mosque</option>
-                    <option>Synagogue</option>
-                </select>
+            <select id="pageitemscopeproduct">
+                    <option value="http://schema.org/Product">Select a Product Type</option>
+                    <option value="http://schema.org/IndividualProduct">IndividualProduct</option>
+                    <option value="http://schema.org/ProductModel">ProductModel</option>
+                    <option value="http://schema.org/SomeProducts">SomeProducts</option>
+            </select>
+                
 <?php
 }

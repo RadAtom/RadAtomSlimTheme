@@ -109,645 +109,773 @@
 	margin: 2em 0em 1em 6em;
 }
 /*list of itemscopes*/
+
 #pageitemscope{
 	display: ;
+	margin-bottom: 1.95em;
 }
 
 	#pageitemscopedatatype{
 		display: none;
 		margin-left: 1.95em;
+		margin-bottom: 1.95em;
 	}
 
 		#pageitemscopenumber{
 		display: none;
 		margin-left: 1.95em;
+		margin-bottom: 1.95em;
 		}
 
 		#pageitemscopetext{
 		display: none;
 		margin-left: 1.95em;
+		margin-bottom: 1.95em;
 		}
 
 	#pageitemscopething{
 		display: none;
 		margin-left: 1.95em;
+		margin-bottom: 1.95em;
 	}
 
 		#pageitemscopeaction{
 		display: none;
 		margin-left: 1.95em;
+		margin-bottom: 1.95em;
 		}
 
 			#pageitemscopeachieveaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeassessaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 				#pageitemscopechooseaction{
 					display: none;
 					margin-left: 1.95em;
+					margin-bottom: 1.95em;
 				}
 
 				#pageitemscopereactaction{
 					display: none;
 					margin-left: 1.95em;
+					margin-bottom: 1.95em;
 				}
 
 			#pageitemscopeconsumeaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 				#pageitemscopeuseaction{
 					display: none;
 					margin-left: 1.95em;
+					margin-bottom: 1.95em;
 				}
 
 			#pageitemscopecreateaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopefindaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeinteractaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 				#pageitemscopecommunicateaction{
 					display: none;
 					margin-left: 1.95em;
+					margin-bottom: 1.95em;
 				}
 
 				#pageitemscopeinformaction{
 					display: none;
 					margin-left: 1.95em;
+					margin-bottom: 1.95em;
 				}
 
 			#pageitemscopemoveaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeorganizeaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 				#pageitemscopeallocateaction{
 					display: none;
 					margin-left: 1.95em;
+					margin-bottom: 1.95em;
 				}
 
 				#pageitemscopeplanaction{
 					display: none;
 					margin-left: 1.95em;
+					margin-bottom: 1.95em;
 				}
 
 			#pageitemscopeplayaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopetradeaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopetransferaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeupdateaction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 				#pageitemscopeaddaction{
 					display: none;
 					margin-left: 1.95em;
+					margin-bottom: 1.95em;
 				}
 
 					#pageitemscopeinsertaction{
 						display: none;
 						margin-left: 1.95em;
+						margin-bottom: 1.95em;
 					}
 
 		#pageitemscopecreativework{
 			display: none;
 			margin-left: 1.95em;
+			margin-bottom: 1.95em;
 		}
 
 			#pageitemscopearticle{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopescholarlyarticle{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopetecharticle{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeclip{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeepisode{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemediaobject{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemusicplaylist{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeseason{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeseries{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopesoftwareapplication{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopewebpage{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopecollectionpage{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopewebpageelement{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 		#pageitemscopeevent{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 		}
 
 			#pageitemscopepublicationevent{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeuserinteraction{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 		#pageitemscopeintangible{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 		}
 
 			#pageitemscopeaudience{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 				#pageitemscopemedicalaudience{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 				}
 
 				#pageitemscopepeopleaudience{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 				}
 
 			#pageitemscopeenumeration{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopebookformattype{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopecontactpointoption{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopedeliverymethod{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
-			#pageitemscopeeventstatusstype{
+			#pageitemscopeeventstatustype{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeitemavailability{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeofferitemcondition{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeorderstatus{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopepaymentmethod{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopespecialty{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalspecialty{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeoffer{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopepermit{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopequantity{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscoperating{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeservice{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopestructuredvalue{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopecontactpoint{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopepricespecification{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 		#pageitemscopemedicalentity{
 			display: none;
 			margin-left: 1.95em;
+			margin-bottom: 1.95em;
 		}
 
 			#pageitemscopeanatomicalstructure{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 				#pageitemscopevessel{
 					display: none;
 					margin-left: 1.95em;
+					margin-bottom: 1.95em;
 				}
 
 			#pageitemscopemedicalcondition{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalguideline{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalguideline{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalindication{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalintangible{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopedoseschedule{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalenumeration{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopedrugcostcatagory{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopedrugpregnancy{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopedrugprescriptionstatus{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeinfectionagentclass{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicaldevicepurpose{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalevidencelevel{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalimagingtechnique{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalobservationalstudydesign{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalproceduretype{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalstudystatus{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicaltrialdesign{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicinesystem{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopephysicalactivitycategory{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopephysicalexam{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalprocedure{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalriskestimator{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalsignorsymptom{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalstudy{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicaltest{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicaltherapy{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopelifestylemodification{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopephysicalactivity{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 		#pageitemscopeorganization{
 			display: none;
 			margin-left: 1.95em;
+			margin-bottom: 1.95em;
 		}
 
 			#pageitemscopeeducationalorganization{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeautomotivebusiness{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeemergencyservice{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeentertainmentbusiness{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopefinancialservice{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopefoodestablishment{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopegovernmentoffice{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopehealthandbeautybusiness{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopehomeandconstructionbusiness{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopelodgingbusiness{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopemedicalorganization{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeprofessionalservice{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopesportsactivitylocation{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopestore{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeperforminggroup{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopelocalbusiness{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopelocalbusiness{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 		#pageitemscopeoerson{
 			display: none;
 			margin-left: 1.95em;
+			margin-bottom: 1.95em;
 		}
 
 		#pageitemscopeplace{
 			display: none;
 			margin-left: 1.95em;
+			margin-bottom: 1.95em;
 		}
 
 			#pageitemscopeadministrativearea{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopecivicstructure{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopegovernmentbuilding{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopelandform{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopebodyofwater{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscoperesidence{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeproduct{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 			#pageitemscopeplaceofworship{
 				display: none;
 				margin-left: 1.95em;
+				margin-bottom: 1.95em;
 			}
 
 		#pageitemscopeproperty{
 			display: none;
 			margin-left: 1.95em;
+			margin-bottom: 1.95em;
 		}
-
 
 /*list of posts and pages created*/
 #pageitemscopepages{
