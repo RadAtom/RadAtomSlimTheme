@@ -752,157 +752,157 @@ function page_itemscopes()
                     <option value="http://schema.org/MedicalConditionStage">MedicalConditionStage</option>
                     <option value="http://schema.org/MedicalEnumeration">MedicalEnumeration</option>
                 </select>
-                <select id="pageitemscopedoseschedule">
-                    <option value="http://schema.org/DoseSchedule">Select a DoseSchedule Type</option>
-                    <option value="http://schema.org/MaximumDoseSchedule">MaximumDoseSchedule</option>
-                    <option value="http://schema.org/RecommendedDoseSchedule">RecommendedDoseSchedule</option>
-                    <option value="http://schema.org/ReportedDoseSchedule">ReportedDoseSchedule</option>
-                </select>
-                <select id="pageitemscopemedicalenumeration">
-                    <option value="http://schema.org/MedicalEnumeration">Select a MedicalEnumeration Type</option>
-                    <option value="http://schema.org/DrugCostCategory">DrugCostCategory</option>
-                    <option value="http://schema.org/DrugPregnancyCategory">DrugPregnancyCategory</option>
-                    <option value="http://schema.org/DrugPrescriptionStatus">DrugPrescriptionStatus</option>
-                    <option value="http://schema.org/InfectiousAgentClass">InfectiousAgentClass</option>
-                    <option value="http://schema.org/MedicalAudience">MedicalAudience</option>
-                    <option value="http://schema.org/MedicalDevicePurpose">MedicalDevicePurpose</option>
-                    <option value="http://schema.org/MedicalEvidenceLevel">MedicalEvidenceLevel</option>
-                    <option value="http://schema.org/MedicalImagingTechnique">MedicalImagingTechnique</option>
-                    <option value="http://schema.org/MedicalObservationalStudyDesign">MedicalObservationalStudyDesign</option>
-                    <option value="http://schema.org/MedicalProcedureType">MedicalProcedureType</option>
-                    <option value="http://schema.org/MedicalSpecialty">MedicalSpecialty</option>
-                    <option value="http://schema.org/MedicalStudyStatus">MedicalStudyStatus</option>
-                    <option value="http://schema.org/MedicalTrialDesign">MedicalTrialDesign</option>
-                    <option value="http://schema.org/MedicineSystem">MedicineSystem</option>
-                    <option value="http://schema.org/PhysicalActivityCategory">PhysicalActivityCategory</option>
-                    <option value="http://schema.org/PhysicalExam">PhysicalExam</option>
-                </select>
-                <select id="pageitemscopedrugcostcatagory">
-                    <option value="http://schema.org/DrugCostCatagory">Select a DrugCostCatagory Type</option>
-                    <option value="http://schema.org/ReimbursementCap">ReimbursementCap</option>
-                    <option value="http://schema.org/Retail">Retail</option>
-                    <option value="http://schema.org/Wholesale">Wholesale</option>
-                </select>
-                <select id="pageitemscopedrugpregnancy">
-                    <option value="http://schema.org/DrugPregnancy">Select a DrugPregnancy Type</option>
-                    <option value="http://schema.org/FDAcategoryA">FDAcategoryA</option>
-                    <option value="http://schema.org/FDAcategoryB">FDAcategoryB</option>
-                    <option value="http://schema.org/FDAcategoryC">FDAcategoryC</option>
-                    <option value="http://schema.org/FDAcategoryD">FDAcategoryD</option>
-                    <option value="http://schema.org/FDAcategoryX">FDAcategoryX</option>
-                    <option value="http://schema.org/FDAnotEvaluated">FDAnotEvaluated</option>
-                </select>
-                <select id="pageitemscopedrugprescriptionstatus">
-                    <option value="http://schema.org/DrugPrescriptionStatus">Select a DrugPrescriptionStatus Type</option>
-                    <option value="http://schema.org/OTC">OTC</option>
-                    <option value="http://schema.org/PrescriptionOnly">PrescriptionOnly</option>
-                </select>
-                <select id="pageitemscopeinfectionagentclass">
-                    <option value="http://schema.org/InfectionAgentClass">Select a InfectionAgentClass Type</option>
-                    <option value="http://schema.org/Bacteria">Bacteria</option>
-                    <option value="http://schema.org/Fungus">Fungus</option>
-                    <option value="http://schema.org/MulticellularParasite">MulticellularParasite</option>
-                    <option value="http://schema.org/Prion">Prion</option>
-                    <option value="http://schema.org/Protozoa">Protozoa</option>
-                    <option value="http://schema.org/Virus">Virus</option>
-                </select>
-                <select id="pageitemscopemedicaldevicepurpose">
-                    <option value="http://schema.org/MedicalDevicePurpose">Select a MedicalDevicePurpose Type</option>
-                    <option value="http://schema.org/Diagnostic">Diagnostic</option>
-                    <option value="http://schema.org/Therapeutic">Therapeutic</option>
-                </select>
-                <select id="pageitemscopemedicalevidencelevel">
-                    <option value="http://schema.org/">Select a MedicalEvidenceLevel Type</option>
-                    <option value="http://schema.org/EvidenceLevelA">EvidenceLevelA</option>
-                    <option value="http://schema.org/EvidenceLevelB">EvidenceLevelB</option>
-                    <option value="http://schema.org/EvidenceLevelC">EvidenceLevelC</option>
-                </select>
-                <select id="pageitemscopemedicalimagingtechnique">
-                    <option value="http://schema.org/MedicalImagingTechnique">Select a MedicalImagingTechnique Type</option>
-                    <option value="http://schema.org/CT">CT</option>
-                    <option value="http://schema.org/MRI">MRI</option>
-                    <option value="http://schema.org/PET">PET</option>
-                    <option value="http://schema.org/Ultrasound">Ultrasound</option>
-                    <option value="http://schema.org/XRay">XRay</option>
-                </select>
-                <select id="pageitemscopemedicalobservationalstudydesign">
-                    <option value="http://schema.org/MedicalObservationalStudyDesign">Select a MedicalObservationalStudyDesign Type</option>
-                    <option value="http://schema.org/CaseSeries">CaseSeries</option>
-                    <option value="http://schema.org/CohortStudy">CohortStudy</option>
-                    <option value="http://schema.org/CrossSectional">CrossSectional</option>
-                    <option value="http://schema.org/Longitudinal">Longitudinal</option>
-                    <option value="http://schema.org/Observational">Observational</option>
-                    <option value="http://schema.org/Registry">Registry</option>
-                </select>
-                <select id="pageitemscopemedicalproceduretype">
-                    <option value="http://schema.org/MedicalProcedureType">Select a MedicalProcedureType Type</option>
-                    <option value="http://schema.org/NoninvasiveProcedure">NoninvasiveProcedure</option>
-                    <option value="http://schema.org/PercutaneousProcedure">PercutaneousProcedure</option>
-                    <option value="http://schema.org/SurgicalProcedure">SurgicalProcedure</option>
-                </select>
-                </select>
-                <select id="pageitemscopemedicalstudystatus">
-                    <option value="http://schema.org/MedicalStudyStatus">Select a MedicalStudyStatus Type</option>
-                    <option value="http://schema.org/ActiveNotRecruiting">ActiveNotRecruiting</option>
-                    <option value="http://schema.org/Completed">Completed</option>
-                    <option value="http://schema.org/EnrollingByInvitation">EnrollingByInvitation</option>
-                    <option value="http://schema.org/NotYetRecruiting">NotYetRecruiting</option>
-                    <option value="http://schema.org/Recruiting">Recruiting</option>
-                    <option value="http://schema.org/ResultsAvailable">ResultsAvailable</option>
-                    <option value="http://schema.org/ResultsNotAvailable">ResultsNotAvailable</option>
-                    <option value="http://schema.org/Suspended">Suspended</option>
-                    <option value="http://schema.org/Terminated">Terminated</option>
-                    <option value="http://schema.org/Withdrawn">Withdrawn</option>
-                </select>
-                <select id="pageitemscopemedicaltrialdesign">
-                    <option value="http://schema.org/MedicalTrialDesign">Select a MedicalTrialDesign Type</option>
-                    <option value="http://schema.org/DoubleBlindedTrial">DoubleBlindedTrial</option>
-                    <option value="http://schema.org/InternationalTrial">InternationalTrial</option>
-                    <option value="http://schema.org/MultiCenterTrial">MultiCenterTrial</option>
-                    <option value="http://schema.org/OpenTrial">OpenTrial</option>
-                    <option value="http://schema.org/PlaceboControlledTrial">PlaceboControlledTrial</option>
-                    <option value="http://schema.org/RandomizedTrial">RandomizedTrial</option>
-                    <option value="http://schema.org/SingleBlindedTrial">SingleBlindedTrial</option>
-                    <option value="http://schema.org/SingleCenterTrial">SingleCenterTrial</option>
-                    <option value="http://schema.org/TripleBlindedTrial">TripleBlindedTrial</option>
-                </select>
-                <select id="pageitemscopemedicinesystem">
-                    <option value="http://schema.org/MedicineSystem">Select a MedicineSystem Type</option>
-                    <option value="http://schema.org/Ayurvedic">Ayurvedic</option>
-                    <option value="http://schema.org/Chiropractic">Chiropractic</option>
-                    <option value="http://schema.org/Homeopathic">Homeopathic</option>
-                    <option value="http://schema.org/Osteopathic">Osteopathic</option>
-                    <option value="http://schema.org/TraditionalChinese">TraditionalChinese</option>
-                    <option value="http://schema.org/WesternConventional">WesternConventional</option>
-                </select>
-                <select id="pageitemscopephysicalactivitycategory">
-                    <option value="http://schema.org/PhysicalActivityCategory">Select a PhysicalActivityCategory Type</option>
-                    <option value="http://schema.org/AerobicActivity">AerobicActivity</option>
-                    <option value="http://schema.org/AnaerobicActivity">AnaerobicActivity</option>
-                    <option value="http://schema.org/Balance">Balance</option>
-                    <option value="http://schema.org/Flexibility">Flexibility</option>
-                    <option value="http://schema.org/LeisureTimeActivity">LeisureTimeActivity</option>
-                    <option value="http://schema.org/OccupationalActivity">OccupationalActivity</option>
-                    <option value="http://schema.org/StrengthTraining">StrengthTraining</option>
-                </select>
-                <select id="pageitemscopephysicalexam">
-                    <option value="http://schema.org/PhysicalExam">Select a PhysicalExam Type</option>
-                    <option value="http://schema.org/Abdomen">Abdomen</option>
-                    <option value="http://schema.org/Appearance">Appearance</option>
-                    <option value="http://schema.org/CardiovascularExam">CardiovascularExam</option>
-                    <option value="http://schema.org/Ear">Ear</option>
-                    <option value="http://schema.org/Eye">Eye</option>
-                    <option value="http://schema.org/Genitourinary">Genitourinary</option>
-                    <option value="http://schema.org/Head">Head</option>
-                    <option value="http://schema.org/Lung">Lung</option>
-                    <option value="http://schema.org/MusculoskeletalExam">MusculoskeletalExam</option>
-                    <option value="http://schema.org/Neck">Neck</option>
-                    <option value="http://schema.org/Neuro">Neuro</option>
-                    <option value="http://schema.org/Nose">Nose</option>
-                    <option value="http://schema.org/Skin">Skin</option>
-                    <option value="http://schema.org/Throat">Throat</option>
-                    <option value="http://schema.org/VitalSign">VitalSign</option>
-                </select>
+                    <select id="pageitemscopedoseschedule">
+                        <option value="http://schema.org/DoseSchedule">Select a DoseSchedule Type</option>
+                        <option value="http://schema.org/MaximumDoseSchedule">MaximumDoseSchedule</option>
+                        <option value="http://schema.org/RecommendedDoseSchedule">RecommendedDoseSchedule</option>
+                        <option value="http://schema.org/ReportedDoseSchedule">ReportedDoseSchedule</option>
+                    </select>
+                    <select id="pageitemscopemedicalenumeration">
+                        <option value="http://schema.org/MedicalEnumeration">Select a MedicalEnumeration Type</option>
+                        <option value="http://schema.org/DrugCostCategory">DrugCostCategory</option>
+                        <option value="http://schema.org/DrugPregnancyCategory">DrugPregnancyCategory</option>
+                        <option value="http://schema.org/DrugPrescriptionStatus">DrugPrescriptionStatus</option>
+                        <option value="http://schema.org/InfectiousAgentClass">InfectiousAgentClass</option>
+                        <option value="http://schema.org/MedicalAudience">MedicalAudience</option>
+                        <option value="http://schema.org/MedicalDevicePurpose">MedicalDevicePurpose</option>
+                        <option value="http://schema.org/MedicalEvidenceLevel">MedicalEvidenceLevel</option>
+                        <option value="http://schema.org/MedicalImagingTechnique">MedicalImagingTechnique</option>
+                        <option value="http://schema.org/MedicalObservationalStudyDesign">MedicalObservationalStudyDesign</option>
+                        <option value="http://schema.org/MedicalProcedureType">MedicalProcedureType</option>
+                        <option value="http://schema.org/MedicalSpecialty">MedicalSpecialty</option>
+                        <option value="http://schema.org/MedicalStudyStatus">MedicalStudyStatus</option>
+                        <option value="http://schema.org/MedicalTrialDesign">MedicalTrialDesign</option>
+                        <option value="http://schema.org/MedicineSystem">MedicineSystem</option>
+                        <option value="http://schema.org/PhysicalActivityCategory">PhysicalActivityCategory</option>
+                        <option value="http://schema.org/PhysicalExam">PhysicalExam</option>
+                    </select>
+                        <select id="pageitemscopedrugcostcategory">
+                            <option value="http://schema.org/DrugCostCatagory">Select a DrugCostCategory Type</option>
+                            <option value="http://schema.org/ReimbursementCap">ReimbursementCap</option>
+                            <option value="http://schema.org/Retail">Retail</option>
+                            <option value="http://schema.org/Wholesale">Wholesale</option>
+                        </select>
+                        <select id="pageitemscopedrugpregnancycategory">
+                            <option value="http://schema.org/DrugPregnancy">Select a DrugPregnancyCategory Type</option>
+                            <option value="http://schema.org/FDAcategoryA">FDAcategoryA</option>
+                            <option value="http://schema.org/FDAcategoryB">FDAcategoryB</option>
+                            <option value="http://schema.org/FDAcategoryC">FDAcategoryC</option>
+                            <option value="http://schema.org/FDAcategoryD">FDAcategoryD</option>
+                            <option value="http://schema.org/FDAcategoryX">FDAcategoryX</option>
+                            <option value="http://schema.org/FDAnotEvaluated">FDAnotEvaluated</option>
+                        </select>
+                        <select id="pageitemscopedrugprescriptionstatus">
+                            <option value="http://schema.org/DrugPrescriptionStatus">Select a DrugPrescriptionStatus Type</option>
+                            <option value="http://schema.org/OTC">OTC</option>
+                            <option value="http://schema.org/PrescriptionOnly">PrescriptionOnly</option>
+                        </select>
+                        <select id="pageitemscopeinfectiousagentclass">
+                            <option value="http://schema.org/InfectiousAgentClass">Select a InfectiousAgentClass Type</option>
+                            <option value="http://schema.org/Bacteria">Bacteria</option>
+                            <option value="http://schema.org/Fungus">Fungus</option>
+                            <option value="http://schema.org/MulticellularParasite">MulticellularParasite</option>
+                            <option value="http://schema.org/Prion">Prion</option>
+                            <option value="http://schema.org/Protozoa">Protozoa</option>
+                            <option value="http://schema.org/Virus">Virus</option>
+                        </select>
+                        <select id="pageitemscopemedicaldevicepurpose">
+                            <option value="http://schema.org/MedicalDevicePurpose">Select a MedicalDevicePurpose Type</option>
+                            <option value="http://schema.org/Diagnostic">Diagnostic</option>
+                            <option value="http://schema.org/Therapeutic">Therapeutic</option>
+                        </select>
+                        <select id="pageitemscopemedicalevidencelevel">
+                            <option value="http://schema.org/">Select a MedicalEvidenceLevel Type</option>
+                            <option value="http://schema.org/EvidenceLevelA">EvidenceLevelA</option>
+                            <option value="http://schema.org/EvidenceLevelB">EvidenceLevelB</option>
+                            <option value="http://schema.org/EvidenceLevelC">EvidenceLevelC</option>
+                        </select>
+                        <select id="pageitemscopemedicalimagingtechnique">
+                            <option value="http://schema.org/MedicalImagingTechnique">Select a MedicalImagingTechnique Type</option>
+                            <option value="http://schema.org/CT">CT</option>
+                            <option value="http://schema.org/MRI">MRI</option>
+                            <option value="http://schema.org/PET">PET</option>
+                            <option value="http://schema.org/Ultrasound">Ultrasound</option>
+                            <option value="http://schema.org/XRay">XRay</option>
+                        </select>
+                        <select id="pageitemscopemedicalobservationalstudydesign">
+                            <option value="http://schema.org/MedicalObservationalStudyDesign">Select a MedicalObservationalStudyDesign Type</option>
+                            <option value="http://schema.org/CaseSeries">CaseSeries</option>
+                            <option value="http://schema.org/CohortStudy">CohortStudy</option>
+                            <option value="http://schema.org/CrossSectional">CrossSectional</option>
+                            <option value="http://schema.org/Longitudinal">Longitudinal</option>
+                            <option value="http://schema.org/Observational">Observational</option>
+                            <option value="http://schema.org/Registry">Registry</option>
+                        </select>
+                        <select id="pageitemscopemedicalproceduretype">
+                            <option value="http://schema.org/MedicalProcedureType">Select a MedicalProcedureType Type</option>
+                            <option value="http://schema.org/NoninvasiveProcedure">NoninvasiveProcedure</option>
+                            <option value="http://schema.org/PercutaneousProcedure">PercutaneousProcedure</option>
+                            <option value="http://schema.org/SurgicalProcedure">SurgicalProcedure</option>
+                        </select>
+                        </select>
+                        <select id="pageitemscopemedicalstudystatus">
+                            <option value="http://schema.org/MedicalStudyStatus">Select a MedicalStudyStatus Type</option>
+                            <option value="http://schema.org/ActiveNotRecruiting">ActiveNotRecruiting</option>
+                            <option value="http://schema.org/Completed">Completed</option>
+                            <option value="http://schema.org/EnrollingByInvitation">EnrollingByInvitation</option>
+                            <option value="http://schema.org/NotYetRecruiting">NotYetRecruiting</option>
+                            <option value="http://schema.org/Recruiting">Recruiting</option>
+                            <option value="http://schema.org/ResultsAvailable">ResultsAvailable</option>
+                            <option value="http://schema.org/ResultsNotAvailable">ResultsNotAvailable</option>
+                            <option value="http://schema.org/Suspended">Suspended</option>
+                            <option value="http://schema.org/Terminated">Terminated</option>
+                            <option value="http://schema.org/Withdrawn">Withdrawn</option>
+                        </select>
+                        <select id="pageitemscopemedicaltrialdesign">
+                            <option value="http://schema.org/MedicalTrialDesign">Select a MedicalTrialDesign Type</option>
+                            <option value="http://schema.org/DoubleBlindedTrial">DoubleBlindedTrial</option>
+                            <option value="http://schema.org/InternationalTrial">InternationalTrial</option>
+                            <option value="http://schema.org/MultiCenterTrial">MultiCenterTrial</option>
+                            <option value="http://schema.org/OpenTrial">OpenTrial</option>
+                            <option value="http://schema.org/PlaceboControlledTrial">PlaceboControlledTrial</option>
+                            <option value="http://schema.org/RandomizedTrial">RandomizedTrial</option>
+                            <option value="http://schema.org/SingleBlindedTrial">SingleBlindedTrial</option>
+                            <option value="http://schema.org/SingleCenterTrial">SingleCenterTrial</option>
+                            <option value="http://schema.org/TripleBlindedTrial">TripleBlindedTrial</option>
+                        </select>
+                        <select id="pageitemscopemedicinesystem">
+                            <option value="http://schema.org/MedicineSystem">Select a MedicineSystem Type</option>
+                            <option value="http://schema.org/Ayurvedic">Ayurvedic</option>
+                            <option value="http://schema.org/Chiropractic">Chiropractic</option>
+                            <option value="http://schema.org/Homeopathic">Homeopathic</option>
+                            <option value="http://schema.org/Osteopathic">Osteopathic</option>
+                            <option value="http://schema.org/TraditionalChinese">TraditionalChinese</option>
+                            <option value="http://schema.org/WesternConventional">WesternConventional</option>
+                        </select>
+                        <select id="pageitemscopephysicalactivitycategory">
+                            <option value="http://schema.org/PhysicalActivityCategory">Select a PhysicalActivityCategory Type</option>
+                            <option value="http://schema.org/AerobicActivity">AerobicActivity</option>
+                            <option value="http://schema.org/AnaerobicActivity">AnaerobicActivity</option>
+                            <option value="http://schema.org/Balance">Balance</option>
+                            <option value="http://schema.org/Flexibility">Flexibility</option>
+                            <option value="http://schema.org/LeisureTimeActivity">LeisureTimeActivity</option>
+                            <option value="http://schema.org/OccupationalActivity">OccupationalActivity</option>
+                            <option value="http://schema.org/StrengthTraining">StrengthTraining</option>
+                        </select>
+                        <select id="pageitemscopephysicalexam">
+                            <option value="http://schema.org/PhysicalExam">Select a PhysicalExam Type</option>
+                            <option value="http://schema.org/Abdomen">Abdomen</option>
+                            <option value="http://schema.org/Appearance">Appearance</option>
+                            <option value="http://schema.org/CardiovascularExam">CardiovascularExam</option>
+                            <option value="http://schema.org/Ear">Ear</option>
+                            <option value="http://schema.org/Eye">Eye</option>
+                            <option value="http://schema.org/Genitourinary">Genitourinary</option>
+                            <option value="http://schema.org/Head">Head</option>
+                            <option value="http://schema.org/Lung">Lung</option>
+                            <option value="http://schema.org/MusculoskeletalExam">MusculoskeletalExam</option>
+                            <option value="http://schema.org/Neck">Neck</option>
+                            <option value="http://schema.org/Neuro">Neuro</option>
+                            <option value="http://schema.org/Nose">Nose</option>
+                            <option value="http://schema.org/Skin">Skin</option>
+                            <option value="http://schema.org/Throat">Throat</option>
+                            <option value="http://schema.org/VitalSign">VitalSign</option>
+                        </select>
                 <select id="pageitemscopemedicalprocedure">
                     <option value="http://schema.org/MedicalProcedure">Select a MedicalProcedure Type</option>
                     <option value="http://schema.org/DiagnosticProcedure">DiagnosticProcedure</option>
@@ -944,14 +944,14 @@ function page_itemscopes()
                     <option value="http://schema.org/RadiationTherapy">RadiationTherapy</option>
                     <option value="http://schema.org/TherapeuticProcedure">TherapeuticProcedure</option>
                 </select>
-                <select id="pageitemscopelifestylemodification">
-                    <option value="http://schema.org/LifestyleModification">Select a LifestyleModification Type</option>
-                    <option value="http://schema.org/Diet">Diet</option>
-                    <option value="http://schema.org/PhysicalActivity">PhysicalActivity</option>
-                </select>
-                <select id="pageitemscopephysicalactivity">
-                    <option value="http://schema.org/">Select a PhysicalActivity Type</option>
-                    <option value="http://schema.org/ExercisePlan">ExercisePlan</option>
+                    <select id="pageitemscopelifestylemodification">
+                        <option value="http://schema.org/LifestyleModification">Select a LifestyleModification Type</option>
+                        <option value="http://schema.org/Diet">Diet</option>
+                        <option value="http://schema.org/PhysicalActivity">PhysicalActivity</option>
+                    </select>
+                    <select id="pageitemscopephysicalactivity">
+                        <option value="http://schema.org/">Select a PhysicalActivity Type</option>
+                        <option value="http://schema.org/ExercisePlan">ExercisePlan</option>
                 </select>
             <select id="pageitemscopeorganization">
                 <option value="http://schema.org/Organization">Select a Organization Type</option>
