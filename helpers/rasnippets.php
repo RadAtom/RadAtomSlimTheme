@@ -4,7 +4,7 @@ add_action( 'admin_init', 'ra_snippets_homeinit' );
 add_action( 'admin_init', 'ra_snippets_pageinit' );
 add_action( 'admin_init', 'ra_snippets_contentinit' );
 add_action( 'admin_init', 'ra_snippets_itempropinit' );
-add_action( 'admin_init', 'place_ra_snippets' );
+
 
 
 function rasnippets_admin_menu()  
@@ -45,7 +45,7 @@ function create_rasnippets_page() {
                 if( $active_tab == 'pageitemscope' ) {
                     settings_fields( 'radatom_ra_snippets_page_option');   
                     do_settings_sections( 'radatom_ra_snippets_page_option' );
-                    submit_button();
+                    echo '<input type="submit" name="submit" id="submit" class="button button-primary" value="Save Changes" onclick="'.place_ra_snippets().'">';
                 }else if( $active_tab == 'contentitemscope' ) {
                     settings_fields( 'radatom_ra_snippets_content_option');   
                     do_settings_sections( 'radatom_ra_snippets_content_option' );
@@ -223,7 +223,24 @@ function ra_snippets_itempropinit()
 
 function place_ra_snippets()
 {
+    //Sanitizes input
 
+    $post = $_POST('pageid');
+
+    //Updates Ra Snippet field
+    update_post_meta( $post, 'pageitemscope', $mydata );
+}
+
+function sanitize( $input )
+{
+    $new_input = array();
+    if( isset( $input['show_pagetab'] ) )
+        $new_input['show_pagetab'] = absint( $input['show_pagetab'] );
+
+    if( isset( $input['show_contenttab'] ) )
+        $new_input['show_contenttab'] = absint( $input['show_contenttab'] );
+        
+    return $new_input;
 }
 
 function home_content()
@@ -258,7 +275,7 @@ function pageitemscope_content()
                 <br>
                 for Page:
                 <form action="<? bloginfo('url'); ?>" method="get">
-                <select name="page_id" id="page_id">
+                <select name="pageid" id="pageid">
                     <?php
                     global $post;
                     $args = array( 

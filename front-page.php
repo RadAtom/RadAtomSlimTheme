@@ -16,10 +16,10 @@ get_header();
 				?>
 				<li>
 					<div class="large-8 columns">
-						<h2 id="oh1">Why Rad Atom?</h2>
-						<h3 id="osh1" class="subheader">Simplicity. That is why.</h3>
-						<h5 id="od1" class="subheader">No matter if it's a Small Business Website, an E-Commerce Website, or a Creative Idea of any size, your website is no match for the Rad Atom process.</h4>
-						<p id="ob1"><a href="/schedule-a-meeting/">Click Here to Learn More</a></p>
+						<h2 id="orbit-header-1">Why Rad Atom?</h2>
+						<h3 id="orbit-subheader-1" class="subheader">Simplicity. That is why.</h3>
+						<h5 id="orbit-description-1" class="subheader">No matter if it's a Small Business Website, an E-Commerce Website, or a Creative Idea of any size, your website is no match for the Rad Atom process.</h4>
+						<p id="orbit-button-1"><a href="/schedule-a-meeting/">Click Here to Learn More</a></p>
 					</div>
 					<div class="large-5 columns">
 						<img src="">
@@ -31,10 +31,10 @@ get_header();
 			?>
 			<li>
 				<div class="large-8 columns">
-					<h2 id="oh1">Why Rad Atom?</h2>
-					<h3 id="osh1" class="subheader">Simplicity. That is why.</h3>
-					<h5 id="od1" class="subheader">No matter if it's a Small Business Website, an E-Commerce Website, or a Creative Idea of any size, your website is no match for the Rad Atom process.</h4>
-					<p id="ob1"><a href="/schedule-a-meeting/">Click Here to Learn More</a></p>
+					<h2 id="orbit-header-1">Why Rad Atom?</h2>
+					<h3 id="orbit-subheader-1" class="subheader">Simplicity. That is why.</h3>
+					<h5 id="orbit-description-1" class="subheader">No matter if it's a Small Business Website, an E-Commerce Website, or a Creative Idea of any size, your website is no match for the Rad Atom process.</h4>
+					<p id="orbit-button-1"><a href="/schedule-a-meeting/">Click Here to Learn More</a></p>
 				</div>
 				<div class="large-5 columns">
 					<img src="">
@@ -42,10 +42,10 @@ get_header();
 			</li>
 			<li>
 				<div class="large-8 columns">
-					<h2 id="oh2">Our Prior Work</h2>
-					<h3 id="osh2" class="subheader">Proof of our method</h3>
-					<h5 id="od2" class="subheader">If our word alone is not suffiecient enough for you to believe Rad Atom on the quality we promise, why not judge our work for yourself by taking a look at our portfolio?</h4>
-					<p id="ob2"><a href="/portfolio/">Click Here for Our Portfolio</a></p>
+					<h2 id="orbit-header-2">Our Prior Work</h2>
+					<h3 id="orbit-subheader-2" class="subheader">Proof of our method</h3>
+					<h5 id="orbit-description-2" class="subheader">If our word alone is not suffiecient enough for you to believe Rad Atom on the quality we promise, why not judge our work for yourself by taking a look at our portfolio?</h4>
+					<p id="orbit-button-2"><a href="/portfolio/">Click Here for Our Portfolio</a></p>
 				</div>
 				<div class="large-5 columns">
 					<img src="">
@@ -53,10 +53,10 @@ get_header();
 			</li>
 			<li>
 				<div class="large-8 columns">
-					<h2 id="oh3">Your Experience</h2>
-					<h3 id="osh3" class="subheader">Customer Service Track Record</h3>
-					<h5 id="od3" class="subheader">We value ourselves on providing an informative and enjoyable experience for each and every client. Please tell us your opinion on our service and finished product we offered.</h4>
-					<p id="ob3"><a href="/client-testimony/">Click Here for Our Track Record</a></p>
+					<h2 id="orbit-header-3">Your Experience</h2>
+					<h3 id="orbit-subheader-3" class="subheader">Customer Service Track Record</h3>
+					<h5 id="orbit-description-3" class="subheader">We value ourselves on providing an informative and enjoyable experience for each and every client. Please tell us your opinion on our service and finished product we offered.</h4>
+					<p id="orbit-button-3"><a href="/client-testimony/">Click Here for Our Track Record</a></p>
 				</div>
 				<div class="large-5 columns">
 					<img src="">
@@ -70,9 +70,9 @@ get_header();
 
 
 <div id="front-content-wrapper" class="row">
-	<div class="inner-bezell bezzled small-13 columns">
+	<div id="front-content-question" class="inner-bezell bezzled small-13 columns">
 		<div id="content" class="small-13 columns">
-			<h3 id="fpq">Is your website ready for Tomorrow's technology?</h3>
+			<h3 id="front-page-question">Is your website ready for Tomorrow's technology?</h3>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
 			<?php endwhile; endif; ?>
