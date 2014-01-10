@@ -121,7 +121,10 @@ body{
 	width: 	9em;
 	margin-top: 0.5em;
 	margin-left: -0.3em;
-	background: -webkit-radial-gradient(circle, #F5F5F5 -150%, #a5a5a5 5%, #3c3c3c 100%);
+	background: -webkit-radial-gradient(#F5F5F5 -150%, #a5a5a5 -50%, #3c3c3c 100%);
+	background: -o-radial-gradient(#F5F5F5 -150%, #a5a5a5 -50%, #3c3c3c 100%);
+	background: -moz-radial-gradient(#F5F5F5 -150%, #a5a5a5 -50%, #3c3c3c 100%);
+	background: radial-gradient(#F5F5F5 -150%, #a5a5a5 -50%, #3c3c3c 100%);
 }
 
 #navbuttonbox{
@@ -178,10 +181,10 @@ body{
 	width: 9em;
 	margin-top: 0.5em;
 	margin-left: -0.5em;
-	background: -webkit-radial-gradient(circle, #F5F5F5 -150%, #a5a5a5 5%, #3c3c3c 100%);
-	background: -o-radial-gradient(circle, #F5F5F5 -150%, #a5a5a5 5%, #3c3c3c 100%);
-	background: -moz-radial-gradient(circle, #F5F5F5 -150%, #a5a5a5 5%, #3c3c3c 100%);
-	background: radial-gradient(circle, #F5F5F5 -150%, #a5a5a5 5%, #3c3c3c 100%);
+	background: -webkit-radial-gradient(#F5F5F5 -150%, #a5a5a5 -50%, #3c3c3c 100%);
+	background: -o-radial-gradient(#F5F5F5 -150%, #a5a5a5 -50%, #3c3c3c 100%);
+	background: -moz-radial-gradient(#F5F5F5 -150%, #a5a5a5 -50%, #3c3c3c 100%);
+	background: radial-gradient(#F5F5F5 -150%, #a5a5a5 -50%, #3c3c3c 100%);
 }
 
 #socialbuttonbox{
