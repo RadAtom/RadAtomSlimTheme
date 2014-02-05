@@ -1,33 +1,27 @@
 <?php
 add_action( 'admin_menu', 'rasnippets_admin_menu' );
-add_action( 'admin_init', 'ra_snippets_init' );
+add_action( 'admin_init', 'ra_snippets_homeinit' );
+add_action( 'admin_init', 'ra_snippets_pageinit' );
+add_action( 'admin_init', 'ra_snippets_contentinit' );
+add_action( 'admin_init', 'ra_snippets_itempropinit' );
+add_action( 'admin_init', 'place_ra_snippets' );
 
 
 function rasnippets_admin_menu()  
 {  
     // add subsetting to settings
-    add_options_page(
+    add_submenu_page(
+        'ra-settings',
         'Ra Snippets',
         'Ra Snippets',
         'manage_options',
         'radatom-ra-snippets',
-        'create_admin_page'
+        'create_rasnippets_page'
     );
 }
 
-function ra_snippets_init()
-{
-    wp_enqueue_style( 'rasettings', get_template_directory_uri().'/helpers/css/rasettings.css', false, '1.0', 'all');
-    wp_enqueue_script('jquery');
-    wp_register_script('rasnippets', get_template_directory_uri().'/helpers/js/rasnippets.js', array('jquery'), null ); 
-    wp_enqueue_script('rasnippets');
-
-}
-    
-function create_admin_page( $current = 'homepage' ) 
-{
-    $options = get_option( 'radatom_ra_snippets_option' );
-    ?>
+function create_rasnippets_page() {
+?>
     <div class="wrap">
         <?php screen_icon(); ?>
         <h2>Ra Snippets</h2>
@@ -45,28 +39,196 @@ function create_admin_page( $current = 'homepage' )
         </h2>
         <div>
         <form method="post" action="options.php">
-            <?php  
+            <?php
+                $value = get_option( 'pageitemscope' );
                 $active_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'home';
-                if( $active_tab == 'pageitemscope' ) {  
-                    pageitemscope_content();
+                if( $active_tab == 'pageitemscope' ) {
+                    settings_fields( 'radatom_ra_snippets_page_option');   
+                    do_settings_sections( 'radatom_ra_snippets_page_option' );
+                    submit_button();
                 }else if( $active_tab == 'contentitemscope' ) {
-                    contentitemscope_content();
+                    settings_fields( 'radatom_ra_snippets_content_option');   
+                    do_settings_sections( 'radatom_ra_snippets_content_option' );
+                    submit_button();
                 }else if( $active_tab == 'itemprop' ) {
-                    itemprop_content();
-                }else { 
-                    home_content();
+                    settings_fields( 'radatom_ra_snippets_itemprop_option');   
+                    do_settings_sections( 'radatom_ra_snippets_itemprop_option' );
+                    submit_button();
+                }else{
+                    settings_fields( 'radatom_ra_snippets_option');   
+                    do_settings_sections( 'radatom_ra_snippets_option' );     
                 }
-                submit_button();
-            ?> 
+            ?>
         </form>
         </div>
     </div>
-    <?
+<?php
+}
+
+function ra_snippets_homeinit()
+{
+    // If the home options doesn't exist, create it  
+    if( false == get_option( 'radatom_ra_snippets_option' ) ) {     
+        add_option( 'radatom_ra_snippets_option' );
+    }
+
+    add_settings_section(
+        'radatom_ra_snippets_id', // ID
+        '', // Title
+        '', // Callback
+        'radatom_ra_snippets_option' // Page
+    );  
+
+    add_settings_field(
+        'show_hometab', // ID
+        '', // Title 
+        'home_content', // Callback
+        'radatom_ra_snippets_option', // Page
+        'radatom_ra_snippets_id' // Section           
+    );
+    // Finally, we register the fields with WordPress
+    register_setting(
+        'radatom_ra_snippets_option', // Option group
+        'radatom_ra_snippets_option', // Option name
+        'sanitize' // Sanitize
+    );
+    wp_enqueue_style( 'rasettings', get_template_directory_uri().'/helpers/css/rasettings.css', false, '1.0', 'all');
+    wp_enqueue_script('jquery');
+    wp_enqueue_style( 'pageitemscopes', get_template_directory_uri().'/helpers/css/pageitemscopes.css', false, '1.0', 'all');
+    wp_enqueue_script('jquery');
+    wp_register_script('rasnippets-page', get_template_directory_uri().'/helpers/js/rasnippets-page.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-page');
+    wp_register_script('rasnippets-content', get_template_directory_uri().'/helpers/js/rasnippets-content.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-content');
+    wp_register_script('rasnippets-itemprop', get_template_directory_uri().'/helpers/js/rasnippets-itemprop.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-itemprop');
+}
+
+function ra_snippets_pageinit()
+{
+    // If the home options doesn't exist, create it  
+    if( false == get_option( 'radatom_ra_snippets_page_option' ) ) {     
+        add_option( 'radatom_ra_snippets_page_option' );
+    }
+
+    add_settings_section(
+        'radatom_ra_snippets_page_id', // ID
+        '', // Title
+        '', // Callback
+        'radatom_ra_snippets_page_option' // Page
+    );  
+
+    add_settings_field(
+        'show_pagetab', // ID
+        '', // Title 
+        'pageitemscope_content', // Callback
+        'radatom_ra_snippets_page_option', // Page
+        'radatom_ra_snippets_page_id' // Section           
+    );
+    // Finally, we register the fields with WordPress
+    register_setting(
+        'radatom_ra_snippets_page_option', // Option group
+        'radatom_ra_snippets_page_option', // Option name
+        'sanitize' // Sanitize
+    );
+    wp_enqueue_style( 'rasettings', get_template_directory_uri().'/helpers/css/rasettings.css', false, '1.0', 'all');
+    wp_enqueue_script('jquery');
+    wp_enqueue_style( 'pageitemscopes', get_template_directory_uri().'/helpers/css/pageitemscopes.css', false, '1.0', 'all');
+    wp_enqueue_script('jquery');
+    wp_register_script('rasnippets-page', get_template_directory_uri().'/helpers/js/rasnippets-page.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-page');
+    wp_register_script('rasnippets-content', get_template_directory_uri().'/helpers/js/rasnippets-content.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-content');
+    wp_register_script('rasnippets-itemprop', get_template_directory_uri().'/helpers/js/rasnippets-itemprop.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-itemprop');
+}
+
+function ra_snippets_contentinit()
+{
+    // If the home options doesn't exist, create it  
+    if( false == get_option( 'radatom_ra_snippets_content_option' ) ) {     
+        add_option( 'radatom_ra_snippets_content_option' );
+    }
+
+    add_settings_section(
+        'radatom_ra_snippets_content_id', // ID
+        '', // Title
+        '', // Callback
+        'radatom_ra_snippets_content_option' // Page
+    );  
+
+    add_settings_field(
+        'show_contenttab', // ID
+        '', // Title 
+        'contentitemscope_content', // Callback
+        'radatom_ra_snippets_content_option', // Page
+        'radatom_ra_snippets_content_id' // Section           
+    );
+    // Finally, we register the fields with WordPress
+    register_setting(
+        'radatom_ra_snippets_content_option', // Option group
+        'radatom_ra_snippets_content_option', // Option name
+        'sanitize' // Sanitize
+    );
+    wp_enqueue_style( 'rasettings', get_template_directory_uri().'/helpers/css/rasettings.css', false, '1.0', 'all');
+    wp_enqueue_script('jquery');
+    wp_enqueue_style( 'pageitemscopes', get_template_directory_uri().'/helpers/css/pageitemscopes.css', false, '1.0', 'all');
+    wp_enqueue_script('jquery');
+    wp_register_script('rasnippets-page', get_template_directory_uri().'/helpers/js/rasnippets-page.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-page');
+    wp_register_script('rasnippets-content', get_template_directory_uri().'/helpers/js/rasnippets-content.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-content');
+    wp_register_script('rasnippets-itemprop', get_template_directory_uri().'/helpers/js/rasnippets-itemprop.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-itemprop');
+}
+
+function ra_snippets_itempropinit()
+{
+    // If the home options doesn't exist, create it  
+    if( false == get_option( 'radatom_ra_snippets_itemprop_option' ) ) {     
+        add_option( 'radatom_ra_snippets_itemprop_option' );
+    }
+
+    add_settings_section(
+        'radatom_ra_snippets_itemprop_id', // ID
+        '', // Title
+        '', // Callback
+        'radatom_ra_snippets_itemprop_option' // Page
+    );  
+
+    add_settings_field(
+        'show_itemproptab', // ID
+        '', // Title 
+        'itemprop_content', // Callback
+        'radatom_ra_snippets_itemprop_option', // Page
+        'radatom_ra_snippets_itemprop_id' // Section           
+    );
+    // Finally, we register the fields with WordPress
+    register_setting(
+        'radatom_ra_snippets_itemprop_option', // Option group
+        'radatom_ra_snippets_itemprop_option', // Option name
+        'sanitize' // Sanitize
+    );
+    wp_enqueue_style( 'rasettings', get_template_directory_uri().'/helpers/css/rasettings.css', false, '1.0', 'all');
+    wp_enqueue_script('jquery');
+    wp_enqueue_style( 'pageitemscopes', get_template_directory_uri().'/helpers/css/pageitemscopes.css', false, '1.0', 'all');
+    wp_enqueue_script('jquery');
+    wp_register_script('rasnippets-page', get_template_directory_uri().'/helpers/js/rasnippets-page.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-page');
+    wp_register_script('rasnippets-content', get_template_directory_uri().'/helpers/js/rasnippets-content.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-content');
+    wp_register_script('rasnippets-itemprop', get_template_directory_uri().'/helpers/js/rasnippets-itemprop.js', array('jquery'), null );
+    wp_enqueue_script('rasnippets-itemprop');
+}
+
+function place_ra_snippets()
+{
+
 }
 
 function home_content()
 {
-    ?>
+?>
     <div id="ra-snippets-home-content">
         Hello and Welcome to the Ra Snippets home tab! Above are two other tabs named "ItemScope" and "ItemProp" and there is where you can set the ItemScopes of each page and the ItemProps each of those scopes entail. Once you have completed the data input you are now ready to go to each page and generate your content! On the side of every post editor there is a Ra Snippet box that will tell you the shortcuts to use your ItemProps within your content.
         <div id="ra-snippets-buttons">
@@ -77,7 +239,7 @@ function home_content()
             <span id="radatomname">Rad Atom Technologies</span>
         </div>
     </div>
-    <?php
+<?php
 }
 
 function pageitemscope_content()
@@ -85,25 +247,38 @@ function pageitemscope_content()
 ?>
     <div id="ra-snippets-pageitemscope-content">
         <div id="ra-snippets-pageitemscope-header">
-            Hello and Welcome to the ItemScope tab where you will be able to set the different ItemScopes that pertain to each of your pages. An ItemScop is...
+            Hello and Welcome to the ItemScope tab where you will be able to set the different ItemScopes that pertain to each of your pages. An ItemScope is a tag that is designed to allow search engines (and applications) a better understanding of the the content on each of your pages. To use Ra Snippet's Page Itemscope function merely select an Itemscope and the page you wish to apply them to. If you need more assistance with Ra Snippets please click on the "Home" tab and then click on "Documentation" or "Support."
         </div>
         <div id="ra-snippets-pageitemscope-body">
-            <span id="pagesitemscopeslist">
+            <div id="pagesitemscopeslist">
                 <?php page_itemscopes(); ?>
-            </span>
-            <span id="pageitemscopepages">
+            </div>
+            <div id="pageitemscopepages">
                 <br>
                 <br>
                 for Page:
-                <?php wp_dropdown_pages(); ?>
-            </span>
+                <form action="<? bloginfo('url'); ?>" method="get">
+                <select name="page_id" id="page_id">
+                    <?php
+                    global $post;
+                    $args = array( 
+                        'posts_per_page' => -1,
+                        'sort_column' => 'menu_order',
+                        'post_type' => array('page', 'post')
+                        );
+                    $posts = get_posts($args);
+                    foreach( $posts as $post ) : setup_postdata($post); ?>
+                        <option value="<? echo $post->ID; ?>"><?php the_title(); ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
         </div>
         <div id="ra-snippets-footer">
             <span id="radatomname">Rad Atom Technologies</span>
         </div>
         </div>
     </div>
-<?
+<?php
 }
 
 function contentitemscope_content()
@@ -115,19 +290,47 @@ function contentitemscope_content()
             <span id="radatomname">Rad Atom Technologies</span>
         </div>
     </div>
-<?
+<?php
 }
 
 function itemprop_content()
 {
 ?>
-    <div id="ra-snippets-contentitemscope-content">
-        THIS IS WHERE THE TWO REAMINING TABS WILL GO
+    <div id="ra-snippets-itemprop-content">
+        <div id="ra-snippets-itemprop-header">
+            Hello and Welcome to the ItemProp tab where you will be able to set the various ItemProps you will need to structure your data. Once you have saved the ItemProps you will need to go to your various pages and posts to actually use the ItemProps saved here.
+        </div>
+        <div>
+            <div id="ra-snippets-itemprop-body-1" class="row">
+                <div id="ra-snippets-itemprop-body-1a">
+                    Saved ItemScopes
+                </div>
+                <div id="ra-snippets-itemprop-body-1b">
+                    ItemProps
+                </div>
+                <div id="ra-snippets-itemprop-body-1c">
+                    Saved ItemProps
+                </div>
+            </div>
+            <li>
+                <ul id="ra-snippets-itemprop-body-2">
+                    <li id="ra-snippets-itemprop-body-2a">
+                        <?php itemprop_col1(); ?>
+                    </li>
+                    <li id="ra-snippets-itemprop-body-2b">
+                        <?php itemprop_col2(); ?>
+                    </li>
+                    <li id="ra-snippets-itemprop-body-2c">
+                        <?php itemprop_col3(); ?>
+                    </li>
+                </ul>
+            </li>
+        </div>
         <div id="ra-snippets-footer">
             <span id="radatomname">Rad Atom Technologies</span>
         </div>
     </div>
-<?
+<?php
 }
 
 function page_itemscopes()
@@ -265,11 +468,11 @@ function page_itemscopes()
                         <option value="http://schema.org/ReplyAction">ReplyAction</option>
                         <option value="http://schema.org/ShareAction">ShareAction</option>
                     </select>
-                    <select id="pageitemscopeinformaction">
-                            <option value="http://schema.org/InformAction">Select a InformAction Type</option>
-                            <option value="http://schema.org/ConfirmAction">ConfirmAction
-                            <option value="http://schema.org/RsvpAction">RsvpAction</option>
-                    </select>
+                        <select id="pageitemscopeinformaction">
+                                <option value="http://schema.org/InformAction">Select a InformAction Type</option>
+                                <option value="http://schema.org/ConfirmAction">ConfirmAction
+                                <option value="http://schema.org/RsvpAction">RsvpAction</option>
+                        </select>
                 <select id="pageitemscopemoveaction">
                     <option value="http://schema.org/MoveAction">Select a MoveAction Type</option>
                     <option value="http://schema.org/ArriveAction">ArriveAction</option>
@@ -325,7 +528,7 @@ function page_itemscopes()
                 </select>
                 <select id="pageitemscopeupdateaction">
                     <option value="http://schema.org/UpdateAction">Select a UpdateAction Type</option>
-                    <option value="http://schema.org/AddActionAddAction">AddAction</option>
+                    <option value="http://schema.org/AddAction">AddAction</option>
                     <option value="http://schema.org/DeleteAction">DeleteAction</option>
                     <option value="http://schema.org/ReplaceAction">ReplaceAction</option>
                 </select>
@@ -333,11 +536,11 @@ function page_itemscopes()
                         <option value="http://schema.org/AddAction">Select a AddAction Type</option>
                         <option value="http://schema.org/InsertAction">InsertAction</option>
                     </select>
-                    <select id="pageitemscopeinsertaction">
+                        <select id="pageitemscopeinsertaction">
                             <option value="http://schema.org/InsertAction">Select a InsertAction Type</option>
                             <option value="http://schema.org/AppendAction">AppendAction</option>
                             <option value="http://schema.org/PrependAction">PrependAction</option>
-                    </select>
+                        </select>
             <select id="pageitemscopecreativework">
                 <option value="http://schema.org/CreativeWork">Select a CreativeWork Type</option>
                 <option value="http://schema.org/Article">Article</option>
@@ -1200,12 +1403,12 @@ function page_itemscopes()
                     <option value="http://schema.org/Zoo">Zoo</option>
                 </select>
                     <select id="pageitemscopegovernmentbuilding">
-                    <option value="http://schema.org/GovernmentBuilding">Select a GovernmentBuilding Type</option>
-                    <option value="http://schema.org/CityHall">CityHall</option>
-                    <option value="http://schema.org/Courthouse">Courthouse</option>
-                    <option value="http://schema.org/DefenceEstablishment">DefenceEstablishment</option>
-                    <option value="http://schema.org/Embassy">Embassy</option>
-                    <option value="http://schema.org/LegislativeBuilding">LegislativeBuilding</option>
+                        <option value="http://schema.org/GovernmentBuilding">Select a GovernmentBuilding Type</option>
+                        <option value="http://schema.org/CityHall">CityHall</option>
+                        <option value="http://schema.org/Courthouse">Courthouse</option>
+                        <option value="http://schema.org/DefenceEstablishment">DefenceEstablishment</option>
+                        <option value="http://schema.org/Embassy">Embassy</option>
+                        <option value="http://schema.org/LegislativeBuilding">LegislativeBuilding</option>
                     </select>
                     <select id="pageitemscopeplaceofworship">
                         <option value="http://schema.org/PlaceOfWorship">Select a PlaceOfWorship Type</option>
@@ -1246,6 +1449,60 @@ function page_itemscopes()
                     <option value="http://schema.org/ProductModel">ProductModel</option>
                     <option value="http://schema.org/SomeProducts">SomeProducts</option>
             </select>
-                
+<?php
+}
+
+function content_itemscopes()
+{
+?>
+<?php
+}
+
+function itemprop_col1()
+{
+?>
+    <div="">
+    <div id="itemprop_itemscope_thing">
+        Thing
+    </div>
+<?php
+}
+
+function itemprop_col2()
+{
+?>
+    <ul id="ra-snippets-itemprops-thing">
+        <li>additionalType : <input type="text" id="thingprops-additionalType"/></li>
+        <li>alternateName : <input type="text" id="thingprops-alternateName"/></li>
+        <li>description : <input type="text" id="thingprops-description"/></li>
+        <li>image : <input type="text" id="thingprops-image"/></li>
+        <li>name : <input type="text" id="thingprops-name"/></li>
+        <li>sameAs : <input type="text" id="thingprops-sameAs"/></li>
+        <li>url : <input type="text" id="thingprops-url"/></li>
+    </ul>
+    <ul id="ra-snippets-itemprops-action">
+        <li>additionalType : <input type="text" id="actionprops-additionalType"/></li>
+        <li>alternateName : <input type="text" id="actionprops-alternateName"/></li>
+        <li>description : <input type="text" id="actionprops-description"/></li>
+        <li>image : <input type="text" id="actionprops-image"/></li>
+        <li>name : <input type="text" id="actionprops-name"/></li>
+        <li>sameAs : <input type="text" id="actionprops-sameAs"/></li>
+        <li>url : <input type="text" id="actionprops-url"/></li>
+        <li>agent : <input type="text" id="actionprops-agent"/></li>
+        <li>endTime : <input type="text" id="actionprops-endTime"/></li>
+        <li>instrument : <input type="text" id="actionprops-instrument"/></li>
+        <li>location : <input type="text" id="actionprops-location"/></li>
+        <li>object : <input type="text" id="actionprops-object"/></li>
+        <li>participant : <input type="text" id="actionprops-participant"/></li>
+        <li>result : <input type="text" id="actionprops-result"/></li>
+        <li>startTime : <input type="text" id="actionprops-startTime"/></li>
+    </ul>
+<?php
+}
+
+function itemprop_col3()
+{
+?>
+
 <?php
 }

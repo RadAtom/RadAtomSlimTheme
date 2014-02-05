@@ -1,5 +1,5 @@
 /*
- * JS for Ra Snippets
+ * JS for Ra Snippets Page ItemScope
  */
 function remove_datatypeselection()
 {
@@ -53,7 +53,7 @@ function remove_thingselectionALTorganization()
 
 function remove_thingselectionALTplace()
 {
-  var remove_itemscopethingselection =  jQuery('#pageitemscopething').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeachieveaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeassessaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopechooseaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopereactaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeconsumeaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeuseaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecreateaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefindaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeinteractaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecommunicateaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeinformaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemoveaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeorganizeaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeallocateaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeplanaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeplayaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopetradeaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopetransferaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeupdateaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeaddaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeinsertaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecreativework').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopearticle').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopescholarlyarticle').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopetecharticle').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeclip').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeepisode').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemediaobject').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemusicplaylist').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeseason').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeseries').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesoftwareapplication').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopewebpage').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecollectionpage').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopewebpageelement').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeevent').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopepublicationevent').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeuserinteraction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeintangible').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeaudience').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalaudience').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopepeopleaudience').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeenumeration').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopebookformattype').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecontactpointoption').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopedeliverymethod').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeeventstatusstype').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeitemavailability').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeofferitemcondition').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeorderstatus').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopepaymentmethod').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopespecialty').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalspecialty').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeoffer').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopepermit').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopequantity').find('option:selected').removeAttr("selected"); jQuery('#pageitemscoperating').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestructuredvalue').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecontactpoint').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopepricespecification').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalentity').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeanatomicalstructure').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopevessel').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalcondition').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalguideline').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalindication').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalintangible').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopedoseschedule').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalenumeration').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopedrugcostcategory').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopedrugpregnancycategory').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopedrugprescriptionstatus').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeinfectiousagentclass').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicaldevicepurpose').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalevidencelevel').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalimagingtechnique').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalobservationalstudydesign').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalproceduretype').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalstudystatus').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicaltrialdesign').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicinesystem').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopephysicalactivitycategory').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopephysicalexam').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalprocedure').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalriskestimator').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalsignorsymptom').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalstudy').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicaltest').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicaltherapy').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelifestylemodification').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopephysicalactivity').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeeducationalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelocalbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeperforminggroup').find('option:selected').removeAttr("selected");
+  var remove_itemscopethingselection =  jQuery('#pageitemscopeaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeachieveaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeassessaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopechooseaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopereactaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeconsumeaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeuseaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecreateaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefindaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeinteractaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecommunicateaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeinformaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemoveaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeorganizeaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeallocateaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeplanaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeplayaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopetradeaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopetransferaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeupdateaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeaddaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeinsertaction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecreativework').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopearticle').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopescholarlyarticle').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopetecharticle').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeclip').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeepisode').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemediaobject').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemusicplaylist').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeseason').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeseries').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesoftwareapplication').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopewebpage').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecollectionpage').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopewebpageelement').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeevent').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopepublicationevent').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeuserinteraction').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeintangible').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeaudience').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalaudience').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopepeopleaudience').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeenumeration').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopebookformattype').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecontactpointoption').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopedeliverymethod').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeeventstatusstype').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeitemavailability').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeofferitemcondition').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeorderstatus').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopepaymentmethod').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopespecialty').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalspecialty').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeoffer').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopepermit').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopequantity').find('option:selected').removeAttr("selected"); jQuery('#pageitemscoperating').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestructuredvalue').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecontactpoint').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopepricespecification').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalentity').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeanatomicalstructure').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopevessel').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalcondition').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalguideline').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalindication').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalintangible').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopedoseschedule').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalenumeration').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopedrugcostcategory').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopedrugpregnancycategory').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopedrugprescriptionstatus').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeinfectiousagentclass').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicaldevicepurpose').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalevidencelevel').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalimagingtechnique').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalobservationalstudydesign').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalproceduretype').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalstudystatus').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicaltrialdesign').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicinesystem').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopephysicalactivitycategory').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopephysicalexam').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalprocedure').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalriskestimator').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalsignorsymptom').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalstudy').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicaltest').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicaltherapy').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelifestylemodification').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopephysicalactivity').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeeducationalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelocalbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeperforminggroup').find('option:selected').removeAttr("selected");
 }
 
 function remove_actionselection()
@@ -416,10 +416,112 @@ function remove_organizationselection()
   var remove_itemscopethingselection = jQuery('#pageitemscopelocalbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeperforminggroup').find('option:selected').removeAttr("selected");
 }
 
+function remove_organizationselectionALTeducationalorganization()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopelocalbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeperforminggroup').find('option:selected').removeAttr("selected");
+}
+
+function remove_organizationselectionALTlocalbusiness()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeeducationalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeperforminggroup').find('option:selected').removeAttr("selected");
+}
+
+function remove_organizationselectionALTlocalbusinessALTautomotivebusiness()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALTemergencyservice()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALTentertainmentbusiness()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALTfinancialservice()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALTfoodestablishment()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALTgovernmentoffice()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALThealthandbeautybusiness()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALThomeandconstructionbusiness()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALTlodgingbusiness()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALTmedicalorganization()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALTprofessionalservice()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALTsportsactivitylocation()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTlocalbusinessALTstore()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_organizationselectionALTperforminggroup()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeeducationalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelocalbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeautomotivebusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeemergencyservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeentertainmentbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefinancialservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopefoodestablishment').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentoffice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehealthandbeautybusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopehomeandconstructionbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelodgingbusiness').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopemedicalorganization').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeprofessionalservice').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopesportsactivitylocation').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopestore').find('option:selected').removeAttr("selected");
+}
+
 function remove_placeselection()
 {
-  var remove_itemscopethingselection = jQuery('#pageitemscopeadministrativearea').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecivicstructure').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentbuilding').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelandform').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopebodyofwater').find('option:selected').removeAttr("selected"); jQuery('#pageitemscoperesidence').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeproduct').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeplaceofworship').find('option:selected').removeAttr("selected");
+  var remove_itemscopethingselection = jQuery('#pageitemscopeadministrativearea').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecivicstructure').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentbuilding').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeplaceofworship').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelandform').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopebodyofwater').find('option:selected').removeAttr("selected"); jQuery('#pageitemscoperesidence').find('option:selected').removeAttr("selected"); 
 }
+
+function remove_placeselectionALTadministrativearea()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopecivicstructure').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentbuilding').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeplaceofworship').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelandform').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopebodyofwater').find('option:selected').removeAttr("selected"); jQuery('#pageitemscoperesidence').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_placeselectionALTcivicstructure()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeadministrativearea').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelandform').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopebodyofwater').find('option:selected').removeAttr("selected"); jQuery('#pageitemscoperesidence').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_placeselectionALTlandform()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeadministrativearea').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecivicstructure').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentbuilding').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeplaceofworship').find('option:selected').removeAttr("selected"); jQuery('#pageitemscoperesidence').find('option:selected').removeAttr("selected"); 
+}
+
+function remove_placeselectionALTresidence()
+{
+  var remove_itemscopethingselection = jQuery('#pageitemscopeadministrativearea').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopecivicstructure').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopegovernmentbuilding').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopeplaceofworship').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopelandform').find('option:selected').removeAttr("selected"); jQuery('#pageitemscopebodyofwater').find('option:selected').removeAttr("selected"); 
+}
+
+
 
 function remove_datatypeitemscopelists()
 {
@@ -619,6 +721,7 @@ function show_pageitemscopeassessaction()
   if (jQuery('#pageitemscopeassessaction').val() == 'http://schema.org/ChooseAction') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopereactaction').find('option:selected').removeAttr("selected"); 
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeaction').show();
     jQuery('#pageitemscopeassessaction').show();
@@ -626,28 +729,38 @@ function show_pageitemscopeassessaction()
   } else if (jQuery('#pageitemscopeassessaction').val() == 'http://schema.org/ReactAction') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopechooseaction').find('option:selected').removeAttr("selected"); 
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeaction').show();
     jQuery('#pageitemscopeassessaction').show();
     jQuery('#pageitemscopereactaction').show();
   } else {
-    
+    remove_datatypeitemscopelists();
+    remove_thingitemscopelists();
+    jQuery('#pageitemscopechooseaction').find('option:selected').removeAttr("selected"); 
+    jQuery('#pageitemscopereactaction').find('option:selected').removeAttr("selected");
+    jQuery('#pageitemscopething').show();
+    jQuery('#pageitemscopeaction').show();
+    jQuery('#pageitemscopeassessaction').show();
   }
 }
 
 function show_pageitemscopeconsumeaction()
 {
-  if (jQuery('#pageitemscopeconsumeaction').val() == 'http://schema.org/ConsumeAction') {
+  if (jQuery('#pageitemscopeconsumeaction').val() == 'http://schema.org/UseAction') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeaction').show();
     jQuery('#pageitemscopeconsumeaction').show();
+    jQuery('#pageitemscopeuseaction').show();
   } else {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopeuseaction').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeaction').show();
+    jQuery('#pageitemscopeconsumeaction').show();
   }
 }
 
@@ -658,56 +771,104 @@ function show_pageitemscopeinteractaction()
     remove_thingitemscopelists();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeaction').show();
-    jQuery('#pageitemscopecommunicateaction').show();
-  } else if (jQuery('#pageitemscopeinteractaction').val() == 'http://schema.org/InformAction') {
-    remove_datatypeitemscopelists();
-    remove_thingitemscopelists();
-    jQuery('#pageitemscopething').show();
-    jQuery('#pageitemscopeaction').show();
+    jQuery('#pageitemscopeinteractaction').show();
     jQuery('#pageitemscopecommunicateaction').show();
   } else {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopecommunicateaction').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeaction').show();
+    jQuery('#pageitemscopeinteractaction').show();
+  }
+}
+
+function show_pageitemscopecommunicateaction()
+{
+  if (jQuery('#pageitemscopecommunicateaction').val() == 'http://schema.org/InformAction') {
+    remove_datatypeitemscopelists();
+    remove_thingitemscopelists();
+    jQuery('#pageitemscopething').show();
+    jQuery('#pageitemscopeaction').show();
+    jQuery('#pageitemscopeinteractaction').show();
+    jQuery('#pageitemscopecommunicateaction').show();
+    jQuery('#pageitemscopeinformaction').show();
+  } else{
+    remove_datatypeitemscopelists();
+    remove_thingitemscopelists();
+    jQuery('#pageitemscopeinformaction').find('option:selected').removeAttr("selected");
+    jQuery('#pageitemscopething').show();
+    jQuery('#pageitemscopeaction').show();
+    jQuery('#pageitemscopeinteractaction').show();
+    jQuery('#pageitemscopecommunicateaction').show();
+
   }
 }
 
 function show_pageitemscopeorganizeaction()
 {
-  if (jQuery('#pageitemscopeaction').val() == 'http://schema.org/LocateAction') {
+  if (jQuery('#pageitemscopeaction').val() == 'http://schema.org/AllocateAction') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopeplanaction').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeaction').show();
     jQuery('#pageitemscopeallocateaction').show();
   } else if (jQuery('#pageitemscopeaction').val() == 'http://schema.org/PlanAction') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopeallocateaction').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeaction').show();
     jQuery('#pageitemscopeplanaction').show();
-  } else {
-    
+  } else {remove_datatypeitemscopelists();
+    remove_thingitemscopelists();
+    jQuery('#pageitemscopeallocateaction').find('option:selected').removeAttr("selected");
+    jQuery('#pageitemscopeplanaction').find('option:selected').removeAttr("selected");
+    jQuery('#pageitemscopething').show();
+    jQuery('#pageitemscopeaction').show();
   }
 }
 
 function show_pageitemscopeupdateaction()
 {
-  if (jQuery('#pageitemscopeaction').val() == 'http://schema.org/AddAction') {
+  if (jQuery('#pageitemscopeupdateaction').val() == 'http://schema.org/AddAction') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopeinsertaction').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeaction').show();
+    jQuery('#pageitemscopeupdateaction').show();
     jQuery('#pageitemscopeaddaction').show();
-  } else if (jQuery('#pageitemscopeaction').val() == 'http://schema.org/InsertAction') {
+  } else {
+    remove_datatypeitemscopelists();
+    remove_thingitemscopelists();
+    jQuery('#pageitemscopeaddaction').find('option:selected').removeAttr("selected");
+    jQuery('#pageitemscopeinsertaction').find('option:selected').removeAttr("selected");
+    jQuery('#pageitemscopething').show();
+    jQuery('#pageitemscopeaction').show();
+    jQuery('#pageitemscopeupdateaction').show();    
+  }
+}
+
+function show_pageitemscopeaddaction()
+{
+  if (jQuery('#pageitemscopeaddaction').val() == 'http://schema.org/InsertAction') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeaction').show();
+    jQuery('#pageitemscopeupdateaction').show();
+    jQuery('#pageitemscopeaddaction').show();
     jQuery('#pageitemscopeinsertaction').show();
-  } else {
-    
+  } else{
+    remove_datatypeitemscopelists();
+    remove_thingitemscopelists();
+    jQuery('#pageitemscopeinsertaction').find('option:selected').removeAttr("selected");
+    jQuery('#pageitemscopething').show();
+    jQuery('#pageitemscopeaction').show();
+    jQuery('#pageitemscopeupdateaction').show();
+    jQuery('#pageitemscopeaddaction').show();
   }
 }
 
@@ -1195,6 +1356,7 @@ function show_pageitemscopeanatomicalstructure()
   } else {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopevessel').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopemedicalentity').show();
     jQuery('#pageitemscopeanatomicalstructure').show();
@@ -1206,6 +1368,7 @@ function show_pageitemscopemedicalintangible()
   if (jQuery('#pageitemscopemedicalintangible').val() == 'http://schema.org/DoseSchedule') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopemedicalenumeration').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopemedicalentity').show();
     jQuery('#pageitemscopemedicalintangible').show();
@@ -1213,6 +1376,7 @@ function show_pageitemscopemedicalintangible()
   } else if (jQuery('#pageitemscopemedicalintangible').val() == 'http://schema.org/MedicalEnumeration') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopedoseschedule').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopemedicalentity').show();
     jQuery('#pageitemscopemedicalintangible').show();
@@ -1220,6 +1384,8 @@ function show_pageitemscopemedicalintangible()
   } else {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopedoseschedule').find('option:selected').removeAttr("selected");
+    jQuery('#pageitemscopemedicalenumeration').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopemedicalentity').show();
     jQuery('#pageitemscopemedicalintangible').show();
@@ -1398,18 +1564,21 @@ function show_pageitemscopeorganization()
   if (jQuery('#pageitemscopeorganization').val() == 'http://schema.org/EducationalOrganization') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTeducationalorganization();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopeeducationalorganization').show();
   } else if (jQuery('#pageitemscopeorganization').val() == 'http://schema.org/LocalBusiness') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusiness();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
   } else if (jQuery('#pageitemscopeorganization').val() == 'http://schema.org/PerformingGroup') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTperforminggroup();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopeperforminggroup').show();
@@ -1427,6 +1596,7 @@ function show_pageitemscopelocalbusiness()
   if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/AutomotiveBusiness') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTautomotivebusiness();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1434,6 +1604,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/EmergencyService') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTemergencyservice();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1441,6 +1612,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/EntertainmentBusiness') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTentertainmentbusiness();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1448,6 +1620,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/FinancialService') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTfinancialservice();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1455,6 +1628,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/FoodEstablishment') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTfoodestablishment();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1462,6 +1636,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/GovernmentOffice') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTgovernmentoffice();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1469,6 +1644,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/HealthAndBeautyBusiness') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALThealthandbeautybusiness();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1476,6 +1652,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/HomeAndConstructionBusiness') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALThomeandconstructionbusiness();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1483,6 +1660,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/LodgingBusiness') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTlodgingbusiness();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1490,6 +1668,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/MedicalOrganization') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTmedicalorganization();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1497,6 +1676,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/ProfessionalService') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTprofessionalservice();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1504,6 +1684,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/SportsActivityLocation') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTsportsactivitylocation();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1511,6 +1692,7 @@ function show_pageitemscopelocalbusiness()
   } else if (jQuery('#pageitemscopelocalbusiness').val() == 'http://schema.org/Store') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_organizationselectionALTlocalbusinessALTstore();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeorganization').show();
     jQuery('#pageitemscopelocalbusiness').show();
@@ -1529,30 +1711,35 @@ function show_pageitemscopeplace()
   if (jQuery('#pageitemscopeplace').val() == 'http://schema.org/AdministrativeArea') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_placeselectionALTadministrativearea();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeplace').show();
     jQuery('#pageitemscopeadministrativearea').show();
   } else if (jQuery('#pageitemscopeplace').val() == 'http://schema.org/CivicStructure') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_placeselectionALTcivicstructure();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeplace').show();
     jQuery('#pageitemscopecivicstructure').show();
   } else if (jQuery('#pageitemscopeplace').val() == 'http://schema.org/Landform') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_placeselectionALTlandform();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeplace').show();
     jQuery('#pageitemscopelandform').show();
   } else if (jQuery('#pageitemscopeplace').val() == 'http://schema.org/Residence') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_placeselectionALTresidence();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeplace').show();
     jQuery('#pageitemscoperesidence').show();
   } else {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    remove_placeselection();
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeplace').show();
   }
@@ -1563,6 +1750,7 @@ function show_pageitemscopecivicstructure()
   if (jQuery('#pageitemscopecivicstructure').val() == 'http://schema.org/GovernmentBuilding') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopeplaceofworship').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeplace').show();
     jQuery('#pageitemscopecivicstructure').show();
@@ -1570,6 +1758,7 @@ function show_pageitemscopecivicstructure()
   } else if (jQuery('#pageitemscopecivicstructure').val() == 'http://schema.org/PlaceOfWorship') {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopegovernmentbuilding').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeplace').show();
     jQuery('#pageitemscopecivicstructure').show();
@@ -1577,6 +1766,8 @@ function show_pageitemscopecivicstructure()
   } else {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopegovernmentbuilding').find('option:selected').removeAttr("selected");
+    jQuery('#pageitemscopeplaceofworship').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeplace').show();
     jQuery('#pageitemscopecivicstructure').show();
@@ -1595,6 +1786,7 @@ function show_pageitemscopelandform()
   } else {
     remove_datatypeitemscopelists();
     remove_thingitemscopelists();
+    jQuery('#pageitemscopebodyofwater').find('option:selected').removeAttr("selected");
     jQuery('#pageitemscopething').show();
     jQuery('#pageitemscopeplace').show();
     jQuery('#pageitemscopelandform').show();
@@ -1630,12 +1822,24 @@ jQuery( document ).ready(function() {
     show_pageitemscopeconsumeaction();
     e.preventDefault();
   });
+  jQuery('#pageitemscopecommunicateaction').on('change', function(e) {
+    show_pageitemscopecommunicateaction();
+    e.preventDefault();
+  });
+  jQuery('#pageitemscopeinformaction').on('change', function(e) {
+    show_pageitemscopeinformaction();
+    e.preventDefault();
+  });
   jQuery('#pageitemscopeinteractaction').on('change', function(e) {
     show_pageitemscopeinteractaction();
     e.preventDefault();
   });
   jQuery('#pageitemscopeupdateaction').on('change', function(e) {
     show_pageitemscopeupdateaction();
+    e.preventDefault();
+  });
+  jQuery('#pageitemscopeaddaction').on('change', function(e) {
+    show_pageitemscopeaddaction();
     e.preventDefault();
   });
   jQuery('#pageitemscopecreativework').on('change', function(e) {

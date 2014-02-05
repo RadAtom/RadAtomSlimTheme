@@ -35,7 +35,8 @@ function render_ra_settings() {
             echo '<li><a href="">Documentation</a></li>';
             echo '<p><span id="seperator">|</span></p>';
             echo '<li><a href="">Support</a></li>';
-            echo '<p><span id="seperator">|</span></p>';                echo '<li><a href="">More Ra Wordpress Helpers</a></li>';
+            echo '<p><span id="seperator">|</span></p>';                
+            echo '<li><a href="">More Ra Wordpress Helpers</a></li>';
             echo '<p><span id="radatomname">Rad Atom Technologies</span></p>';
         echo '</ul>';
         echo '</div>';

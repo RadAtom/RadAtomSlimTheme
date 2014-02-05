@@ -22,7 +22,8 @@ class RadAtomWordpressExcerpts {
     public function add_plugin_page()
     {
         // This page will be under "Settings"
-        add_options_page(
+        add_submenu_page(
+            'ra-settings',
             'Excerpts', 
             'Excerpts', 
             'manage_options', 

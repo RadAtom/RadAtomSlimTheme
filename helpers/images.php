@@ -20,7 +20,8 @@ class RadAtomWordpressImages {
     public function add_plugin_page()
     {
         // This page will be under "Settings"
-        add_options_page(
+        add_submenu_page(
+            'ra-settings',
             'Image Settings',
             'Image Settings',
             'manage_options',

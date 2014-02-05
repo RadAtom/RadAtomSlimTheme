@@ -19,7 +19,8 @@ class RadAtomWordpressPosts {
     public function add_plugin_page()
     {
         // This page will be under "Settings"
-        add_options_page(
+        add_submenu_page(
+            'ra-settings',
             'RadAtom Post Settings', 
             'RadAtom Post Settings', 
             'manage_options', 
