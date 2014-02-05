@@ -1,5 +1,5 @@
 <?php
-require_once('themeslug_walker_nav_menu.php');
+require_once('helpers/radatom_theme_specifics.php');
 require_once('radatomautoload.php');
 ?>
 <!DOCTYPE html>
@@ -73,7 +73,7 @@ require_once('radatomautoload.php');
       <div id="header-stuff" class="large-13 columns">
         <div id="nav-button" class="large-6 columns">
           <div id="navbuttonbox" class="large-2 columns">
-            <a href="#" id="navbutton" class="round button"><?php echo get_nav_menu_text(); ?></a>
+            <a href="#" id="navbutton" class="round button"><?php echo get_nav_menu_button_text(); ?></a>
           </div>
           <div id="nav-menu" class="large-8 columns">
             <?php wp_nav_menu( array( 'theme_location' => 'menu-header', 'container'       => 'nav','items_wrap'      => '<ul id="%1$s" class="%2$s inline-list">%3$s</ul>', ) ); ?>
@@ -88,7 +88,7 @@ require_once('radatomautoload.php');
             </ul>
           </div>
           <div id="socialbuttonbox" class="large-2 columns">
-            <a href="#" id="socialbutton" class="round button"><?php echo get_social_menu_text(); ?></a>
+            <a href="#" id="socialbutton" class="round button"><?php echo get_social_menu_button_text(); ?></a>
           </div>
         </div>
       </div>
